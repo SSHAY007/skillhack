@@ -1,0 +1,565 @@
+[2023-10-21 14:37:58,039][root][INFO] - name: null
+wandb: false
+project: skillhack
+entity: your_entity_name
+group: default
+state_dict_path: none
+foc_options_path: none
+foc_options_config_path: none
+teacher_path: none
+teacher_config_path: none
+ks_max_lambda: 10
+ks_max_time: 20000000.0
+ks_min_lambda_prop: 0.1
+train_with_all_skills: false
+penalty_per_step: 0.01
+hks_max_uniform_weight: 1000
+hks_min_uniform_prop: 0.05
+hks_max_uniform_time: 20000000.0
+tasks_json: tasks
+mock: false
+single_ttyrec: true
+num_seeds: 0
+write_profiler_trace: false
+relative_reward: false
+fn_penalty_step: constant
+penalty_time: 0.0
+penalty_step: -0.001
+reward_lose: 0
+reward_win: 1
+character: null
+save_tty: false
+mode: train
+env: mini_skill_fight
+obs_keys: glyphs,chars,colors,specials,blstats,message
+num_actors: 256
+total_steps: 10000000.0
+batch_size: 32
+unroll_length: 80
+num_learner_threads: 1
+num_inference_threads: 1
+disable_cuda: false
+learner_device: cuda:0
+actor_device: cuda:0
+max_learner_queue_size: null
+model: baseline
+use_lstm: false
+hidden_dim: 256
+embedding_dim: 64
+glyph_type: all_cat
+equalize_input_dim: false
+equalize_factor: 2
+layers: 5
+crop_model: cnn
+crop_dim: 9
+use_index_select: true
+entropy_cost: 0.001
+baseline_cost: 0.5
+discounting: 0.999
+reward_clipping: none
+normalize_reward: true
+learning_rate: 0.0002
+grad_norm_clipping: 40
+alpha: 0.99
+momentum: 0
+epsilon: 1.0e-06
+state_counter: none
+no_extrinsic: false
+int:
+  twoheaded: true
+  input: full
+  intrinsic_weight: 0.1
+  discounting: 0.99
+  baseline_cost: 0.5
+  episodic: true
+  reward_clipping: none
+  normalize_reward: true
+ride:
+  count_norm: true
+  forward_cost: 1
+  inverse_cost: 0.1
+  hidden_dim: 128
+rnd:
+  forward_cost: 0.01
+msg:
+  model: none
+  hidden_dim: 64
+  embedding_dim: 32
+
+[2023-10-21 14:37:58,055][root][INFO] - Symlinked log directory: /opt/project/latest
+[2023-10-21 14:37:58,056][root][INFO] - Creating archive directory: /opt/project/outputs/2023-10-21/14-37-57/archives
+[2023-10-21 14:37:58,060][root][INFO] - Logging results to /opt/project/outputs/2023-10-21/14-37-57
+[2023-10-21 14:37:58,095][palaas/out][INFO] - Found log directory: /opt/project/outputs/2023-10-21/14-37-57
+[2023-10-21 14:37:58,095][palaas/out][INFO] - Saving arguments to /opt/project/outputs/2023-10-21/14-37-57/meta.json
+[2023-10-21 14:37:58,096][palaas/out][INFO] - Saving messages to /opt/project/outputs/2023-10-21/14-37-57/out.log
+[2023-10-21 14:37:58,096][palaas/out][INFO] - Saving logs data to /opt/project/outputs/2023-10-21/14-37-57/logs.csv
+[2023-10-21 14:37:58,096][palaas/out][INFO] - Saving logs' fields to /opt/project/outputs/2023-10-21/14-37-57/fields.csv
+[2023-10-21 14:37:58,096][root][INFO] - Not using CUDA.
+[2023-10-21 14:37:58,102][root][INFO] - Using model baseline
+[2023-10-21 14:37:58,612][root][INFO] - Number of model parameters: 3717182
+[2023-10-21 14:37:58,635][root][INFO] - ()
+[2023-10-21 14:37:58,636][root][INFO] - After actor pool
+[2023-10-21 14:37:58,922][root][INFO] - <All keys matched successfully>
+[2023-10-21 14:37:58,922][root][INFO] - The model states is ()
+[2023-10-21 14:37:58,928][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,928][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,929][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,929][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,930][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,933][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,933][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,933][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,933][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,934][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,934][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,937][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,941][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,945][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,947][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,954][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,957][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,960][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,966][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,969][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,969][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,969][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,969][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,969][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,969][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,969][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,972][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,973][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,973][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,973][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,977][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,977][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,979][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,980][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,981][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,984][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,985][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,987][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,987][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,988][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,989][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,989][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,990][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,987][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,987][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,992][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,993][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,993][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,993][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,993][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,993][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,995][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,997][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,997][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,997][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,997][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,000][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,000][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,001][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,001][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,001][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,001][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,002][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:58,987][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,006][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,010][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,013][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,037][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,041][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,046][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,049][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,050][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,057][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,057][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,061][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,061][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,066][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,069][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,069][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,077][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,154][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,160][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,173][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,186][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,197][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,201][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,201][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,209][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,209][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,245][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,254][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,255][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,255][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,254][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,258][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,261][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,261][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,261][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,265][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,265][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,265][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,269][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,269][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,269][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,269][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,269][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,272][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,272][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,273][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,273][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,273][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,277][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,278][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,278][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,282][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,286][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,290][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,294][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,294][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,294][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,295][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,297][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,301][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,301][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,305][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,305][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,305][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,305][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,306][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,310][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,310][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,311][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,313][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,308][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,317][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,317][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,322][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,325][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,329][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,334][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,334][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,334][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,339][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,345][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,349][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,349][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,349][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,349][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,354][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,354][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,357][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,357][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,361][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,365][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,369][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,369][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,374][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,375][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,379][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,381][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,381][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:37:59,643][root][CRITICAL] - before torch.Size([1, 1])
+[2023-10-21 14:37:59,645][root][CRITICAL] - before torch.Size([1, 1])
+[2023-10-21 14:37:59,789][root][CRITICAL] - before torch.Size([158, 1])
+[2023-10-21 14:37:59,789][root][CRITICAL] - before torch.Size([1, 158])
+[2023-10-21 14:37:59,926][root][CRITICAL] - before torch.Size([161, 1])
+[2023-10-21 14:37:59,926][root][CRITICAL] - before torch.Size([1, 161])
+[2023-10-21 14:37:59,970][root][CRITICAL] - before torch.Size([5, 1])
+[2023-10-21 14:37:59,971][root][CRITICAL] - before torch.Size([1, 5])
+[2023-10-21 14:38:00,096][root][CRITICAL] - before torch.Size([156, 1])
+[2023-10-21 14:38:00,097][root][CRITICAL] - before torch.Size([1, 156])
+[2023-10-21 14:38:00,122][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,122][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,123][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,124][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,125][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,129][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,129][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,130][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,130][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,130][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,133][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,133][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,133][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,134][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,137][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,138][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,138][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,141][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,142][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,145][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,145][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,146][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,150][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,152][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,153][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,154][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,157][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,158][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,160][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,160][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,161][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,161][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,161][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,163][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,165][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,169][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,169][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,169][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,169][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,172][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,174][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,174][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,177][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,184][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,201][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,211][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,211][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,211][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,211][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,215][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,217][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,224][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,236][root][CRITICAL] - before torch.Size([6, 1])
+[2023-10-21 14:38:00,237][root][CRITICAL] - before torch.Size([1, 6])
+[2023-10-21 14:38:00,241][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,248][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:00,543][root][CRITICAL] - before torch.Size([155, 1])
+[2023-10-21 14:38:00,543][root][CRITICAL] - before torch.Size([1, 155])
+[2023-10-21 14:38:00,633][root][CRITICAL] - before torch.Size([66, 1])
+[2023-10-21 14:38:00,633][root][CRITICAL] - before torch.Size([1, 66])
+[2023-10-21 14:38:00,814][root][CRITICAL] - before torch.Size([209, 1])
+[2023-10-21 14:38:00,814][root][CRITICAL] - before torch.Size([1, 209])
+[2023-10-21 14:38:00,888][root][CRITICAL] - before torch.Size([41, 1])
+[2023-10-21 14:38:00,888][root][CRITICAL] - before torch.Size([1, 41])
+[2023-10-21 14:38:01,042][root][CRITICAL] - before torch.Size([189, 1])
+[2023-10-21 14:38:01,042][root][CRITICAL] - before torch.Size([1, 189])
+[2023-10-21 14:38:01,123][root][CRITICAL] - before torch.Size([79, 1])
+[2023-10-21 14:38:01,124][root][CRITICAL] - before torch.Size([1, 79])
+[2023-10-21 14:38:01,278][root][CRITICAL] - before torch.Size([185, 1])
+[2023-10-21 14:38:01,278][root][CRITICAL] - before torch.Size([1, 185])
+[2023-10-21 14:38:01,365][root][CRITICAL] - before torch.Size([68, 1])
+[2023-10-21 14:38:01,366][root][CRITICAL] - before torch.Size([1, 68])
+[2023-10-21 14:38:01,417][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,425][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,431][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,432][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,441][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,441][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,453][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,474][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,526][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,538][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,577][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,593][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,597][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,597][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,602][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,617][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,618][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,633][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,645][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,673][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,674][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,693][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,713][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,725][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,733][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,741][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,741][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,758][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,769][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,820][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,825][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,849][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,866][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,878][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,881][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,885][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,893][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,895][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:01,933][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:02,005][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:02,041][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-21 14:38:02,242][root][CRITICAL] - before torch.Size([147, 1])
+[2023-10-21 14:38:02,242][root][CRITICAL] - before torch.Size([1, 147])
+[2023-10-21 14:38:02,369][root][CRITICAL] - before torch.Size([137, 1])
+[2023-10-21 14:38:02,370][root][CRITICAL] - before torch.Size([1, 137])
+[2023-10-21 14:38:02,537][root][CRITICAL] - before torch.Size([196, 1])
+[2023-10-21 14:38:02,537][root][CRITICAL] - before torch.Size([1, 196])
+[2023-10-21 14:38:02,662][root][CRITICAL] - before torch.Size([127, 1])
+[2023-10-21 14:38:02,662][root][CRITICAL] - before torch.Size([1, 127])
+[2023-10-21 14:38:02,763][root][CRITICAL] - before torch.Size([136, 1])
+[2023-10-21 14:38:02,764][root][CRITICAL] - before torch.Size([1, 136])
+[2023-10-21 14:38:02,860][root][CRITICAL] - before torch.Size([122, 1])
+[2023-10-21 14:38:02,861][root][CRITICAL] - before torch.Size([1, 122])
+[2023-10-21 14:38:02,963][root][CRITICAL] - before torch.Size([145, 1])
+[2023-10-21 14:38:02,964][root][CRITICAL] - before torch.Size([1, 145])
+[2023-10-21 14:38:03,073][root][CRITICAL] - before torch.Size([111, 1])
+[2023-10-21 14:38:03,073][root][CRITICAL] - before torch.Size([1, 111])
+[2023-10-21 14:38:03,202][root][CRITICAL] - before torch.Size([160, 1])
+[2023-10-21 14:38:03,202][root][CRITICAL] - before torch.Size([1, 160])
+[2023-10-21 14:38:03,316][root][CRITICAL] - before torch.Size([149, 1])
+[2023-10-21 14:38:03,316][root][CRITICAL] - before torch.Size([1, 149])
+[2023-10-21 14:38:03,432][root][CRITICAL] - before torch.Size([126, 1])
+[2023-10-21 14:38:03,433][root][CRITICAL] - before torch.Size([1, 126])
+[2023-10-21 14:38:03,554][root][CRITICAL] - before torch.Size([134, 1])
+[2023-10-21 14:38:03,554][root][CRITICAL] - before torch.Size([1, 134])
+[2023-10-21 14:38:03,662][root][CRITICAL] - before torch.Size([137, 1])
+[2023-10-21 14:38:03,662][root][CRITICAL] - before torch.Size([1, 137])
+[2023-10-21 14:38:03,756][root][CRITICAL] - before torch.Size([119, 1])
+[2023-10-21 14:38:03,756][root][CRITICAL] - before torch.Size([1, 119])
+[2023-10-21 14:38:03,880][root][CRITICAL] - before torch.Size([139, 1])
+[2023-10-21 14:38:03,880][root][CRITICAL] - before torch.Size([1, 139])
+[2023-10-21 14:38:03,928][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 139. Learner queue size: 0. Other stats: (train_seconds = 5.0)
+[2023-10-21 14:38:03,980][root][CRITICAL] - before torch.Size([117, 1])
+[2023-10-21 14:38:03,980][root][CRITICAL] - before torch.Size([1, 117])
+[2023-10-21 14:38:04,101][root][CRITICAL] - before torch.Size([141, 1])
+[2023-10-21 14:38:04,101][root][CRITICAL] - before torch.Size([1, 141])
+[2023-10-21 14:38:04,220][root][CRITICAL] - before torch.Size([139, 1])
+[2023-10-21 14:38:04,220][root][CRITICAL] - before torch.Size([1, 139])
+[2023-10-21 14:38:04,320][root][CRITICAL] - before torch.Size([118, 1])
+[2023-10-21 14:38:04,321][root][CRITICAL] - before torch.Size([1, 118])
+[2023-10-21 14:38:04,441][root][CRITICAL] - before torch.Size([138, 1])
+[2023-10-21 14:38:04,441][root][CRITICAL] - before torch.Size([1, 138])
+[2023-10-21 14:38:04,544][root][CRITICAL] - before torch.Size([119, 1])
+[2023-10-21 14:38:04,544][root][CRITICAL] - before torch.Size([1, 119])
+[2023-10-21 14:38:04,684][root][CRITICAL] - before torch.Size([164, 1])
+[2023-10-21 14:38:04,685][root][CRITICAL] - before torch.Size([1, 164])
+[2023-10-21 14:38:04,803][root][CRITICAL] - before torch.Size([148, 1])
+[2023-10-21 14:38:04,803][root][CRITICAL] - before torch.Size([1, 148])
+[2023-10-21 14:38:04,898][root][CRITICAL] - before torch.Size([112, 1])
+[2023-10-21 14:38:04,898][root][CRITICAL] - before torch.Size([1, 112])
+[2023-10-21 14:38:05,018][root][CRITICAL] - before torch.Size([151, 1])
+[2023-10-21 14:38:05,018][root][CRITICAL] - before torch.Size([1, 151])
+[2023-10-21 14:38:05,126][root][CRITICAL] - before torch.Size([124, 1])
+[2023-10-21 14:38:05,126][root][CRITICAL] - before torch.Size([1, 124])
+[2023-10-21 14:38:05,222][root][CRITICAL] - before torch.Size([134, 1])
+[2023-10-21 14:38:05,223][root][CRITICAL] - before torch.Size([1, 134])
+[2023-10-21 14:38:05,333][root][CRITICAL] - before torch.Size([149, 1])
+[2023-10-21 14:38:05,334][root][CRITICAL] - before torch.Size([1, 149])
+[2023-10-21 14:38:05,430][root][CRITICAL] - before torch.Size([107, 1])
+[2023-10-21 14:38:05,430][root][CRITICAL] - before torch.Size([1, 107])
+[2023-10-21 14:38:05,551][root][CRITICAL] - before torch.Size([149, 1])
+[2023-10-21 14:38:05,551][root][CRITICAL] - before torch.Size([1, 149])
+[2023-10-21 14:38:05,673][root][CRITICAL] - before torch.Size([141, 1])
+[2023-10-21 14:38:05,673][root][CRITICAL] - before torch.Size([1, 141])
+[2023-10-21 14:38:05,780][root][CRITICAL] - before torch.Size([120, 1])
+[2023-10-21 14:38:05,781][root][CRITICAL] - before torch.Size([1, 120])
+[2023-10-21 14:38:05,896][root][CRITICAL] - before torch.Size([136, 1])
+[2023-10-21 14:38:05,896][root][CRITICAL] - before torch.Size([1, 136])
+[2023-10-21 14:38:06,019][root][CRITICAL] - before torch.Size([156, 1])
+[2023-10-21 14:38:06,019][root][CRITICAL] - before torch.Size([1, 156])
+[2023-10-21 14:38:06,124][root][CRITICAL] - before torch.Size([112, 1])
+[2023-10-21 14:38:06,124][root][CRITICAL] - before torch.Size([1, 112])
+[2023-10-21 14:38:06,226][root][CRITICAL] - before torch.Size([146, 1])
+[2023-10-21 14:38:06,226][root][CRITICAL] - before torch.Size([1, 146])
+[2023-10-21 14:38:06,335][root][CRITICAL] - before torch.Size([120, 1])
+[2023-10-21 14:38:06,335][root][CRITICAL] - before torch.Size([1, 120])
+[2023-10-21 14:38:06,469][root][CRITICAL] - before torch.Size([152, 1])
+[2023-10-21 14:38:06,470][root][CRITICAL] - before torch.Size([1, 152])
+[2023-10-21 14:38:06,564][root][CRITICAL] - before torch.Size([104, 1])
+[2023-10-21 14:38:06,564][root][CRITICAL] - before torch.Size([1, 104])
+[2023-10-21 14:38:06,685][root][CRITICAL] - before torch.Size([152, 1])
+[2023-10-21 14:38:06,686][root][CRITICAL] - before torch.Size([1, 152])
+[2023-10-21 14:38:06,842][root][CRITICAL] - before torch.Size([178, 1])
+[2023-10-21 14:38:06,842][root][CRITICAL] - before torch.Size([1, 178])
+[2023-10-21 14:38:06,923][root][CRITICAL] - before torch.Size([78, 1])
+[2023-10-21 14:38:06,923][root][CRITICAL] - before torch.Size([1, 78])
+[2023-10-21 14:38:07,074][root][CRITICAL] - before torch.Size([188, 1])
+[2023-10-21 14:38:07,074][root][CRITICAL] - before torch.Size([1, 188])
+[2023-10-21 14:38:07,199][root][CRITICAL] - before torch.Size([134, 1])
+[2023-10-21 14:38:07,200][root][CRITICAL] - before torch.Size([1, 134])
+[2023-10-21 14:38:07,298][root][CRITICAL] - before torch.Size([122, 1])
+[2023-10-21 14:38:07,298][root][CRITICAL] - before torch.Size([1, 122])
+[2023-10-21 14:38:07,402][root][CRITICAL] - before torch.Size([141, 1])
+[2023-10-21 14:38:07,402][root][CRITICAL] - before torch.Size([1, 141])
+[2023-10-21 14:38:07,512][root][CRITICAL] - before torch.Size([115, 1])
+[2023-10-21 14:38:07,513][root][CRITICAL] - before torch.Size([1, 115])
+[2023-10-21 14:38:07,628][root][CRITICAL] - before torch.Size([150, 1])
+[2023-10-21 14:38:07,628][root][CRITICAL] - before torch.Size([1, 150])
+[2023-10-21 14:38:07,726][root][CRITICAL] - before torch.Size([110, 1])
+[2023-10-21 14:38:07,726][root][CRITICAL] - before torch.Size([1, 110])
+[2023-10-21 14:38:07,870][root][CRITICAL] - before torch.Size([166, 1])
+[2023-10-21 14:38:07,871][root][CRITICAL] - before torch.Size([1, 166])
+[2023-10-21 14:38:07,965][root][CRITICAL] - before torch.Size([91, 1])
+[2023-10-21 14:38:07,965][root][CRITICAL] - before torch.Size([1, 91])
+[2023-10-21 14:38:08,106][root][CRITICAL] - before torch.Size([166, 1])
+[2023-10-21 14:38:08,106][root][CRITICAL] - before torch.Size([1, 166])
+[2023-10-21 14:38:08,211][root][CRITICAL] - before torch.Size([102, 1])
+[2023-10-21 14:38:08,211][root][CRITICAL] - before torch.Size([1, 102])
+[2023-10-21 14:38:08,364][root][CRITICAL] - before torch.Size([159, 1])
+[2023-10-21 14:38:08,365][root][CRITICAL] - before torch.Size([1, 159])
+[2023-10-21 14:38:08,932][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 158. Learner queue size: 0. Other stats: (train_seconds = 10.0)
+[2023-10-21 14:38:08,943][root][CRITICAL] - before torch.Size([98, 1])
+[2023-10-21 14:38:08,943][root][CRITICAL] - before torch.Size([1, 98])
+[2023-10-21 14:38:09,102][root][CRITICAL] - before torch.Size([158, 1])
+[2023-10-21 14:38:09,102][root][CRITICAL] - before torch.Size([1, 158])
+[2023-10-21 14:38:09,206][root][CRITICAL] - before torch.Size([98, 1])
+[2023-10-21 14:38:09,206][root][CRITICAL] - before torch.Size([1, 98])
+[2023-10-21 14:38:09,411][root][CRITICAL] - before torch.Size([226, 1])
+[2023-10-21 14:38:09,412][root][CRITICAL] - before torch.Size([1, 226])
+[2023-10-21 14:38:09,524][root][CRITICAL] - before torch.Size([72, 1])
+[2023-10-21 14:38:09,525][root][CRITICAL] - before torch.Size([1, 72])
+[2023-10-21 14:38:09,691][root][CRITICAL] - before torch.Size([185, 1])
+[2023-10-21 14:38:09,692][root][CRITICAL] - before torch.Size([1, 185])
+[2023-10-21 14:38:09,759][root][CRITICAL] - before torch.Size([71, 1])
+[2023-10-21 14:38:09,760][root][CRITICAL] - before torch.Size([1, 71])
+[2023-10-21 14:38:09,910][root][CRITICAL] - before torch.Size([199, 1])
+[2023-10-21 14:38:09,911][root][CRITICAL] - before torch.Size([1, 199])
+[2023-10-21 14:38:09,996][root][CRITICAL] - before torch.Size([80, 1])
+[2023-10-21 14:38:09,996][root][CRITICAL] - before torch.Size([1, 80])
+[2023-10-21 14:38:10,120][root][CRITICAL] - before torch.Size([188, 1])
+[2023-10-21 14:38:10,121][root][CRITICAL] - before torch.Size([1, 188])
+[2023-10-21 14:38:10,221][root][CRITICAL] - before torch.Size([93, 1])
+[2023-10-21 14:38:10,222][root][CRITICAL] - before torch.Size([1, 93])
+[2023-10-21 14:38:10,378][root][CRITICAL] - before torch.Size([196, 1])
+[2023-10-21 14:38:10,378][root][CRITICAL] - before torch.Size([1, 196])
+[2023-10-21 14:38:10,449][root][CRITICAL] - before torch.Size([68, 1])
+[2023-10-21 14:38:10,449][root][CRITICAL] - before torch.Size([1, 68])
+[2023-10-21 14:38:10,597][root][CRITICAL] - before torch.Size([189, 1])
+[2023-10-21 14:38:10,597][root][CRITICAL] - before torch.Size([1, 189])
+[2023-10-21 14:38:10,674][root][CRITICAL] - before torch.Size([75, 1])
+[2023-10-21 14:38:10,674][root][CRITICAL] - before torch.Size([1, 75])
+[2023-10-21 14:38:10,812][root][CRITICAL] - before torch.Size([198, 1])
+[2023-10-21 14:38:10,812][root][CRITICAL] - before torch.Size([1, 198])
+[2023-10-21 14:38:10,872][root][CRITICAL] - before torch.Size([60, 1])
+[2023-10-21 14:38:10,872][root][CRITICAL] - before torch.Size([1, 60])
+[2023-10-21 14:38:11,025][root][CRITICAL] - before torch.Size([196, 1])
+[2023-10-21 14:38:11,025][root][CRITICAL] - before torch.Size([1, 196])
+[2023-10-21 14:38:11,092][root][CRITICAL] - before torch.Size([66, 1])
+[2023-10-21 14:38:11,092][root][CRITICAL] - before torch.Size([1, 66])
+[2023-10-21 14:38:11,234][root][CRITICAL] - before torch.Size([190, 1])
+[2023-10-21 14:38:11,234][root][CRITICAL] - before torch.Size([1, 190])
+[2023-10-21 14:38:11,298][root][CRITICAL] - before torch.Size([66, 1])
+[2023-10-21 14:38:11,299][root][CRITICAL] - before torch.Size([1, 66])
+[2023-10-21 14:38:11,446][root][CRITICAL] - before torch.Size([196, 1])
+[2023-10-21 14:38:11,446][root][CRITICAL] - before torch.Size([1, 196])
+[2023-10-21 14:38:11,516][root][CRITICAL] - before torch.Size([61, 1])
+[2023-10-21 14:38:11,516][root][CRITICAL] - before torch.Size([1, 61])
+[2023-10-21 14:38:11,678][root][CRITICAL] - before torch.Size([204, 1])
+[2023-10-21 14:38:11,678][root][CRITICAL] - before torch.Size([1, 204])
+[2023-10-21 14:38:11,748][root][CRITICAL] - before torch.Size([63, 1])
+[2023-10-21 14:38:11,748][root][CRITICAL] - before torch.Size([1, 63])
+[2023-10-21 14:38:11,919][root][CRITICAL] - before torch.Size([211, 1])
+[2023-10-21 14:38:11,919][root][CRITICAL] - before torch.Size([1, 211])
+[2023-10-21 14:38:11,989][root][CRITICAL] - before torch.Size([61, 1])
+[2023-10-21 14:38:11,989][root][CRITICAL] - before torch.Size([1, 61])
+[2023-10-21 14:38:12,134][root][CRITICAL] - before torch.Size([205, 1])
+[2023-10-21 14:38:12,135][root][CRITICAL] - before torch.Size([1, 205])
+[2023-10-21 14:38:12,221][root][CRITICAL] - before torch.Size([90, 1])
+[2023-10-21 14:38:12,222][root][CRITICAL] - before torch.Size([1, 90])
+[2023-10-21 14:38:12,357][root][CRITICAL] - before torch.Size([173, 1])
+[2023-10-21 14:38:12,358][root][CRITICAL] - before torch.Size([1, 173])
+[2023-10-21 14:38:12,442][root][CRITICAL] - before torch.Size([83, 1])
+[2023-10-21 14:38:12,442][root][CRITICAL] - before torch.Size([1, 83])
+[2023-10-21 14:38:12,568][root][CRITICAL] - before torch.Size([179, 1])
+[2023-10-21 14:38:12,568][root][CRITICAL] - before torch.Size([1, 179])
+[2023-10-21 14:38:12,657][root][CRITICAL] - before torch.Size([95, 1])
+[2023-10-21 14:38:12,657][root][CRITICAL] - before torch.Size([1, 95])
+[2023-10-21 14:38:12,784][root][CRITICAL] - before torch.Size([161, 1])
+[2023-10-21 14:38:12,784][root][CRITICAL] - before torch.Size([1, 161])

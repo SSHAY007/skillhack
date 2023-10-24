@@ -1,0 +1,362 @@
+[2023-10-15 09:16:14,514][root][INFO] - name: null
+wandb: false
+project: skillhack
+entity: your_entity_name
+group: default
+state_dict_path: none
+foc_options_path: none
+foc_options_config_path: none
+teacher_path: none
+teacher_config_path: none
+ks_max_lambda: 10
+ks_max_time: 20000000.0
+ks_min_lambda_prop: 0.1
+train_with_all_skills: false
+penalty_per_step: 0.01
+hks_max_uniform_weight: 1000
+hks_min_uniform_prop: 0.05
+hks_max_uniform_time: 20000000.0
+tasks_json: tasks
+mock: false
+single_ttyrec: true
+num_seeds: 0
+write_profiler_trace: false
+relative_reward: false
+fn_penalty_step: constant
+penalty_time: 0.0
+penalty_step: -0.001
+reward_lose: 0
+reward_win: 1
+character: null
+save_tty: false
+mode: train
+env: HalfCheetahv4
+obs_keys: glyphs,chars,colors,specials,blstats,message
+num_actors: 256
+total_steps: 10000000.0
+batch_size: 32
+unroll_length: 80
+num_learner_threads: 1
+num_inference_threads: 1
+disable_cuda: false
+learner_device: cuda:0
+actor_device: cuda:0
+max_learner_queue_size: null
+model: HalfCheetah
+use_lstm: false
+hidden_dim: 256
+embedding_dim: 64
+glyph_type: all_cat
+equalize_input_dim: false
+equalize_factor: 2
+layers: 5
+crop_model: cnn
+crop_dim: 9
+use_index_select: true
+entropy_cost: 0.001
+baseline_cost: 0.5
+discounting: 0.999
+reward_clipping: none
+normalize_reward: true
+learning_rate: 0.0002
+grad_norm_clipping: 40
+alpha: 0.99
+momentum: 0
+epsilon: 1.0e-06
+state_counter: none
+no_extrinsic: false
+int:
+  twoheaded: true
+  input: full
+  intrinsic_weight: 0.1
+  discounting: 0.99
+  baseline_cost: 0.5
+  episodic: true
+  reward_clipping: none
+  normalize_reward: true
+ride:
+  count_norm: true
+  forward_cost: 1
+  inverse_cost: 0.1
+  hidden_dim: 128
+rnd:
+  forward_cost: 0.01
+msg:
+  model: none
+  hidden_dim: 64
+  embedding_dim: 32
+
+[2023-10-15 09:16:14,528][root][INFO] - Symlinked log directory: /opt/project/latest
+[2023-10-15 09:16:14,529][root][INFO] - Creating archive directory: /opt/project/outputs/2023-10-15/09-16-14/archives
+[2023-10-15 09:16:14,533][root][INFO] - Logging results to /opt/project/outputs/2023-10-15/09-16-14
+[2023-10-15 09:16:14,566][palaas/out][INFO] - Found log directory: /opt/project/outputs/2023-10-15/09-16-14
+[2023-10-15 09:16:14,567][palaas/out][INFO] - Saving arguments to /opt/project/outputs/2023-10-15/09-16-14/meta.json
+[2023-10-15 09:16:14,567][palaas/out][INFO] - Saving messages to /opt/project/outputs/2023-10-15/09-16-14/out.log
+[2023-10-15 09:16:14,568][palaas/out][INFO] - Saving logs data to /opt/project/outputs/2023-10-15/09-16-14/logs.csv
+[2023-10-15 09:16:14,568][palaas/out][INFO] - Saving logs' fields to /opt/project/outputs/2023-10-15/09-16-14/fields.csv
+[2023-10-15 09:16:14,568][root][INFO] - Not using CUDA.
+[2023-10-15 09:16:14,575][root][INFO] - Using model HalfCheetah
+[2023-10-15 09:16:14,652][root][INFO] - Number of model parameters: 11085
+[2023-10-15 09:16:14,657][root][INFO] - ()
+[2023-10-15 09:16:14,658][root][INFO] - After actor pool
+[2023-10-15 09:16:15,051][root][INFO] - <All keys matched successfully>
+[2023-10-15 09:16:15,052][root][INFO] - The model states is ()
+[2023-10-15 09:16:15,790][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:15,804][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:15,895][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:15,944][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:15,999][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,005][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,022][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,026][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,013][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,067][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,078][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,087][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,087][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,094][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,093][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,103][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,102][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,108][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,118][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,115][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,124][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,122][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,084][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,127][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,130][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,113][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,140][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,159][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,159][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,186][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,172][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,188][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,197][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,176][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,201][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,202][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,209][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,166][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,204][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,225][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,226][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,209][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,230][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,233][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,234][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,243][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,247][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,244][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,248][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,251][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,242][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,253][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,248][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,258][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,260][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,260][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,263][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,270][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,270][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,272][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,277][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,280][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,284][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,258][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,291][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,279][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,293][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,295][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,298][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,303][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,305][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,310][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,303][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,318][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,307][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,326][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,326][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,328][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,297][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,329][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,331][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,337][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,342][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,347][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,342][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,338][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,345][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,356][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,351][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,336][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,350][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,360][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,359][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,363][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,372][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,376][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,393][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,410][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,426][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,456][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,463][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,487][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,495][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,504][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,513][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,516][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,521][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,556][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,560][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,569][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,581][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,583][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,583][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:16,590][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:17,721][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:17,738][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:17,751][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:17,812][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:17,856][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:17,861][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,131][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,333][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,338][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,374][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,389][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,327][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,402][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,451][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,524][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,602][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,703][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,659][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,719][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,756][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,768][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,785][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,815][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,818][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,825][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,828][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,830][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,844][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,803][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,920][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,921][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,877][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,939][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,908][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,957][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,962][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,968][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,925][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,973][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,976][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,979][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,993][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,002][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,016][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:18,965][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,057][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,031][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,063][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,077][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,082][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,084][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,056][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,115][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,044][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,124][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,131][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,134][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,098][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,143][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,121][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,162][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,169][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,172][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,161][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,173][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,180][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,181][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,186][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,187][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,188][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,178][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,193][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,193][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,195][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,204][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,206][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,207][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,209][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,169][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,213][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,216][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,222][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,225][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,225][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,236][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,234][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,242][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,243][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,250][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,250][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,255][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,255][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,257][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,258][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,260][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,263][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,266][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,246][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,247][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,272][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,273][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,275][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,275][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,277][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,278][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,279][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,285][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,290][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,292][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,292][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,293][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,295][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,297][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,299][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,300][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,294][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,302][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,301][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,305][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,307][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,308][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,310][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,312][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,315][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,316][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,319][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,322][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,326][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,327][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,327][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,328][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,330][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,335][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,335][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,335][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,338][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,341][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,341][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,342][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,343][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,348][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,355][root][INFO] - <class 'gymnasium.wrappers.normalize.NormalizeReward'>
+[2023-10-15 09:16:19,358][root][ERROR] - Exception in actorpool thread!
+[2023-10-15 09:16:20,057][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 5.0)
+[2023-10-15 09:16:25,061][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 10.0)

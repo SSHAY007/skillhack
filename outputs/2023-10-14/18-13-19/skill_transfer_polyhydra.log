@@ -1,0 +1,910 @@
+[2023-10-14 18:13:20,047][root][INFO] - name: null
+wandb: false
+project: skillhack
+entity: your_entity_name
+group: default
+state_dict_path: none
+foc_options_path: none
+foc_options_config_path: none
+teacher_path: none
+teacher_config_path: none
+ks_max_lambda: 10
+ks_max_time: 20000000.0
+ks_min_lambda_prop: 0.1
+train_with_all_skills: false
+penalty_per_step: 0.01
+hks_max_uniform_weight: 1000
+hks_min_uniform_prop: 0.05
+hks_max_uniform_time: 20000000.0
+tasks_json: tasks
+mock: false
+single_ttyrec: true
+num_seeds: 0
+write_profiler_trace: false
+relative_reward: false
+fn_penalty_step: constant
+penalty_time: 0.0
+penalty_step: -0.001
+reward_lose: 0
+reward_win: 1
+character: null
+save_tty: false
+mode: train
+env: mini_skill_fight
+obs_keys: glyphs,chars,colors,specials,blstats,message
+num_actors: 256
+total_steps: 10000000.0
+batch_size: 32
+unroll_length: 80
+num_learner_threads: 1
+num_inference_threads: 1
+disable_cuda: false
+learner_device: cuda:0
+actor_device: cuda:0
+max_learner_queue_size: null
+model: baseline
+use_lstm: false
+hidden_dim: 256
+embedding_dim: 64
+glyph_type: all_cat
+equalize_input_dim: false
+equalize_factor: 2
+layers: 5
+crop_model: cnn
+crop_dim: 9
+use_index_select: true
+entropy_cost: 0.001
+baseline_cost: 0.5
+discounting: 0.999
+reward_clipping: none
+normalize_reward: true
+learning_rate: 0.0002
+grad_norm_clipping: 40
+alpha: 0.99
+momentum: 0
+epsilon: 1.0e-06
+state_counter: none
+no_extrinsic: false
+int:
+  twoheaded: true
+  input: full
+  intrinsic_weight: 0.1
+  discounting: 0.99
+  baseline_cost: 0.5
+  episodic: true
+  reward_clipping: none
+  normalize_reward: true
+ride:
+  count_norm: true
+  forward_cost: 1
+  inverse_cost: 0.1
+  hidden_dim: 128
+rnd:
+  forward_cost: 0.01
+msg:
+  model: none
+  hidden_dim: 64
+  embedding_dim: 32
+
+[2023-10-14 18:13:20,077][root][INFO] - Symlinked log directory: /opt/project/latest
+[2023-10-14 18:13:20,078][root][INFO] - Creating archive directory: /opt/project/outputs/2023-10-14/18-13-19/archives
+[2023-10-14 18:13:20,085][root][INFO] - Logging results to /opt/project/outputs/2023-10-14/18-13-19
+[2023-10-14 18:13:20,167][palaas/out][INFO] - Found log directory: /opt/project/outputs/2023-10-14/18-13-19
+[2023-10-14 18:13:20,167][palaas/out][INFO] - Saving arguments to /opt/project/outputs/2023-10-14/18-13-19/meta.json
+[2023-10-14 18:13:20,168][palaas/out][INFO] - Saving messages to /opt/project/outputs/2023-10-14/18-13-19/out.log
+[2023-10-14 18:13:20,168][palaas/out][INFO] - Saving logs data to /opt/project/outputs/2023-10-14/18-13-19/logs.csv
+[2023-10-14 18:13:20,168][palaas/out][INFO] - Saving logs' fields to /opt/project/outputs/2023-10-14/18-13-19/fields.csv
+[2023-10-14 18:13:20,169][root][INFO] - Not using CUDA.
+[2023-10-14 18:13:20,196][root][INFO] - Using model baseline
+[2023-10-14 18:13:20,507][root][INFO] - Number of model parameters: 3717182
+[2023-10-14 18:13:20,549][root][INFO] - ()
+[2023-10-14 18:13:20,550][root][INFO] - After actor pool
+[2023-10-14 18:13:20,870][root][INFO] - <All keys matched successfully>
+[2023-10-14 18:13:20,871][root][INFO] - The model states is ()
+[2023-10-14 18:13:20,878][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,879][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,879][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,879][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,880][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,880][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,881][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,882][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,886][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,883][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,887][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,888][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,888][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,888][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,888][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,888][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,888][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,889][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,889][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,890][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,890][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,890][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,890][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,890][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,897][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,897][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,898][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,899][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,898][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,901][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,901][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,903][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,910][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,910][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,910][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,910][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,910][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,912][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,912][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,912][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,910][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,912][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,912][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,912][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,913][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,916][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,917][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,918][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,926][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,927][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,927][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,927][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,929][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,929][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,929][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,929][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,929][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,930][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,930][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,930][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,933][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,933][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,933][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,934][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,934][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,934][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,936][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,937][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,938][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,938][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,939][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,940][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,941][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,941][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,942][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,942][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,944][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,945][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,946][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,946][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,948][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,949][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,949][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,949][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,949][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,949][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,949][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,949][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,950][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,950][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,950][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,950][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,951][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,951][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,952][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,952][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,952][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,952][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,952][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,952][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,952][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,953][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,953][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,953][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,953][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,954][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,954][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,954][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,957][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,957][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,957][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,958][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,958][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,958][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,961][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,961][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,962][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,962][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,965][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,965][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,966][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,966][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,968][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,968][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,970][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,970][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,973][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,973][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,973][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,973][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,973][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,973][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,974][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,974][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,974][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,974][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,974][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,974][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,976][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,976][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,976][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,977][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,976][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,977][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,978][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,978][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,981][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,981][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,981][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,982][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,982][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,982][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,984][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,985][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:20,986][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:20,987][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,037][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,037][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,037][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,037][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,037][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,038][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,038][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,038][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,039][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,038][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,040][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,042][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,045][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,046][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,047][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9c6dbb0>
+[2023-10-14 18:13:21,047][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,048][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,049][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,049][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,049][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,050][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,053][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,054][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,069][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,069][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,069][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,069][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,070][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,070][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,070][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,071][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,073][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,073][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,074][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,074][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,096][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,098][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,149][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,150][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,151][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,151][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,153][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,153][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,154][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,154][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,155][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,156][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,165][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:21,166][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:21,315][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51cb0>
+[2023-10-14 18:13:21,424][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51cf0>
+[2023-10-14 18:13:21,476][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9c89e70>
+[2023-10-14 18:13:21,523][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9c6dbb0>
+[2023-10-14 18:13:21,590][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51cb0>
+[2023-10-14 18:13:21,652][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c198f0>
+[2023-10-14 18:13:21,693][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9c89e70>
+[2023-10-14 18:13:21,775][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9c6dbb0>
+[2023-10-14 18:13:21,814][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c199f0>
+[2023-10-14 18:13:21,900][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51db0>
+[2023-10-14 18:13:21,960][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9c89e70>
+[2023-10-14 18:13:22,010][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,010][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,011][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,011][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,012][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,012][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,012][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,013][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,014][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,014][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,017][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,017][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,017][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,018][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,018][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,018][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,027][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,028][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,027][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,027][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,028][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,028][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,032][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,031][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,031][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,033][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,033][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,033][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,033][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,033][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,034][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,034][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,034][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,034][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,035][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,035][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,035][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,035][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,035][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,036][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,037][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,037][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,037][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,038][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,038][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,040][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,040][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,041][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,041][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,042][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,042][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,042][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,042][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,043][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,043][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,043][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,042][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,044][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,044][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,044][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,044][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,044][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,045][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,045][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,046][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,046][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,046][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,046][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,047][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,047][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,047][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,047][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,048][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,048][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,048][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,048][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,048][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,049][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,049][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,049][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,050][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,050][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,050][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,042][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,031][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,052][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,051][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,052][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,053][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,053][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,053][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,054][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,054][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,056][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,085][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,085][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,086][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,086][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,094][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,094][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,094][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,094][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,095][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,095][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,095][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,095][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,096][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,098][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,101][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,101][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,102][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,102][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,110][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,110][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,111][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,111][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,111][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,112][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,112][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,112][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,112][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,112][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,117][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,117][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,118][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,118][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,120][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,121][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,124][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:22,126][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:22,336][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9c6dbb0>
+[2023-10-14 18:13:22,476][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd23f0>
+[2023-10-14 18:13:22,595][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51db0>
+[2023-10-14 18:13:22,732][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9c89e70>
+[2023-10-14 18:13:22,851][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51d30>
+[2023-10-14 18:13:22,938][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51930>
+[2023-10-14 18:13:23,039][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51db0>
+[2023-10-14 18:13:23,120][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9864bb0>
+[2023-10-14 18:13:23,227][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51cb0>
+[2023-10-14 18:13:23,316][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51930>
+[2023-10-14 18:13:23,332][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,334][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,342][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,344][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,345][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,345][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,346][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,347][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,353][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,355][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,362][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,364][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,371][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,372][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,380][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,383][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,396][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,398][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,400][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,400][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,401][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,401][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,436][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,437][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,438][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,439][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,445][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,447][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,450][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,451][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,455][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,456][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,468][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,468][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,470][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,470][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,476][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,478][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,484][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,486][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,497][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,498][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,500][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,501][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,516][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,517][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,518][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,518][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,519][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,519][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,524][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,526][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,545][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,547][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,557][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,557][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,558][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,558][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,561][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,562][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,566][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,567][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,588][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,590][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,590][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,591][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,601][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,602][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,603][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,605][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,611][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,612][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,612][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,614][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,614][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,614][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,613][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,615][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,615][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,616][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,617][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,617][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,618][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,618][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,621][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,621][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,622][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f8ff3fb3270>
+[2023-10-14 18:13:23,622][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,622][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,623][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,623][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,628][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,629][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,630][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,631][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,633][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,634][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,653][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,653][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,655][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,655][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,656][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,657][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,675][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,676][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,680][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,681][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,681][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,682][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,688][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,688][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,689][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,689][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,703][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,704][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,716][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,717][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,729][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,730][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,729][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,730][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,742][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,743][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,778][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,779][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,786][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,787][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,800][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,802][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,810][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,811][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,820][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51fb0>
+[2023-10-14 18:13:23,833][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,835][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,854][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,854][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,856][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,857][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,859][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,862][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,865][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,866][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,869][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,870][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,879][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,881][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,885][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,886][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,896][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,898][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,906][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,906][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,908][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,908][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,913][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,915][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,914][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,914][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,916][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,916][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,934][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,935][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,936][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,935][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,943][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,944][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,951][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,953][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,974][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,975][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,981][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,983][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:23,997][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:23,998][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:24,008][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:24,010][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:24,161][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51cb0>
+[2023-10-14 18:13:24,225][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51d70>
+[2023-10-14 18:13:24,416][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51d30>
+[2023-10-14 18:13:24,457][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51fb0>
+[2023-10-14 18:13:24,641][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51e70>
+[2023-10-14 18:13:24,720][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51e30>
+[2023-10-14 18:13:24,850][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51d30>
+[2023-10-14 18:13:24,901][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51930>
+[2023-10-14 18:13:25,067][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f8ff3fb3270>
+[2023-10-14 18:13:25,126][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51e30>
+[2023-10-14 18:13:25,253][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51d70>
+[2023-10-14 18:13:25,349][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51f30>
+[2023-10-14 18:13:25,481][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f8ff3fb3270>
+[2023-10-14 18:13:25,573][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51e70>
+[2023-10-14 18:13:25,608][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:25,610][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:25,704][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51db0>
+[2023-10-14 18:13:25,797][root][CRITICAL] - Should not enter this state
+[2023-10-14 18:13:25,799][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 18:13:25,817][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51f30>
+[2023-10-14 18:13:25,876][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 127. Learner queue size: 0. Other stats: (train_seconds = 5.0)
+[2023-10-14 18:13:25,928][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51930>
+[2023-10-14 18:13:26,044][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2070>
+[2023-10-14 18:13:26,140][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51d30>
+[2023-10-14 18:13:26,282][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51e30>
+[2023-10-14 18:13:26,382][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51d70>
+[2023-10-14 18:13:26,519][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2070>
+[2023-10-14 18:13:26,624][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51fb0>
+[2023-10-14 18:13:27,125][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9c6dbb0>
+[2023-10-14 18:13:27,432][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51db0>
+[2023-10-14 18:13:27,529][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2070>
+[2023-10-14 18:13:27,667][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51f30>
+[2023-10-14 18:13:27,776][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9864bb0>
+[2023-10-14 18:13:27,904][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51d30>
+[2023-10-14 18:13:27,995][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2070>
+[2023-10-14 18:13:28,097][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c16e30>
+[2023-10-14 18:13:28,210][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35d70>
+[2023-10-14 18:13:28,303][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51fb0>
+[2023-10-14 18:13:28,413][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2070>
+[2023-10-14 18:13:28,526][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9c6dbb0>
+[2023-10-14 18:13:28,650][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35df0>
+[2023-10-14 18:13:28,749][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51f30>
+[2023-10-14 18:13:28,853][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2070>
+[2023-10-14 18:13:28,954][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9864bb0>
+[2023-10-14 18:13:29,055][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c199f0>
+[2023-10-14 18:13:29,152][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c16e30>
+[2023-10-14 18:13:29,270][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2070>
+[2023-10-14 18:13:29,374][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35d70>
+[2023-10-14 18:13:29,479][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f8ff3fb3270>
+[2023-10-14 18:13:29,582][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9c6dbb0>
+[2023-10-14 18:13:29,711][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2070>
+[2023-10-14 18:13:29,797][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35df0>
+[2023-10-14 18:13:29,930][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51fb0>
+[2023-10-14 18:13:30,015][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9864bb0>
+[2023-10-14 18:13:30,130][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2070>
+[2023-10-14 18:13:30,204][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c199f0>
+[2023-10-14 18:13:30,325][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51f30>
+[2023-10-14 18:13:30,406][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35d70>
+[2023-10-14 18:13:30,525][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2070>
+[2023-10-14 18:13:30,609][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51d30>
+[2023-10-14 18:13:30,748][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c16e30>
+[2023-10-14 18:13:30,834][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35df0>
+[2023-10-14 18:13:30,880][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 95. Learner queue size: 0. Other stats: (train_seconds = 10.0)
+[2023-10-14 18:13:30,964][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2070>
+[2023-10-14 18:13:31,047][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9c6dbb0>
+[2023-10-14 18:13:31,192][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51fb0>
+[2023-10-14 18:13:31,283][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51e70>
+[2023-10-14 18:13:31,413][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2070>
+[2023-10-14 18:13:31,475][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f8ff3fb3270>
+[2023-10-14 18:13:31,633][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9864bb0>
+[2023-10-14 18:13:31,710][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51d30>
+[2023-10-14 18:13:31,844][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2070>
+[2023-10-14 18:13:31,943][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51f30>
+[2023-10-14 18:13:32,055][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c16e30>
+[2023-10-14 18:13:32,159][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9c6dbb0>
+[2023-10-14 18:13:32,277][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2070>
+[2023-10-14 18:13:32,381][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c199f0>
+[2023-10-14 18:13:32,485][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35d70>
+[2023-10-14 18:13:32,586][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51930>
+[2023-10-14 18:13:32,703][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2070>
+[2023-10-14 18:13:32,807][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9864bb0>
+[2023-10-14 18:13:32,914][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35df0>
+[2023-10-14 18:13:33,011][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51f30>
+[2023-10-14 18:13:33,123][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2070>
+[2023-10-14 18:13:33,226][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c16e30>
+[2023-10-14 18:13:33,377][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f8ff3fb3270>
+[2023-10-14 18:13:33,465][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c199f0>
+[2023-10-14 18:13:33,615][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2070>
+[2023-10-14 18:13:33,807][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35d70>
+[2023-10-14 18:13:34,297][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9c6dbb0>
+[2023-10-14 18:13:34,469][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9864bb0>
+[2023-10-14 18:13:34,590][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2070>
+[2023-10-14 18:13:34,712][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35df0>
+[2023-10-14 18:13:34,834][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51930>
+[2023-10-14 18:13:34,941][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c16e30>
+[2023-10-14 18:13:35,056][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2070>
+[2023-10-14 18:13:35,153][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f8ff3fb3270>
+[2023-10-14 18:13:35,250][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51f30>
+[2023-10-14 18:13:35,356][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35d70>
+[2023-10-14 18:13:35,461][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2070>
+[2023-10-14 18:13:35,567][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51d70>
+[2023-10-14 18:13:35,671][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c199f0>
+[2023-10-14 18:13:35,776][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35df0>
+[2023-10-14 18:13:35,884][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 120. Learner queue size: 0. Other stats: (train_seconds = 15.0)
+[2023-10-14 18:13:35,896][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd24f0>
+[2023-10-14 18:13:36,023][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51930>
+[2023-10-14 18:13:36,109][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9864bb0>
+[2023-10-14 18:13:36,241][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51db0>
+[2023-10-14 18:13:36,327][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd24f0>
+[2023-10-14 18:13:36,479][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9c6dbb0>
+[2023-10-14 18:13:36,555][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c16e30>
+[2023-10-14 18:13:36,719][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51d70>
+[2023-10-14 18:13:36,865][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd24f0>
+[2023-10-14 18:13:36,947][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c199f0>
+[2023-10-14 18:13:37,096][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f8ff3fb3270>
+[2023-10-14 18:13:37,174][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51930>
+[2023-10-14 18:13:37,308][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd24f0>
+[2023-10-14 18:13:37,378][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9864bb0>
+[2023-10-14 18:13:37,515][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35d70>
+[2023-10-14 18:13:37,591][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9c6dbb0>
+[2023-10-14 18:13:37,721][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd24f0>
+[2023-10-14 18:13:37,810][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c16e30>
+[2023-10-14 18:13:37,942][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35df0>
+[2023-10-14 18:13:38,035][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c199f0>
+[2023-10-14 18:13:38,161][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd24f0>
+[2023-10-14 18:13:38,235][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f8ff3fb3270>
+[2023-10-14 18:13:38,358][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51d70>
+[2023-10-14 18:13:38,426][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9864bb0>
+[2023-10-14 18:13:38,550][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd24f0>
+[2023-10-14 18:13:38,647][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35d70>
+[2023-10-14 18:13:38,774][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51930>
+[2023-10-14 18:13:38,872][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c16e30>
+[2023-10-14 18:13:38,999][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd24f0>
+[2023-10-14 18:13:39,087][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51db0>
+[2023-10-14 18:13:39,221][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b9c6dbb0>
+[2023-10-14 18:13:39,364][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35df0>
+[2023-10-14 18:13:39,542][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd26f0>
+[2023-10-14 18:13:39,721][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd27b0>
+[2023-10-14 18:13:39,960][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd27f0>
+[2023-10-14 18:13:40,201][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51db0>
+[2023-10-14 18:13:40,410][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2830>
+[2023-10-14 18:13:40,580][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd24b0>
+[2023-10-14 18:13:40,802][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2870>
+[2023-10-14 18:13:40,888][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 87. Learner queue size: 32. Other stats: (train_seconds = 20.0)
+[2023-10-14 18:13:40,949][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd28b0>
+[2023-10-14 18:13:41,440][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd29b0>
+[2023-10-14 18:13:41,872][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd24b0>
+[2023-10-14 18:13:42,034][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2870>
+[2023-10-14 18:13:42,196][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd28b0>
+[2023-10-14 18:13:42,355][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2530>
+[2023-10-14 18:13:42,463][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c16e30>
+[2023-10-14 18:13:42,616][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2d30>
+[2023-10-14 18:13:42,731][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2d70>
+[2023-10-14 18:13:42,862][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:43,025][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2db0>
+[2023-10-14 18:13:43,169][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2df0>
+[2023-10-14 18:13:43,310][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2d70>
+[2023-10-14 18:13:43,491][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:43,672][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2db0>
+[2023-10-14 18:13:43,781][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2df0>
+[2023-10-14 18:13:43,897][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2d70>
+[2023-10-14 18:13:43,987][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:44,040][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2db0>
+[2023-10-14 18:13:44,159][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2df0>
+[2023-10-14 18:13:44,214][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2d70>
+[2023-10-14 18:13:44,276][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:44,337][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2db0>
+[2023-10-14 18:13:44,416][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2df0>
+[2023-10-14 18:13:44,482][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2d70>
+[2023-10-14 18:13:44,531][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:44,632][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2db0>
+[2023-10-14 18:13:44,726][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2df0>
+[2023-10-14 18:13:44,836][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2d70>
+[2023-10-14 18:13:44,910][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:44,975][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2db0>
+[2023-10-14 18:13:45,018][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2df0>
+[2023-10-14 18:13:45,091][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2d70>
+[2023-10-14 18:13:45,148][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:45,207][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2db0>
+[2023-10-14 18:13:45,244][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2df0>
+[2023-10-14 18:13:45,330][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2d70>
+[2023-10-14 18:13:45,420][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:45,498][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2db0>
+[2023-10-14 18:13:45,613][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2df0>
+[2023-10-14 18:13:45,690][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2d70>
+[2023-10-14 18:13:45,728][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:45,779][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2db0>
+[2023-10-14 18:13:45,816][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2df0>
+[2023-10-14 18:13:45,881][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2d70>
+[2023-10-14 18:13:45,892][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 22. Learner queue size: 32. Other stats: (train_seconds = 25.0)
+[2023-10-14 18:13:46,016][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:46,103][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2db0>
+[2023-10-14 18:13:46,145][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2df0>
+[2023-10-14 18:13:46,206][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2d70>
+[2023-10-14 18:13:46,239][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:46,280][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2db0>
+[2023-10-14 18:13:46,326][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2df0>
+[2023-10-14 18:13:46,374][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2d70>
+[2023-10-14 18:13:46,400][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:46,438][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2db0>
+[2023-10-14 18:13:46,472][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2df0>
+[2023-10-14 18:13:46,523][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2d70>
+[2023-10-14 18:13:46,569][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:46,610][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2db0>
+[2023-10-14 18:13:46,653][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2df0>
+[2023-10-14 18:13:46,716][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2d70>
+[2023-10-14 18:13:46,762][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:46,800][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2db0>
+[2023-10-14 18:13:46,841][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2df0>
+[2023-10-14 18:13:46,872][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2d70>
+[2023-10-14 18:13:46,929][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:46,988][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2db0>
+[2023-10-14 18:13:47,024][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2df0>
+[2023-10-14 18:13:47,055][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2d70>
+[2023-10-14 18:13:47,097][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:47,135][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2db0>
+[2023-10-14 18:13:47,215][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2df0>
+[2023-10-14 18:13:47,282][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2d70>
+[2023-10-14 18:13:47,314][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:47,361][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd23f0>
+[2023-10-14 18:13:47,396][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f8ff3fb3270>
+[2023-10-14 18:13:47,435][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c7e630>
+[2023-10-14 18:13:47,464][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:47,499][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35df0>
+[2023-10-14 18:13:47,536][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51730>
+[2023-10-14 18:13:47,570][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e516b0>
+[2023-10-14 18:13:47,624][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:47,662][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35d70>
+[2023-10-14 18:13:47,695][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c16e30>
+[2023-10-14 18:13:47,723][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51d30>
+[2023-10-14 18:13:47,756][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:47,797][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51bf0>
+[2023-10-14 18:13:47,840][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f8ff3fb3270>
+[2023-10-14 18:13:47,870][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35df0>
+[2023-10-14 18:13:47,911][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:47,932][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c198f0>
+[2023-10-14 18:13:47,963][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c7e630>
+[2023-10-14 18:13:47,989][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51e30>
+[2023-10-14 18:13:48,033][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:48,076][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c16e30>
+[2023-10-14 18:13:48,128][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e516b0>
+[2023-10-14 18:13:48,177][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51bf0>
+[2023-10-14 18:13:48,224][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:48,264][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f8ff3fb3270>
+[2023-10-14 18:13:48,299][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35d70>
+[2023-10-14 18:13:48,374][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c198f0>
+[2023-10-14 18:13:48,577][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:48,906][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51db0>
+[2023-10-14 18:13:49,007][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c7e630>
+[2023-10-14 18:13:49,109][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c16e30>
+[2023-10-14 18:13:49,152][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:49,180][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35df0>
+[2023-10-14 18:13:49,211][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51e30>
+[2023-10-14 18:13:49,241][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51f30>
+[2023-10-14 18:13:49,281][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:49,301][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35d70>
+[2023-10-14 18:13:49,327][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f8ff3fb3270>
+[2023-10-14 18:13:49,349][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51db0>
+[2023-10-14 18:13:49,381][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:49,405][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51bf0>
+[2023-10-14 18:13:49,430][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c198f0>
+[2023-10-14 18:13:49,450][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35df0>
+[2023-10-14 18:13:49,469][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:49,487][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c7e630>
+[2023-10-14 18:13:49,501][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c16e30>
+[2023-10-14 18:13:49,511][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51930>
+[2023-10-14 18:13:49,520][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:49,525][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f8ff3fb3270>
+[2023-10-14 18:13:49,532][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51f30>
+[2023-10-14 18:13:49,536][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e51bf0>
+[2023-10-14 18:13:49,539][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6dd2c70>
+[2023-10-14 18:13:49,542][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6c198f0>
+[2023-10-14 18:13:49,546][root][INFO] - The batch isssssssss <libtorchbeast._C.Batch object at 0x7f90b6e35d70>
+[2023-10-14 18:13:50,898][root][INFO] - Saving checkpoint to /opt/project/outputs/2023-10-14/18-13-19/mini_skill_fight_0.tar
+[2023-10-14 18:13:50,920][root][INFO] - Step 2560 @ 511.4 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 30.0, success_rate = 0.69767, step = 2560, mean_episode_return = 0.10651, mean_episode_step = 25.67, total_loss = 38.635, entropy_loss = -4.1191, pg_loss = -283.63, baseline_loss = 326.38, learner_queue_size = 32)

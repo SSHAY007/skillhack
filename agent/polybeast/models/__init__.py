@@ -11,11 +11,15 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+import logging
 
 from agent.common.envs import tasks
-from agent.polybeast.models.base import BaseNet, RandomNet
+from agent.polybeast.models.base import BaseNet, RandomNet, HalfCheetahAgent
 from agent.polybeast.models.intrinsic import RNDNet, RIDENet
 from nle.env.base import DUNGEON_SHAPE
+from envs.skills_all import HalfCheetah
+
+
 
 from agent.polybeast.models.frozen_optioncritic import FOCNet
 from agent.polybeast.models.hks import HKSNet
@@ -30,6 +34,8 @@ def create_model(flags, device):
         model_cls = BaseNet
     elif model_string == "rnd":
         model_cls = RNDNet
+    elif model_string == "HalfCheetah":
+        model_cls = HalfCheetahAgent
     elif model_string == "ride":
         model_cls = RIDENet
     elif model_string == "foc":
@@ -45,11 +51,14 @@ def create_model(flags, device):
         )
     else:
         raise NotImplementedError("model=%s" % model_string)
+    #env = tasks.ENVS[flags.env]()()
+    #env = tasks.ENVS[flags.env]()().actions
+    #num_actions = tasks.ENVS[flags.env]().actions
+    num_actions = 5
 
-    num_actions = len(
-        tasks.ENVS[flags.env](savedir=None, archivefile=None)._actions
-    )
 
-    model = model_cls(DUNGEON_SHAPE, num_actions, flags, device)
+    env = HalfCheetah()()#have a functor, first brackets is constructor and second is a function call
+    #model = model_cls(DUNGEON_SHAPE, num_actions, flags, device)
+    model = model_cls(env.observation_space,env.action_space,flags,device)
     model.to(device=device)
     return model

@@ -13,12 +13,14 @@
 # limitations under the License.
 
 import collections
+import logging
+
 import torch
 from torch import nn
 from torch.nn import functional as F
-
+from torch.distributions.normal import Normal
 from nle import nethack
-
+import numpy as np
 from agent.common.models.embed import GlyphEmbedding
 from agent.common.models.transformer import TransformerEncoder
 
@@ -210,6 +212,129 @@ class Flatten(nn.Module):
         return input.view(input.size(0), -1)
 
 
+
+class HalfCheetahAgent(nn.Module):
+
+    def layer_init(self,layer, std=np.sqrt(2), bias_const=0.0):
+        torch.nn.init.orthogonal_(layer.weight, std)
+        torch.nn.init.constant_(layer.bias, bias_const)
+        return layer
+    def __init__(self, observation_space,action_space,flags,device):
+        self.reward_sum = 0
+        self.reward_count = 1
+        self.reward_m2 =0
+        self.num_actions = action_space.shape[0]#same as env.action_space.n
+        super().__init__()
+        self.critic = nn.Sequential(
+            self.layer_init(nn.Linear(np.array(observation_space.shape).prod(), 64)),
+            nn.Tanh(),
+            self.layer_init(nn.Linear(64, 64)),
+            nn.Tanh(),
+            self.layer_init(nn.Linear(64, 1), std=1.0),
+        )
+        self.actor_mean = nn.Sequential(
+            self.layer_init(nn.Linear(np.array(observation_space.shape).prod(), 64)),
+            nn.Tanh(),
+            self.layer_init(nn.Linear(64, 64)),
+            nn.Tanh(),
+            self.layer_init(nn.Linear(64, np.prod(action_space.shape)), std=0.01),
+        )
+        self.actor_logstd = nn.Parameter(torch.zeros(1, np.prod(action_space.shape)))
+
+    def prepare_input(self, inputs : torch.tensor):
+        return inputs.type(torch.float32)#float32 is float and float64 is double in torch
+    def forward(self, inputs, core_state, learning=False):
+        inputs = self.prepare_input(inputs)
+        T, B ,*_ = inputs.shape
+        inputs = torch.flatten(inputs, 0, 1)
+        #T = T*self.num_actions
+        if T != 1:
+            logging.info(inputs.shape)
+        reps = inputs
+        # -- [B x K]
+        action_mean = self.actor_mean(inputs)
+        action_logstd = self.actor_logstd.expand_as(action_mean)
+        action_std = torch.exp(action_logstd)
+        #Normal.batch_shape = (T,B,self.num_actions)
+        probs = Normal(action_mean, action_std)
+        #logging.info(f"action mean shape is {action_mean.shape}")
+        policy =  probs
+        # -- [B x A]
+        #policy_logits = self.actor_mean(core_output)
+        # -- [B x A]
+        baseline = self.critic(inputs)
+
+        if self.training:
+            action = probs.sample()
+        else:
+            # Don't sample when testing.
+            logging.critical("not training")
+            action = torch.argmax(probs, dim=1)
+
+        #policy_logits = policy_logits.view(T, B, self.num_actions)
+        #baseline = baseline.view(T, B)
+        #action = action.view( self.num_actions,1)
+        #action = action.squeeze(0)
+        #action = action[0]
+
+        # we have to reshape it to [Time,BatchSize,Value]
+        #logging.info(inputs.shape)
+        probs = probs.log_prob(action)#.expand((T,B,self.num_actions))
+        action = action.view(T,B,self.num_actions)
+        probs = probs.view(T,B,self.num_actions)
+        #probs = probs.view(probs.size()[1],-1)
+        baseline = baseline.view(T,B)
+
+        output = dict(
+            policy_logits=probs,
+            baseline=baseline,
+            action=action,
+            chosen_option=probs,
+            teacher_logits=probs,
+            pot_sm=probs,
+        )
+        #logging.info(f"Baseline shape is {baseline.shape}")
+        #logging.info(f"Action shape is {action.shape}")
+        #logging.info(f"policy shape is {probs.shape}")
+        return (output, core_state)
+
+    def initial_state(self, batch_size=1):
+        return tuple()
+    def get_value(self, x):
+        return self.critic(x)
+
+    def get_action_and_value(self, x, action=None):
+        action_mean = self.actor_mean(x)
+        action_logstd = self.actor_logstd.expand_as(action_mean)
+        action_std = torch.exp(action_logstd)
+        probs = Normal(action_mean, action_std)
+        if action is None:
+            action = probs.sample()
+        return action, probs.log_prob(action).sum(1), probs.entropy().sum(1), self.critic(x)
+
+    @torch.no_grad()
+    def update_running_moments(self, reward_batch):
+        """Maintains a running mean of reward."""
+        new_count = len(reward_batch)
+        new_sum = torch.sum(reward_batch)
+        new_mean = new_sum / new_count
+
+        curr_mean = self.reward_sum / self.reward_count
+        new_m2 = torch.sum((reward_batch - new_mean) ** 2) + (
+                (self.reward_count * new_count)
+                / (self.reward_count + new_count)
+                * (new_mean - curr_mean) ** 2
+        )
+
+        self.reward_count += new_count
+        self.reward_sum += new_sum
+        self.reward_m2 += new_m2
+
+    @torch.no_grad()
+    def get_running_std(self):
+        """Returns standard deviation of the running mean of the reward."""
+        return torch.sqrt(self.reward_m2 / self.reward_count)
+
 class BaseNet(NetHackNet):
     def __init__(self, observation_shape, num_actions, flags, device):
         super(BaseNet, self).__init__()
@@ -221,7 +346,7 @@ class BaseNet(NetHackNet):
         self.H = observation_shape[0]
         self.W = observation_shape[1]
 
-        self.num_actions = num_actions
+        self.  num_actions = num_actions
         self.use_lstm = flags.use_lstm
 
         self.k_dim = flags.embedding_dim
@@ -434,6 +559,7 @@ class BaseNet(NetHackNet):
     def prepare_input(self, inputs):
         # -- [T x B x H x W]
         T, B, H, W = inputs["glyphs"].shape
+        #Time , Batch, height ,width
 
         # take our chosen glyphs and merge the time and batch
 
@@ -567,7 +693,11 @@ class BaseNet(NetHackNet):
 
         policy_logits = policy_logits.view(T, B, self.num_actions)
         baseline = baseline.view(T, B)
+        #logging.info(f"Action shape is {action.shape}")
         action = action.view(T, B)
+        #logging.info(f"Baseline shape is {baseline.shape}")
+        #logging.info(f"Action shape is {action}")
+        #logging.info(f"policy shape is {policy_logits.shape}")
 
         output = dict(
             policy_logits=policy_logits,

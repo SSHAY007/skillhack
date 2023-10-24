@@ -1,10 +1,14 @@
 # Copyright (c) Facebook, Inc. and its affiliates.
-
+import logging
 import threading
 
+import gym
+import gymnasium
 from nle.env import tasks as nle_tasks
 
 from minihack import MiniHack
+
+import envs.skills_all
 from agent.common.envs.wrapper import (
     CounterWrapper,
 )
@@ -35,6 +39,8 @@ from envs import (
 )
 
 ENVS = dict(
+    #Gym tasks
+    HalfCheetahv4=envs.skills_all.HalfCheetah,
     # NLE tasks
     staircase=nle_tasks.NetHackStaircase,
     score=nle_tasks.NetHackScore,
@@ -97,6 +103,7 @@ ENVS = dict(
     explore_hard=exploremaze.MiniHackExploreMazeHard,
     explore_hard_map=exploremaze.MiniHackExploreMazeHardMapped,
     # MiniHack MultiRooms
+    #mini_skill_fight
     multiroom_2=minigrid.MiniHackMultiRoomN2,
     multiroom_4=minigrid.MiniHackMultiRoomN4,
     multiroom_6=minigrid.MiniHackMultiRoomN6,
@@ -206,22 +213,36 @@ def create_env(flags, env_id=0):
         else:
             savedir = None
 
+        #env = skills_all.HalfCheetah()()
+
+
         kwargs = dict(
             savedir=savedir,
-            archivefile=None,
+            #archivefile=None,
             observation_keys=flags.obs_keys.split(","),
             penalty_step=flags.penalty_step,
             penalty_time=flags.penalty_time,
             penalty_mode=flags.fn_penalty_step,
         )
         if not is_env_minihack(env_class):
+            #logging.info("NOT MINIHACK")
             kwargs.update(max_episode_steps=flags.max_num_steps)
             kwargs.update(character=flags.character)
+            #env = skills_all.HalfCheetah()()
+
+            env = gym.make("HalfCheetah-v3") # this works
+
+            #logging.info(isinstance(env,gymnasium.Env),) making sure it is an gym instance
+            #logging.info(type(env))
+            return env
 
         env = env_class(**kwargs)
         if flags.state_counter != "none":
             env = CounterWrapper(env, flags.state_counter)
         if flags.seedspath is not None and len(flags.seedspath) > 0:
             raise NotImplementedError("seedspath > 0 not implemented yet.")
+
+
+        #logging.info(type(env))
 
         return env

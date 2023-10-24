@@ -1,0 +1,362 @@
+[2023-10-12 18:43:57,658][root][INFO] - name: null
+wandb: false
+project: skillhack
+entity: your_entity_name
+group: default
+state_dict_path: none
+foc_options_path: none
+foc_options_config_path: none
+teacher_path: none
+teacher_config_path: none
+ks_max_lambda: 10
+ks_max_time: 20000000.0
+ks_min_lambda_prop: 0.1
+train_with_all_skills: false
+penalty_per_step: 0.01
+hks_max_uniform_weight: 1000
+hks_min_uniform_prop: 0.05
+hks_max_uniform_time: 20000000.0
+tasks_json: tasks
+mock: false
+single_ttyrec: true
+num_seeds: 0
+write_profiler_trace: false
+relative_reward: false
+fn_penalty_step: constant
+penalty_time: 0.0
+penalty_step: -0.001
+reward_lose: 0
+reward_win: 1
+character: null
+save_tty: false
+mode: train
+env: HalfCheetahv4
+obs_keys: glyphs,chars,colors,specials,blstats,message
+num_actors: 256
+total_steps: 10000000.0
+batch_size: 32
+unroll_length: 80
+num_learner_threads: 1
+num_inference_threads: 1
+disable_cuda: false
+learner_device: cuda:0
+actor_device: cuda:0
+max_learner_queue_size: null
+model: HalfCheetah
+use_lstm: false
+hidden_dim: 256
+embedding_dim: 64
+glyph_type: all_cat
+equalize_input_dim: false
+equalize_factor: 2
+layers: 5
+crop_model: cnn
+crop_dim: 9
+use_index_select: true
+entropy_cost: 0.001
+baseline_cost: 0.5
+discounting: 0.999
+reward_clipping: none
+normalize_reward: true
+learning_rate: 0.0002
+grad_norm_clipping: 40
+alpha: 0.99
+momentum: 0
+epsilon: 1.0e-06
+state_counter: none
+no_extrinsic: false
+int:
+  twoheaded: true
+  input: full
+  intrinsic_weight: 0.1
+  discounting: 0.99
+  baseline_cost: 0.5
+  episodic: true
+  reward_clipping: none
+  normalize_reward: true
+ride:
+  count_norm: true
+  forward_cost: 1
+  inverse_cost: 0.1
+  hidden_dim: 128
+rnd:
+  forward_cost: 0.01
+msg:
+  model: none
+  hidden_dim: 64
+  embedding_dim: 32
+
+[2023-10-12 18:43:57,674][root][INFO] - Symlinked log directory: /opt/project/latest
+[2023-10-12 18:43:57,675][root][INFO] - Creating archive directory: /opt/project/outputs/2023-10-12/18-43-57/archives
+[2023-10-12 18:43:57,679][root][INFO] - Logging results to /opt/project/outputs/2023-10-12/18-43-57
+[2023-10-12 18:43:57,679][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,684][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,687][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,691][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,693][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,697][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,700][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,704][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,705][palaas/out][INFO] - Found log directory: /opt/project/outputs/2023-10-12/18-43-57
+[2023-10-12 18:43:57,705][palaas/out][INFO] - Saving arguments to /opt/project/outputs/2023-10-12/18-43-57/meta.json
+[2023-10-12 18:43:57,706][palaas/out][INFO] - Saving messages to /opt/project/outputs/2023-10-12/18-43-57/out.log
+[2023-10-12 18:43:57,706][palaas/out][INFO] - Saving logs data to /opt/project/outputs/2023-10-12/18-43-57/logs.csv
+[2023-10-12 18:43:57,706][palaas/out][INFO] - Saving logs' fields to /opt/project/outputs/2023-10-12/18-43-57/fields.csv
+[2023-10-12 18:43:57,707][root][INFO] - Not using CUDA.
+[2023-10-12 18:43:57,707][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,712][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,713][root][INFO] - Using model HalfCheetah
+[2023-10-12 18:43:57,715][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,719][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,722][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,725][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,729][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,732][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,736][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,739][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,742][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,745][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,749][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,752][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,755][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,760][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,765][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,770][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,773][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,777][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,780][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,782][root][INFO] - Number of model parameters: 11085
+[2023-10-12 18:43:57,785][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,790][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,794][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,799][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,802][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,805][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,809][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,812][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,816][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,819][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,822][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,826][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,830][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,833][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,837][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,841][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,845][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,851][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,857][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,866][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,871][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,879][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,887][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,897][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,904][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,909][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,914][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,919][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,924][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,929][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,934][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,940][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,944][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,949][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,955][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,960][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,963][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,967][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,970][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,974][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,977][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,981][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,984][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,988][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,991][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,995][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:57,998][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,002][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,006][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,010][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,013][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,018][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,021][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,024][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,028][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,031][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,035][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,038][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,042][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,045][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,049][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,055][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,061][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,068][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,075][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,078][root][INFO] - <All keys matched successfully>
+[2023-10-12 18:43:58,079][root][INFO] - The learner queue is <libtorchbeast._C.BatchingQueue object at 0x7fd40a7143b0>
+[2023-10-12 18:43:58,079][root][INFO] - The inference batcher is <libtorchbeast._C.DynamicBatcher object at 0x7fd343571db0>
+[2023-10-12 18:43:58,079][root][INFO] - The model states is ()
+[2023-10-12 18:43:58,081][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,124][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,144][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,142][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,175][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,199][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,215][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,236][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,255][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,267][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,372][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,419][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,484][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,524][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,572][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,615][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,700][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,775][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,792][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,851][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:58,947][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,051][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,095][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,152][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,201][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,184][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,206][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,232][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,271][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,271][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,300][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,313][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,315][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,322][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,337][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,344][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,348][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,367][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,370][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,374][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,396][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,397][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,416][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,418][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,436][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,439][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,443][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,474][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,476][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,479][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,484][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,501][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,505][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,507][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,514][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,522][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,529][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,535][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,540][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,544][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,548][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,552][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,556][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,559][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,563][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,567][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,571][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,576][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,580][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,584][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,589][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,595][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,600][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,605][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,610][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,615][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,621][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,626][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,632][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,638][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,644][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,650][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,655][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,660][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,665][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,670][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,675][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,680][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,684][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,689][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,693][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,697][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,701][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,705][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,709][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,713][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,717][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,721][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,725][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,729][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,733][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,737][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,741][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,745][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,749][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,753][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,757][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,761][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,765][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,769][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,773][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,777][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,782][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,787][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,792][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,798][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,804][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,809][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,816][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,827][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,840][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,848][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,859][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,875][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,879][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,891][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,895][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,903][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,911][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,915][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,923][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,939][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,943][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,943][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,955][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,967][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,975][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,987][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,989][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:43:59,996][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:00,003][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:00,012][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:00,019][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:00,027][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:00,035][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:00,043][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:00,051][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:00,063][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:00,075][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:00,075][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:00,087][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:00,095][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:00,103][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:00,111][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:00,115][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:00,123][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:00,139][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:00,142][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:00,156][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:00,163][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:00,167][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:00,175][root][INFO] - <function serve.<locals>.<lambda> at 0x7fd40a6a7700>
+[2023-10-12 18:44:02,122][root][ERROR] - Exception in actorpool thread!
+[2023-10-12 18:44:03,084][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 5.0)
+[2023-10-12 18:44:08,090][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 10.0)

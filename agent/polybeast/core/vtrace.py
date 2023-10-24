@@ -33,6 +33,8 @@ import torch
 import torch.nn.functional as F
 
 
+import logging
+
 VTraceFromLogitsReturns = collections.namedtuple(
     "VTraceFromLogitsReturns",
     [
@@ -46,8 +48,24 @@ VTraceFromLogitsReturns = collections.namedtuple(
 
 VTraceReturns = collections.namedtuple("VTraceReturns", "vs pg_advantages")
 
+def action_log_probs2(policy_logits, actions):
+    policy_logits = torch.flatten(policy_logits, 0, 1)
+    actions = torch.flatten(actions, 0, 1)
+    logging.critical(policy_logits.shape)
+    logging.critical(actions.shape)
+    return -F.nll_loss(
+        F.log_softmax(torch.flatten(policy_logits, 0, 1), dim=-1),
+        torch.flatten(actions, 0, 1),
+        reduction="none",
+    ).view_as(actions)
 
 def action_log_probs(policy_logits, actions):
+    policy_logits = torch.flatten(policy_logits, 0, 1)
+#torch.Size([2560, 5])
+#torch.Size([2560])
+    actions = torch.flatten(actions, 0, 1)
+    logging.critical(policy_logits.shape)
+    logging.critical(actions.shape)
     return -F.nll_loss(
         F.log_softmax(torch.flatten(policy_logits, 0, 1), dim=-1),
         torch.flatten(actions, 0, 1),
@@ -68,10 +86,12 @@ def from_logits(
 ):
     """V-trace for softmax policies."""
 
-    target_action_log_probs = action_log_probs(target_policy_logits, actions)
-    behavior_action_log_probs = action_log_probs(
-        behavior_policy_logits, actions
-    )
+    #target_action_log_probs = action_log_probs(target_policy_logits, actions)#the probleeem
+    #behavior_action_log_probs = action_log_probs(behavior_policy_logits, actions)
+    target_action_log_probs = target_policy_logits
+    behavior_action_log_probs = behavior_policy_logits
+
+
     log_rhos = target_action_log_probs - behavior_action_log_probs
     vtrace_returns = from_importance_weights(
         log_rhos=log_rhos,

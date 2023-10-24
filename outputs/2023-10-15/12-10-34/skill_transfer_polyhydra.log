@@ -1,0 +1,133 @@
+[2023-10-15 12:10:34,385][root][INFO] - name: null
+wandb: false
+project: skillhack
+entity: your_entity_name
+group: default
+state_dict_path: none
+foc_options_path: none
+foc_options_config_path: none
+teacher_path: none
+teacher_config_path: none
+ks_max_lambda: 10
+ks_max_time: 20000000.0
+ks_min_lambda_prop: 0.1
+train_with_all_skills: false
+penalty_per_step: 0.01
+hks_max_uniform_weight: 1000
+hks_min_uniform_prop: 0.05
+hks_max_uniform_time: 20000000.0
+tasks_json: tasks
+mock: false
+single_ttyrec: true
+num_seeds: 0
+write_profiler_trace: false
+relative_reward: false
+fn_penalty_step: constant
+penalty_time: 0.0
+penalty_step: -0.001
+reward_lose: 0
+reward_win: 1
+character: null
+save_tty: false
+mode: train
+env: HalfCheetahv4
+obs_keys: glyphs,chars,colors,specials,blstats,message
+num_actors: 256
+total_steps: 10000000.0
+batch_size: 32
+unroll_length: 80
+num_learner_threads: 1
+num_inference_threads: 1
+disable_cuda: false
+learner_device: cuda:0
+actor_device: cuda:0
+max_learner_queue_size: null
+model: HalfCheetah
+use_lstm: false
+hidden_dim: 256
+embedding_dim: 64
+glyph_type: all_cat
+equalize_input_dim: false
+equalize_factor: 2
+layers: 5
+crop_model: cnn
+crop_dim: 9
+use_index_select: true
+entropy_cost: 0.001
+baseline_cost: 0.5
+discounting: 0.999
+reward_clipping: none
+normalize_reward: true
+learning_rate: 0.0002
+grad_norm_clipping: 40
+alpha: 0.99
+momentum: 0
+epsilon: 1.0e-06
+state_counter: none
+no_extrinsic: false
+int:
+  twoheaded: true
+  input: full
+  intrinsic_weight: 0.1
+  discounting: 0.99
+  baseline_cost: 0.5
+  episodic: true
+  reward_clipping: none
+  normalize_reward: true
+ride:
+  count_norm: true
+  forward_cost: 1
+  inverse_cost: 0.1
+  hidden_dim: 128
+rnd:
+  forward_cost: 0.01
+msg:
+  model: none
+  hidden_dim: 64
+  embedding_dim: 32
+
+[2023-10-15 12:10:34,401][root][INFO] - Symlinked log directory: /workspace/latest
+[2023-10-15 12:10:34,402][root][INFO] - Creating archive directory: /workspace/outputs/2023-10-15/12-10-34/archives
+[2023-10-15 12:10:34,406][root][INFO] - Logging results to /workspace/outputs/2023-10-15/12-10-34
+[2023-10-15 12:10:34,449][palaas/out][INFO] - Found log directory: /workspace/outputs/2023-10-15/12-10-34
+[2023-10-15 12:10:34,449][palaas/out][INFO] - Saving arguments to /workspace/outputs/2023-10-15/12-10-34/meta.json
+[2023-10-15 12:10:34,450][palaas/out][INFO] - Saving messages to /workspace/outputs/2023-10-15/12-10-34/out.log
+[2023-10-15 12:10:34,450][palaas/out][INFO] - Saving logs data to /workspace/outputs/2023-10-15/12-10-34/logs.csv
+[2023-10-15 12:10:34,450][palaas/out][INFO] - Saving logs' fields to /workspace/outputs/2023-10-15/12-10-34/fields.csv
+[2023-10-15 12:10:34,450][root][INFO] - Not using CUDA.
+[2023-10-15 12:10:34,456][root][INFO] - Using model HalfCheetah
+[2023-10-15 12:10:35,006][root][INFO] - running build_ext
+[2023-10-15 12:10:35,946][root][INFO] - Number of model parameters: 11085
+[2023-10-15 12:10:35,951][root][INFO] - ()
+[2023-10-15 12:10:35,952][root][INFO] - After actor pool
+[2023-10-15 12:10:36,132][root][INFO] - <All keys matched successfully>
+[2023-10-15 12:10:36,132][root][INFO] - The model states is ()
+[2023-10-15 12:10:36,133][root][INFO] - The inference batchherr : hh
+[2023-10-15 12:10:41,137][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 5.0)
+[2023-10-15 12:10:46,141][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 10.0)
+[2023-10-15 12:10:51,146][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 15.0)
+[2023-10-15 12:10:56,150][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 20.0)
+[2023-10-15 12:11:01,153][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 25.0)
+[2023-10-15 12:11:06,157][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 30.0)
+[2023-10-15 12:11:11,161][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 35.0)
+[2023-10-15 12:11:13,832][root][ERROR] - Exception in actorpool thread!
+[2023-10-15 12:11:16,165][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 40.0)
+[2023-10-15 12:11:21,169][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 45.0)
+[2023-10-15 12:11:26,173][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 50.0)
+[2023-10-15 12:11:31,175][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 55.0)
+[2023-10-15 12:11:36,177][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 60.0)
+[2023-10-15 12:11:41,181][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 65.0)
+[2023-10-15 12:11:46,185][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 70.1)
+[2023-10-15 12:11:51,189][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 75.1)
+[2023-10-15 12:11:56,193][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 80.1)
+[2023-10-15 12:12:01,197][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 85.1)
+[2023-10-15 12:12:06,201][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 90.1)
+[2023-10-15 12:12:11,206][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 95.1)
+[2023-10-15 12:12:16,212][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 100.1)
+[2023-10-15 12:12:21,217][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 105.1)
+[2023-10-15 12:12:26,221][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 110.1)
+[2023-10-15 12:12:31,226][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 115.1)
+[2023-10-15 12:12:36,232][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 120.1)
+[2023-10-15 12:12:41,237][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 125.1)
+[2023-10-15 12:12:46,242][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 130.1)
+[2023-10-15 12:12:46,385][root][INFO] - Saving checkpoint to /workspace/outputs/2023-10-15/12-10-34/HalfCheetahv4.tar

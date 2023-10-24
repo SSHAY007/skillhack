@@ -18,6 +18,10 @@ import logging
 import os
 import time
 
+import ale_py
+#import gymnasium as gym
+import gym
+
 from agent.common.envs import create_env
 import libtorchbeast
 
@@ -88,9 +92,16 @@ def create_folders(flags):
 
 
 def serve(flags, server_address, env_id):
+    #logging.info(flags)
+    #env = lambda: gym.make("ALE/Amidar-v5") # this works not gymansium
+    #env = lambda: gym.make("CartPole-v1") # this works
+    #env = lambda: gym.make("HalfCheetah-v3") # this works
     env = lambda: create_env(flags, env_id)
+    #I suppose libtorchbeast requires a closure
+    #logging.info(env)
     server = libtorchbeast.Server(env, server_address=server_address)
     server.run()
+
 
 
 def main(flags):

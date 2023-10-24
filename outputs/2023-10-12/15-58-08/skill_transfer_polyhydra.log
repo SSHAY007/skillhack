@@ -1,0 +1,366 @@
+[2023-10-12 15:58:08,515][root][INFO] - name: null
+wandb: false
+project: skillhack
+entity: your_entity_name
+group: default
+state_dict_path: none
+foc_options_path: none
+foc_options_config_path: none
+teacher_path: none
+teacher_config_path: none
+ks_max_lambda: 10
+ks_max_time: 20000000.0
+ks_min_lambda_prop: 0.1
+train_with_all_skills: false
+penalty_per_step: 0.01
+hks_max_uniform_weight: 1000
+hks_min_uniform_prop: 0.05
+hks_max_uniform_time: 20000000.0
+tasks_json: tasks
+mock: false
+single_ttyrec: true
+num_seeds: 0
+write_profiler_trace: false
+relative_reward: false
+fn_penalty_step: constant
+penalty_time: 0.0
+penalty_step: -0.001
+reward_lose: 0
+reward_win: 1
+character: null
+save_tty: false
+mode: train
+env: HalfCheetahv4
+obs_keys: glyphs,chars,colors,specials,blstats,message
+num_actors: 256
+total_steps: 10000000.0
+batch_size: 32
+unroll_length: 80
+num_learner_threads: 1
+num_inference_threads: 1
+disable_cuda: false
+learner_device: cuda:0
+actor_device: cuda:0
+max_learner_queue_size: null
+model: HalfCheetah
+use_lstm: false
+hidden_dim: 256
+embedding_dim: 64
+glyph_type: all_cat
+equalize_input_dim: false
+equalize_factor: 2
+layers: 5
+crop_model: cnn
+crop_dim: 9
+use_index_select: true
+entropy_cost: 0.001
+baseline_cost: 0.5
+discounting: 0.999
+reward_clipping: none
+normalize_reward: true
+learning_rate: 0.0002
+grad_norm_clipping: 40
+alpha: 0.99
+momentum: 0
+epsilon: 1.0e-06
+state_counter: none
+no_extrinsic: false
+int:
+  twoheaded: true
+  input: full
+  intrinsic_weight: 0.1
+  discounting: 0.99
+  baseline_cost: 0.5
+  episodic: true
+  reward_clipping: none
+  normalize_reward: true
+ride:
+  count_norm: true
+  forward_cost: 1
+  inverse_cost: 0.1
+  hidden_dim: 128
+rnd:
+  forward_cost: 0.01
+msg:
+  model: none
+  hidden_dim: 64
+  embedding_dim: 32
+
+[2023-10-12 15:58:08,533][root][INFO] - Symlinked log directory: /opt/project/latest
+[2023-10-12 15:58:08,533][root][INFO] - Creating archive directory: /opt/project/outputs/2023-10-12/15-58-08/archives
+[2023-10-12 15:58:08,537][root][INFO] - Logging results to /opt/project/outputs/2023-10-12/15-58-08
+[2023-10-12 15:58:08,574][palaas/out][INFO] - Found log directory: /opt/project/outputs/2023-10-12/15-58-08
+[2023-10-12 15:58:08,574][palaas/out][INFO] - Saving arguments to /opt/project/outputs/2023-10-12/15-58-08/meta.json
+[2023-10-12 15:58:08,574][palaas/out][INFO] - Saving messages to /opt/project/outputs/2023-10-12/15-58-08/out.log
+[2023-10-12 15:58:08,575][palaas/out][INFO] - Saving logs data to /opt/project/outputs/2023-10-12/15-58-08/logs.csv
+[2023-10-12 15:58:08,575][palaas/out][INFO] - Saving logs' fields to /opt/project/outputs/2023-10-12/15-58-08/fields.csv
+[2023-10-12 15:58:08,575][root][INFO] - Not using CUDA.
+[2023-10-12 15:58:08,581][root][INFO] - Using model HalfCheetah
+[2023-10-12 15:58:08,660][root][INFO] - Number of model parameters: 11085
+[2023-10-12 15:58:08,932][root][INFO] - <All keys matched successfully>
+[2023-10-12 15:58:08,933][root][INFO] - The learner queue is <libtorchbeast._C.BatchingQueue object at 0x7fc6ec6ae4b0>
+[2023-10-12 15:58:08,933][root][INFO] - The inference batcher is <libtorchbeast._C.DynamicBatcher object at 0x7fc6ec69b3f0>
+[2023-10-12 15:58:08,933][root][INFO] - The model states is ()
+[2023-10-12 15:58:08,938][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,938][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,938][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,939][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,939][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,939][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,939][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,942][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,943][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,948][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,949][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,949][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,949][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,951][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,954][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,955][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,959][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,959][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,959][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,963][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,963][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,963][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,963][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,965][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,967][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,967][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,967][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,971][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,971][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,971][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,975][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,975][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,976][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,979][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,979][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,979][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,979][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,983][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,988][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,988][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,994][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,994][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,994][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,994][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,994][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,994][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,994][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,999][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,999][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,999][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,999][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:08,999][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,003][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,003][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,004][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,007][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,007][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,007][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,011][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,015][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,015][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,020][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,023][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,023][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,023][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,047][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,091][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,091][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,095][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,095][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,128][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,136][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,938][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,938][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,938][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,938][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,938][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,938][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,938][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,938][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,938][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,938][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,939][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,942][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,957][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,957][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,958][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,975][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:09,990][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,007][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,017][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,017][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,017][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,024][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,029][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,029][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,039][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,043][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,044][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,047][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,051][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,051][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,055][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,055][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,055][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,059][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,064][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,064][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,072][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,080][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,082][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,084][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,087][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,087][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,094][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,094][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,094][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,094][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:10,099][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,333][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,348][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,363][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,384][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,388][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,391][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,392][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,401][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,406][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,416][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,419][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,419][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,423][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,428][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,435][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,439][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,456][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,463][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,468][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,475][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,477][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,483][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,485][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,491][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,495][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,496][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,504][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,511][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,515][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,523][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,528][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,528][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,535][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,535][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,535][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,537][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,543][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,543][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,549][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,551][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,556][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,558][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,567][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,575][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,579][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,579][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,583][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,589][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,595][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,595][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,599][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,601][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,603][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,608][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,616][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,618][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,619][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,627][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,632][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,632][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,632][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,632][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,636][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,644][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,647][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,653][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,653][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,659][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,666][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,671][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,678][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,690][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,695][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,695][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,699][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,705][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,707][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,723][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,726][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,729][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,729][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,732][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,744][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,753][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,760][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,761][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,770][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,779][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,782][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,795][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,795][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,799][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,806][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,816][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,828][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,834][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,836][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,848][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,850][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,856][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,856][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,856][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,863][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,875][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,880][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,888][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,895][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,895][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,897][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,902][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,902][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,909][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,916][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,923][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,923][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,925][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,926][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,927][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,929][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,951][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,955][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,955][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,960][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,960][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,960][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,963][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,967][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,968][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,969][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,971][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,975][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,975][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,983][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:11,995][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:12,015][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:12,028][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:12,028][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:13,131][root][ERROR] - Exception in actorpool thread!
+[2023-10-12 15:58:13,938][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 5.0)
+[2023-10-12 15:58:18,942][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 10.0)
+[2023-10-12 15:58:23,946][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 15.0)
+[2023-10-12 15:58:28,950][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 20.0)
+[2023-10-12 15:58:33,954][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 25.0)
+[2023-10-12 15:58:38,958][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 30.0)

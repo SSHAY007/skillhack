@@ -1,0 +1,490 @@
+[2023-10-12 15:58:46,881][root][INFO] - name: null
+wandb: false
+project: skillhack
+entity: your_entity_name
+group: default
+state_dict_path: none
+foc_options_path: none
+foc_options_config_path: none
+teacher_path: none
+teacher_config_path: none
+ks_max_lambda: 10
+ks_max_time: 20000000.0
+ks_min_lambda_prop: 0.1
+train_with_all_skills: false
+penalty_per_step: 0.01
+hks_max_uniform_weight: 1000
+hks_min_uniform_prop: 0.05
+hks_max_uniform_time: 20000000.0
+tasks_json: tasks
+mock: false
+single_ttyrec: true
+num_seeds: 0
+write_profiler_trace: false
+relative_reward: false
+fn_penalty_step: constant
+penalty_time: 0.0
+penalty_step: -0.001
+reward_lose: 0
+reward_win: 1
+character: null
+save_tty: false
+mode: train
+env: HalfCheetahv4
+obs_keys: glyphs,chars,colors,specials,blstats,message
+num_actors: 256
+total_steps: 10000000.0
+batch_size: 32
+unroll_length: 80
+num_learner_threads: 1
+num_inference_threads: 1
+disable_cuda: false
+learner_device: cuda:0
+actor_device: cuda:0
+max_learner_queue_size: null
+model: HalfCheetah
+use_lstm: false
+hidden_dim: 256
+embedding_dim: 64
+glyph_type: all_cat
+equalize_input_dim: false
+equalize_factor: 2
+layers: 5
+crop_model: cnn
+crop_dim: 9
+use_index_select: true
+entropy_cost: 0.001
+baseline_cost: 0.5
+discounting: 0.999
+reward_clipping: none
+normalize_reward: true
+learning_rate: 0.0002
+grad_norm_clipping: 40
+alpha: 0.99
+momentum: 0
+epsilon: 1.0e-06
+state_counter: none
+no_extrinsic: false
+int:
+  twoheaded: true
+  input: full
+  intrinsic_weight: 0.1
+  discounting: 0.99
+  baseline_cost: 0.5
+  episodic: true
+  reward_clipping: none
+  normalize_reward: true
+ride:
+  count_norm: true
+  forward_cost: 1
+  inverse_cost: 0.1
+  hidden_dim: 128
+rnd:
+  forward_cost: 0.01
+msg:
+  model: none
+  hidden_dim: 64
+  embedding_dim: 32
+
+[2023-10-12 15:58:46,898][root][INFO] - Symlinked log directory: /opt/project/latest
+[2023-10-12 15:58:46,899][root][INFO] - Creating archive directory: /opt/project/outputs/2023-10-12/15-58-46/archives
+[2023-10-12 15:58:46,903][root][INFO] - Logging results to /opt/project/outputs/2023-10-12/15-58-46
+[2023-10-12 15:58:46,941][palaas/out][INFO] - Found log directory: /opt/project/outputs/2023-10-12/15-58-46
+[2023-10-12 15:58:46,941][palaas/out][INFO] - Saving arguments to /opt/project/outputs/2023-10-12/15-58-46/meta.json
+[2023-10-12 15:58:46,942][palaas/out][INFO] - Saving messages to /opt/project/outputs/2023-10-12/15-58-46/out.log
+[2023-10-12 15:58:46,942][palaas/out][INFO] - Saving logs data to /opt/project/outputs/2023-10-12/15-58-46/logs.csv
+[2023-10-12 15:58:46,942][palaas/out][INFO] - Saving logs' fields to /opt/project/outputs/2023-10-12/15-58-46/fields.csv
+[2023-10-12 15:58:46,942][root][INFO] - Not using CUDA.
+[2023-10-12 15:58:46,948][root][INFO] - Using model HalfCheetah
+[2023-10-12 15:58:47,026][root][INFO] - Number of model parameters: 11085
+[2023-10-12 15:58:47,318][root][INFO] - <All keys matched successfully>
+[2023-10-12 15:58:47,319][root][INFO] - The learner queue is <libtorchbeast._C.BatchingQueue object at 0x7f3b5cac3bb0>
+[2023-10-12 15:58:47,319][root][INFO] - The inference batcher is <libtorchbeast._C.DynamicBatcher object at 0x7f3b5cac3cb0>
+[2023-10-12 15:58:47,319][root][INFO] - The model states is ()
+[2023-10-12 15:58:47,324][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,324][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,325][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,325][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,324][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,326][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,326][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,326][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,326][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,327][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,327][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,327][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,327][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,330][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,330][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,331][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,331][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,331][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,331][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,331][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,331][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,331][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,334][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,335][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,335][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,335][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,335][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,335][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,335][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,335][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,339][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,339][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,339][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,339][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,339][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,339][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,339][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,339][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,341][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,325][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,343][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,343][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,343][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,343][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,344][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,347][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,347][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,347][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,347][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,347][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,347][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,351][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,352][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,352][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,356][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,361][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,367][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,372][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,376][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,396][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,397][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,399][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,407][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,411][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,411][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,419][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,431][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,435][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,449][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,455][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:47,857][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:47,963][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:47,925][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:47,948][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:47,967][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:47,998][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,009][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:47,976][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,051][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,043][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,057][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,090][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,089][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,107][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,125][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,130][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,136][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,131][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,156][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,160][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,164][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,165][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,168][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,176][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,178][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,188][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,195][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,196][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,197][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,203][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,204][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,204][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,208][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,184][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,209][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,200][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,215][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,215][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,225][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,225][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,233][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,224][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,214][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,233][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,235][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,231][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,237][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,237][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,219][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,234][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,244][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,245][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,247][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,247][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,247][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,247][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,247][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,239][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,250][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,250][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,251][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,253][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,256][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,258][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,260][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,260][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,262][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,262][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,268][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,268][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,324][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,324][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,324][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,324][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,347][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,347][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,360][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,376][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,387][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,387][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,431][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,441][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,451][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,451][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,453][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,457][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,458][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,458][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,460][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,479][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,484][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,484][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,488][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,490][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,491][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,494][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,498][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,498][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,499][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,502][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,502][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,508][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,508][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,508][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,508][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,508][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,508][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,508][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,508][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,513][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,513][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,513][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,513][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,519][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,519][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,520][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,520][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,523][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,523][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,528][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,528][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,528][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,528][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,528][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,575][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:48,600][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,637][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,654][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,677][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,742][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,793][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,823][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,864][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,877][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,894][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,890][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,904][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,921][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,927][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,937][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,956][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,966][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,980][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,980][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:48,992][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,002][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,004][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,015][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,015][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,016][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,023][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,026][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,023][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,027][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,032][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,035][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,036][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,036][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,038][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,041][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,043][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,045][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,045][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,047][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,056][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,059][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,065][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,065][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,760][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,783][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,818][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,827][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,827][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,832][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,845][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,845][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,851][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,856][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,856][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,858][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,861][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,861][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,864][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,877][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:49,881][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,894][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,894][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,899][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,899][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,903][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,914][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,921][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,922][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,926][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,926][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,928][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,934][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,950][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,962][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,967][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,970][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,970][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,974][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,975][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,975][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,980][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,987][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,988][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,993][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,999][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:49,999][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,002][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:50,004][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,004][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,007][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,011][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:50,011][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,012][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,012][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,014][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,019][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,019][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,019][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,031][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,042][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,052][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,055][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,056][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:50,059][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,063][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,072][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,075][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,079][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,087][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,087][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,087][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,093][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,094][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,103][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,128][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,129][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:50,132][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,132][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,134][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,138][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,139][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,153][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,167][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,168][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,172][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,177][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,177][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,145][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:50,182][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,184][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,193][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,196][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,205][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,206][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,216][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,219][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,219][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,224][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,231][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,231][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,231][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,231][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,233][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,243][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,255][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,259][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,264][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,270][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,274][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,275][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,277][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,277][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:50,282][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,299][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,309][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,318][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,323][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,327][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,336][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,338][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,339][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,343][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,343][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,343][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,347][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,347][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,347][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,355][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,359][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:50,364][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,367][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,367][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,383][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,387][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,389][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,396][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,403][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,403][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,407][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,412][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,419][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,419][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,421][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,435][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,438][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,443][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,448][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,457][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,473][root][INFO] - NOT MINIHACK
+[2023-10-12 15:58:50,541][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:50,589][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>
+[2023-10-12 15:58:50,618][root][INFO] - <NormalizeReward<TransformObservation<NormalizeObservation<ClipAction<RecordEpisodeStatistics<FlattenObservation<TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>>>>>>>

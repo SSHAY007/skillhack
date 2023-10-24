@@ -1,0 +1,144 @@
+[2023-10-21 17:25:57,333][root][INFO] - name: null
+wandb: false
+project: skillhack
+entity: your_entity_name
+group: default
+state_dict_path: none
+foc_options_path: none
+foc_options_config_path: none
+teacher_path: none
+teacher_config_path: none
+ks_max_lambda: 10
+ks_max_time: 20000000.0
+ks_min_lambda_prop: 0.1
+train_with_all_skills: false
+penalty_per_step: 0.01
+hks_max_uniform_weight: 1000
+hks_min_uniform_prop: 0.05
+hks_max_uniform_time: 20000000.0
+tasks_json: tasks
+mock: false
+single_ttyrec: true
+num_seeds: 0
+write_profiler_trace: false
+relative_reward: false
+fn_penalty_step: constant
+penalty_time: 0.0
+penalty_step: -0.001
+reward_lose: 0
+reward_win: 1
+character: null
+save_tty: false
+mode: train
+env: HalfCheetahv4
+obs_keys: glyphs,chars,colors,specials,blstats,message
+num_actors: 256
+total_steps: 10000000.0
+batch_size: 32
+unroll_length: 80
+num_learner_threads: 1
+num_inference_threads: 1
+disable_cuda: false
+learner_device: cuda:0
+actor_device: cuda:0
+max_learner_queue_size: null
+model: HalfCheetah
+use_lstm: false
+hidden_dim: 256
+embedding_dim: 64
+glyph_type: all_cat
+equalize_input_dim: false
+equalize_factor: 2
+layers: 5
+crop_model: cnn
+crop_dim: 9
+use_index_select: true
+entropy_cost: 0.001
+baseline_cost: 0.5
+discounting: 0.999
+reward_clipping: none
+normalize_reward: true
+learning_rate: 0.0002
+grad_norm_clipping: 40
+alpha: 0.99
+momentum: 0
+epsilon: 1.0e-06
+state_counter: none
+no_extrinsic: false
+int:
+  twoheaded: true
+  input: full
+  intrinsic_weight: 0.1
+  discounting: 0.99
+  baseline_cost: 0.5
+  episodic: true
+  reward_clipping: none
+  normalize_reward: true
+ride:
+  count_norm: true
+  forward_cost: 1
+  inverse_cost: 0.1
+  hidden_dim: 128
+rnd:
+  forward_cost: 0.01
+msg:
+  model: none
+  hidden_dim: 64
+  embedding_dim: 32
+
+[2023-10-21 17:25:57,350][root][INFO] - Symlinked log directory: /opt/project/latest
+[2023-10-21 17:25:57,351][root][INFO] - Creating archive directory: /opt/project/outputs/2023-10-21/17-25-57/archives
+[2023-10-21 17:25:57,355][root][INFO] - Logging results to /opt/project/outputs/2023-10-21/17-25-57
+[2023-10-21 17:25:57,393][palaas/out][INFO] - Found log directory: /opt/project/outputs/2023-10-21/17-25-57
+[2023-10-21 17:25:57,393][palaas/out][INFO] - Saving arguments to /opt/project/outputs/2023-10-21/17-25-57/meta.json
+[2023-10-21 17:25:57,393][palaas/out][INFO] - Saving messages to /opt/project/outputs/2023-10-21/17-25-57/out.log
+[2023-10-21 17:25:57,394][palaas/out][INFO] - Saving logs data to /opt/project/outputs/2023-10-21/17-25-57/logs.csv
+[2023-10-21 17:25:57,394][palaas/out][INFO] - Saving logs' fields to /opt/project/outputs/2023-10-21/17-25-57/fields.csv
+[2023-10-21 17:25:57,394][root][INFO] - Not using CUDA.
+[2023-10-21 17:25:57,400][root][INFO] - Using model HalfCheetah
+[2023-10-21 17:25:57,902][root][INFO] - Number of model parameters: 11085
+[2023-10-21 17:25:57,908][root][INFO] - ()
+[2023-10-21 17:25:57,908][root][INFO] - After actor pool
+[2023-10-21 17:25:58,177][root][INFO] - <All keys matched successfully>
+[2023-10-21 17:25:58,177][root][INFO] - The model states is ()
+[2023-10-21 17:25:59,816][root][INFO] - The batch batch(tensor([[[ 0.0003,  0.0796, -0.0980, -0.0443, -0.0531,  0.0291, -0.0755,
+          -0.0382,  0.0576,  0.1441, -0.0576, -0.0289,  0.0552,  0.0391,
+           0.0286,  0.1287, -0.0312]]], dtype=torch.float64), tensor([[0.]]), tensor([[True]]), tensor([[0]], dtype=torch.int32), tensor([[0.]])) 
+[2023-10-21 17:25:59,817][root][CRITICAL] - Action shape is tensor([[[[-0.0703,  2.3502,  0.5499, -0.2586, -1.1492,  0.1723]]]])
+[2023-10-21 17:25:59,817][root][CRITICAL] - policy shape is torch.Size([1, 1, 1, 6])
+[2023-10-21 17:25:59,819][root][INFO] - The batch batch(tensor([[[ 0.0003,  0.0796, -0.0980, -0.0443, -0.0531,  0.0291, -0.0755,
+          -0.0382,  0.0576,  0.1441, -0.0576, -0.0289,  0.0552,  0.0391,
+           0.0286,  0.1287, -0.0312]]], dtype=torch.float64), tensor([[0.]]), tensor([[True]]), tensor([[0]], dtype=torch.int32), tensor([[0.]])) 
+[2023-10-21 17:25:59,820][root][CRITICAL] - Action shape is tensor([[[[-1.8354, -0.0328,  0.5726,  0.9754, -0.1754, -0.1711]]]])
+[2023-10-21 17:25:59,820][root][CRITICAL] - policy shape is torch.Size([1, 1, 1, 6])
+[2023-10-21 17:26:02,264][root][INFO] - The batch batch(tensor([[[ 0.0558,  0.0641,  0.0549, -0.0322,  0.0689, -0.0159,  0.0139,
+          -0.0315,  0.0190,  0.2014,  0.0404,  0.1169,  0.0935,  0.0959,
+           0.0796,  0.0025,  0.1611]]], dtype=torch.float64), tensor([[0.]]), tensor([[True]]), tensor([[0]], dtype=torch.int32), tensor([[0.]])) 
+[2023-10-21 17:26:02,266][root][CRITICAL] - Action shape is tensor([[[[-0.4841,  2.1858,  0.8830, -0.0349, -2.0249, -0.8825]]]])
+[2023-10-21 17:26:02,266][root][CRITICAL] - policy shape is torch.Size([1, 1, 1, 6])
+[2023-10-21 17:26:02,267][root][INFO] - The batch batch(tensor([[[ 0.0558,  0.0641,  0.0549, -0.0322,  0.0689, -0.0159,  0.0139,
+          -0.0315,  0.0190,  0.2014,  0.0404,  0.1169,  0.0935,  0.0959,
+           0.0796,  0.0025,  0.1611]]], dtype=torch.float64), tensor([[0.]]), tensor([[True]]), tensor([[0]], dtype=torch.int32), tensor([[0.]])) 
+[2023-10-21 17:26:02,268][root][CRITICAL] - Action shape is tensor([[[[-0.9492, -1.4080, -0.5191,  1.0231,  0.8448,  1.6763]]]])
+[2023-10-21 17:26:02,269][root][CRITICAL] - policy shape is torch.Size([1, 1, 1, 6])
+[2023-10-21 17:26:02,781][root][INFO] - The batch batch(tensor([[[ 0.0232, -0.0080,  0.0046,  0.0931,  0.0598, -0.0281,  0.0756,
+          -0.0043,  0.0079, -0.0063, -0.0571,  0.1118, -0.1162,  0.1314,
+           0.2494,  0.1140, -0.0570]]], dtype=torch.float64), tensor([[0.]]), tensor([[True]]), tensor([[0]], dtype=torch.int32), tensor([[0.]])) 
+[2023-10-21 17:26:02,783][root][CRITICAL] - Action shape is tensor([[[[ 0.0309,  0.5065,  1.2883,  0.3118, -0.3230, -0.6736]]]])
+[2023-10-21 17:26:02,783][root][CRITICAL] - policy shape is torch.Size([1, 1, 1, 6])
+[2023-10-21 17:26:02,784][root][INFO] - The batch batch(tensor([[[ 0.0232, -0.0080,  0.0046,  0.0931,  0.0598, -0.0281,  0.0756,
+          -0.0043,  0.0079, -0.0063, -0.0571,  0.1118, -0.1162,  0.1314,
+           0.2494,  0.1140, -0.0570]]], dtype=torch.float64), tensor([[0.]]), tensor([[True]]), tensor([[0]], dtype=torch.int32), tensor([[0.]])) 
+[2023-10-21 17:26:02,786][root][CRITICAL] - Action shape is tensor([[[[-0.1723,  1.7275,  0.4042,  0.5350,  0.7172, -1.5930]]]])
+[2023-10-21 17:26:02,786][root][CRITICAL] - policy shape is torch.Size([1, 1, 1, 6])
+[2023-10-21 17:26:03,180][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 5.0)
+[2023-10-21 17:26:04,270][root][INFO] - The batch batch(tensor([[[ 0.0943,  0.0788, -0.0141,  0.0260, -0.0027,  0.0855, -0.0633,
+           0.0045, -0.0666,  0.0423, -0.0194, -0.0498,  0.0233, -0.0654,
+          -0.0613, -0.0919,  0.0514]]], dtype=torch.float64), tensor([[0.]]), tensor([[True]]), tensor([[0]], dtype=torch.int32), tensor([[0.]])) 
+[2023-10-21 17:26:04,271][root][CRITICAL] - Action shape is tensor([[[[-0.7794,  1.8673, -1.0829, -0.8917, -0.5121, -0.8173]]]])
+[2023-10-21 17:26:04,271][root][CRITICAL] - policy shape is torch.Size([1, 1, 1, 6])
+[2023-10-21 17:26:04,273][root][INFO] - The batch batch(tensor([[[ 0.0943,  0.0788, -0.0141,  0.0260, -0.0027,  0.0855, -0.0633,
+           0.0045, -0.0666,  0.0423, -0.0194, -0.0498,  0.0233, -0.0654,
+          -0.0613, -0.0919,  0.0514]]], dtype=torch.float64), tensor([[0.]]), tensor([[True]]), tensor([[0]], dtype=torch.int32), tensor([[0.]])) 
+[2023-10-21 17:26:04,274][root][CRITICAL] - Action shape is tensor([[[[ 1.2457,  1.0956,  0.7959,  1.4574,  0.7571, -1.2512]]]])
+[2023-10-21 17:26:04,274][root][CRITICAL] - policy shape is torch.Size([1, 1, 1, 6])

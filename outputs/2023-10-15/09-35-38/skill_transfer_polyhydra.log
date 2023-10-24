@@ -1,0 +1,657 @@
+[2023-10-15 09:35:38,736][root][INFO] - name: null
+wandb: false
+project: skillhack
+entity: your_entity_name
+group: default
+state_dict_path: none
+foc_options_path: none
+foc_options_config_path: none
+teacher_path: none
+teacher_config_path: none
+ks_max_lambda: 10
+ks_max_time: 20000000.0
+ks_min_lambda_prop: 0.1
+train_with_all_skills: false
+penalty_per_step: 0.01
+hks_max_uniform_weight: 1000
+hks_min_uniform_prop: 0.05
+hks_max_uniform_time: 20000000.0
+tasks_json: tasks
+mock: false
+single_ttyrec: true
+num_seeds: 0
+write_profiler_trace: false
+relative_reward: false
+fn_penalty_step: constant
+penalty_time: 0.0
+penalty_step: -0.001
+reward_lose: 0
+reward_win: 1
+character: null
+save_tty: false
+mode: train
+env: mini_skill_fight
+obs_keys: glyphs,chars,colors,specials,blstats,message
+num_actors: 256
+total_steps: 10000000.0
+batch_size: 32
+unroll_length: 80
+num_learner_threads: 1
+num_inference_threads: 1
+disable_cuda: false
+learner_device: cuda:0
+actor_device: cuda:0
+max_learner_queue_size: null
+model: baseline
+use_lstm: false
+hidden_dim: 256
+embedding_dim: 64
+glyph_type: all_cat
+equalize_input_dim: false
+equalize_factor: 2
+layers: 5
+crop_model: cnn
+crop_dim: 9
+use_index_select: true
+entropy_cost: 0.001
+baseline_cost: 0.5
+discounting: 0.999
+reward_clipping: none
+normalize_reward: true
+learning_rate: 0.0002
+grad_norm_clipping: 40
+alpha: 0.99
+momentum: 0
+epsilon: 1.0e-06
+state_counter: none
+no_extrinsic: false
+int:
+  twoheaded: true
+  input: full
+  intrinsic_weight: 0.1
+  discounting: 0.99
+  baseline_cost: 0.5
+  episodic: true
+  reward_clipping: none
+  normalize_reward: true
+ride:
+  count_norm: true
+  forward_cost: 1
+  inverse_cost: 0.1
+  hidden_dim: 128
+rnd:
+  forward_cost: 0.01
+msg:
+  model: none
+  hidden_dim: 64
+  embedding_dim: 32
+
+[2023-10-15 09:35:38,752][root][INFO] - Symlinked log directory: /opt/project/latest
+[2023-10-15 09:35:38,753][root][INFO] - Creating archive directory: /opt/project/outputs/2023-10-15/09-35-38/archives
+[2023-10-15 09:35:38,757][root][INFO] - Logging results to /opt/project/outputs/2023-10-15/09-35-38
+[2023-10-15 09:35:38,800][palaas/out][INFO] - Found log directory: /opt/project/outputs/2023-10-15/09-35-38
+[2023-10-15 09:35:38,801][palaas/out][INFO] - Saving arguments to /opt/project/outputs/2023-10-15/09-35-38/meta.json
+[2023-10-15 09:35:38,801][palaas/out][INFO] - Saving messages to /opt/project/outputs/2023-10-15/09-35-38/out.log
+[2023-10-15 09:35:38,801][palaas/out][INFO] - Saving logs data to /opt/project/outputs/2023-10-15/09-35-38/logs.csv
+[2023-10-15 09:35:38,802][palaas/out][INFO] - Saving logs' fields to /opt/project/outputs/2023-10-15/09-35-38/fields.csv
+[2023-10-15 09:35:38,802][root][INFO] - Not using CUDA.
+[2023-10-15 09:35:38,808][root][INFO] - Using model baseline
+[2023-10-15 09:35:38,809][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,228][root][INFO] - Number of model parameters: 3717182
+[2023-10-15 09:35:39,230][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,371][root][INFO] - ()
+[2023-10-15 09:35:39,372][root][INFO] - After actor pool
+[2023-10-15 09:35:39,725][root][INFO] - <All keys matched successfully>
+[2023-10-15 09:35:39,725][root][INFO] - The model states is ()
+[2023-10-15 09:35:39,730][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,730][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,730][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,730][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,730][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,731][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,731][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,731][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,732][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,733][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,733][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,734][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,734][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,735][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,736][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,738][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,738][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,738][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,738][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,738][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,738][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,739][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,739][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,741][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,742][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,742][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,742][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,742][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,742][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,743][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,744][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,745][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,745][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,745][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,745][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,746][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,746][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,748][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,738][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,749][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,749][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,750][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,750][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,750][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,755][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,755][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,755][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,745][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,759][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,759][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,759][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,763][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,769][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,790][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2903d26bb0>)
+[2023-10-15 09:35:39,798][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,800][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,801][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,803][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,803][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,806][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,807][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,815][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,818][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,821][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,815][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,836][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,843][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,853][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,859][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,859][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,869][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,873][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,874][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,899][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,900][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,934][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,946][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,947][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,949][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,963][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,968][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,978][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,983][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,995][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:39,999][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,006][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,007][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,014][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,125][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddcf0>)
+[2023-10-15 09:35:40,212][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2903939fb0>)
+[2023-10-15 09:35:40,296][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddb70>)
+[2023-10-15 09:35:40,316][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9f0>)
+[2023-10-15 09:35:40,388][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edda30>)
+[2023-10-15 09:35:40,411][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd930>)
+[2023-10-15 09:35:40,482][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd970>)
+[2023-10-15 09:35:40,506][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd8f0>)
+[2023-10-15 09:35:40,565][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd8b0>)
+[2023-10-15 09:35:40,587][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:35:40,655][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:40,737][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6f0>)
+[2023-10-15 09:35:40,779][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:40,841][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:35:40,844][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,844][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,853][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,869][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,873][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,873][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,874][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,871][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,883][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,887][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,887][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,899][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,899][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,900][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,907][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,908][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,906][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,911][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,916][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,916][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,919][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,920][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,920][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,920][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,921][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,921][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,921][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,921][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,922][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,927][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,934][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,934][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,934][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,938][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,943][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,943][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,947][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,947][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,948][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,948][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,950][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,952][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,953][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,955][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,959][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,962][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,962][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,963][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,966][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,966][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,966][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,971][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,982][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,982][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,984][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,984][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,984][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,984][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,984][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,986][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,986][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,986][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,990][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,990][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:40,995][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:41,194][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:41,335][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6f0>)
+[2023-10-15 09:35:41,441][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:41,545][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:35:41,607][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:41,720][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6f0>)
+[2023-10-15 09:35:41,778][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:41,888][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:35:41,939][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:42,042][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6f0>)
+[2023-10-15 09:35:42,085][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:42,196][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:35:42,241][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,246][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:42,312][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,357][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,367][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,379][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6f0>)
+[2023-10-15 09:35:42,386][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,391][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,393][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,394][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,400][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,428][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,435][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,438][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,450][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,458][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,465][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,465][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,470][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,476][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,478][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,485][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,491][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,495][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,515][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,516][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:42,530][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,532][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,539][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,539][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,547][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,557][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,561][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,563][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,574][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,597][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,602][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,607][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,608][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,615][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,615][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,625][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,666][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,667][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,668][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,671][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,673][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,678][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,679][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,686][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,687][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,689][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,692][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,696][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,702][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,707][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,712][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,717][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,721][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,737][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,747][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,765][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,774][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,779][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,787][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,792][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,795][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,799][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,812][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,814][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,820][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,825][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,830][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,837][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,846][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,846][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,850][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,862][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,873][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,877][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,885][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,894][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,919][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,928][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,928][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,941][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,955][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,964][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,970][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,977][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:42,984][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:43,001][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:43,079][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:35:43,193][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:43,354][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6f0>)
+[2023-10-15 09:35:43,421][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:43,564][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:35:43,687][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:43,787][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6f0>)
+[2023-10-15 09:35:43,895][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:44,018][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:35:44,104][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:44,239][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6f0>)
+[2023-10-15 09:35:44,345][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:44,467][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:35:44,540][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:44,585][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:44,720][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:44,730][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 79. Learner queue size: 0. Other stats: (train_seconds = 5.0)
+[2023-10-15 09:35:44,744][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:44,784][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:44,853][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:44,866][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:44,925][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:44,973][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:44,994][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:35:45,042][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:45,106][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:45,124][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:45,146][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:45,241][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:45,241][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:45,249][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:45,328][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:45,362][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:45,409][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:45,532][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:45,581][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:35:45,667][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-15 09:35:45,703][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:46,257][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:46,548][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:46,690][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:35:46,792][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:46,965][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:47,044][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:47,203][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:35:47,272][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:47,442][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:47,508][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:47,662][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:35:47,724][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:47,886][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:47,974][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:48,098][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:35:48,217][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:48,325][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:48,433][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:48,531][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:35:48,636][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:48,754][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:48,867][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:48,978][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:35:49,094][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:49,255][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:49,335][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:49,494][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:35:49,561][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:49,716][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:49,733][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 160. Learner queue size: 0. Other stats: (train_seconds = 10.0)
+[2023-10-15 09:35:49,808][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:49,945][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6b0>)
+[2023-10-15 09:35:50,021][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:50,170][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:50,285][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:50,413][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6b0>)
+[2023-10-15 09:35:50,513][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:50,634][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:50,721][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:50,854][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6b0>)
+[2023-10-15 09:35:50,956][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:51,084][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:51,191][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:51,313][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6b0>)
+[2023-10-15 09:35:51,412][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:51,549][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:51,641][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:51,772][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6b0>)
+[2023-10-15 09:35:51,859][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:51,999][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:52,083][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:52,233][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6b0>)
+[2023-10-15 09:35:52,339][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:52,486][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:52,600][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:52,935][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6b0>)
+[2023-10-15 09:35:53,374][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:53,509][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:53,653][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:53,750][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6b0>)
+[2023-10-15 09:35:53,910][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:54,033][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:54,140][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:54,279][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6b0>)
+[2023-10-15 09:35:54,357][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:54,487][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:54,598][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:54,719][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6b0>)
+[2023-10-15 09:35:54,738][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 142. Learner queue size: 0. Other stats: (train_seconds = 15.0)
+[2023-10-15 09:35:54,823][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:54,953][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:55,057][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:55,184][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6b0>)
+[2023-10-15 09:35:55,309][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:55,430][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:55,533][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:55,664][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6b0>)
+[2023-10-15 09:35:55,771][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:55,894][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:55,995][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:56,120][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6b0>)
+[2023-10-15 09:35:56,265][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:56,353][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:56,465][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:56,589][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6b0>)
+[2023-10-15 09:35:56,709][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:56,806][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:56,927][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:57,048][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6b0>)
+[2023-10-15 09:35:57,189][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:57,287][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:57,420][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:57,532][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6b0>)
+[2023-10-15 09:35:57,654][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:57,759][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:57,887][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:58,009][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6b0>)
+[2023-10-15 09:35:58,123][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:35:58,240][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:35:58,417][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd770>)
+[2023-10-15 09:35:58,604][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd470>)
+[2023-10-15 09:35:58,845][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd0f0>)
+[2023-10-15 09:35:59,152][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd1f0>)
+[2023-10-15 09:35:59,478][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd270>)
+[2023-10-15 09:35:59,741][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 14. Learner queue size: 32. Other stats: (train_seconds = 20.0)
+[2023-10-15 09:35:59,742][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd070>)
+[2023-10-15 09:35:59,922][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddfb0>)
+[2023-10-15 09:36:00,641][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddf30>)
+[2023-10-15 09:36:00,846][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7b0>)
+[2023-10-15 09:36:01,142][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddf70>)
+[2023-10-15 09:36:01,393][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddfb0>)
+[2023-10-15 09:36:01,619][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddf30>)
+[2023-10-15 09:36:01,900][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7b0>)
+[2023-10-15 09:36:02,039][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddeb0>)
+[2023-10-15 09:36:02,222][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edddb0>)
+[2023-10-15 09:36:02,415][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edbe30>)
+[2023-10-15 09:36:02,521][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9b0>)
+[2023-10-15 09:36:02,679][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddeb0>)
+[2023-10-15 09:36:02,856][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edddb0>)
+[2023-10-15 09:36:03,028][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:36:03,228][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9b0>)
+[2023-10-15 09:36:03,352][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddeb0>)
+[2023-10-15 09:36:03,564][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7b0>)
+[2023-10-15 09:36:03,803][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:36:03,972][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9b0>)
+[2023-10-15 09:36:04,228][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6f0>)
+[2023-10-15 09:36:04,360][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7b0>)
+[2023-10-15 09:36:04,450][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7f0>)
+[2023-10-15 09:36:04,605][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:36:04,673][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6f0>)
+[2023-10-15 09:36:04,745][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 16. Learner queue size: 32. Other stats: (train_seconds = 25.0)
+[2023-10-15 09:36:04,869][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7b0>)
+[2023-10-15 09:36:05,004][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:36:05,147][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:36:05,242][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6f0>)
+[2023-10-15 09:36:05,312][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902d28230>)
+[2023-10-15 09:36:05,372][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:36:05,543][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:36:05,615][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddeb0>)
+[2023-10-15 09:36:05,663][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902d28230>)
+[2023-10-15 09:36:05,708][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:36:05,769][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edddb0>)
+[2023-10-15 09:36:05,816][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902d281f0>)
+[2023-10-15 09:36:05,894][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902d28230>)
+[2023-10-15 09:36:05,931][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6f0>)
+[2023-10-15 09:36:05,967][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edddb0>)
+[2023-10-15 09:36:06,029][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902d281f0>)
+[2023-10-15 09:36:06,078][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:36:06,138][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6f0>)
+[2023-10-15 09:36:06,201][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edddb0>)
+[2023-10-15 09:36:06,233][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:36:06,302][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:36:06,338][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd6f0>)
+[2023-10-15 09:36:06,436][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7b0>)
+[2023-10-15 09:36:06,479][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:36:06,532][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd830>)
+[2023-10-15 09:36:06,574][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddc30>)
+[2023-10-15 09:36:06,640][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd7b0>)
+[2023-10-15 09:36:06,710][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd870>)
+[2023-10-15 09:36:06,757][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9b0>)
+[2023-10-15 09:36:06,827][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2903939fb0>)
+[2023-10-15 09:36:06,873][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f29063777f0>)
+[2023-10-15 09:36:06,907][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd670>)
+[2023-10-15 09:36:06,965][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9b0>)
+[2023-10-15 09:36:07,008][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddbb0>)
+[2023-10-15 09:36:07,051][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd630>)
+[2023-10-15 09:36:07,085][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd670>)
+[2023-10-15 09:36:07,136][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9b0>)
+[2023-10-15 09:36:07,182][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddbb0>)
+[2023-10-15 09:36:07,217][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd630>)
+[2023-10-15 09:36:07,280][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd670>)
+[2023-10-15 09:36:07,459][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9b0>)
+[2023-10-15 09:36:07,665][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddbb0>)
+[2023-10-15 09:36:07,951][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd630>)
+[2023-10-15 09:36:08,033][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd670>)
+[2023-10-15 09:36:08,063][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9b0>)
+[2023-10-15 09:36:08,114][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddbb0>)
+[2023-10-15 09:36:08,157][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd630>)
+[2023-10-15 09:36:08,190][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd670>)
+[2023-10-15 09:36:08,251][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9b0>)
+[2023-10-15 09:36:08,295][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddbb0>)
+[2023-10-15 09:36:08,344][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd630>)
+[2023-10-15 09:36:08,374][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd670>)
+[2023-10-15 09:36:08,440][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9b0>)
+[2023-10-15 09:36:08,462][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddbb0>)
+[2023-10-15 09:36:08,496][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd630>)
+[2023-10-15 09:36:08,515][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd670>)
+[2023-10-15 09:36:08,556][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9b0>)
+[2023-10-15 09:36:08,580][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddbb0>)
+[2023-10-15 09:36:08,612][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd630>)
+[2023-10-15 09:36:08,644][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd670>)
+[2023-10-15 09:36:08,674][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9b0>)
+[2023-10-15 09:36:08,694][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddbb0>)
+[2023-10-15 09:36:08,721][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd630>)
+[2023-10-15 09:36:08,752][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd670>)
+[2023-10-15 09:36:08,779][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9b0>)
+[2023-10-15 09:36:08,806][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddbb0>)
+[2023-10-15 09:36:08,839][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd630>)
+[2023-10-15 09:36:08,875][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd670>)
+[2023-10-15 09:36:08,904][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9b0>)
+[2023-10-15 09:36:08,936][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddbb0>)
+[2023-10-15 09:36:08,968][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd630>)
+[2023-10-15 09:36:08,995][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd670>)
+[2023-10-15 09:36:09,026][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9b0>)
+[2023-10-15 09:36:09,052][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddbb0>)
+[2023-10-15 09:36:09,090][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd630>)
+[2023-10-15 09:36:09,118][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd670>)
+[2023-10-15 09:36:09,152][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9b0>)
+[2023-10-15 09:36:09,171][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddbb0>)
+[2023-10-15 09:36:09,204][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd630>)
+[2023-10-15 09:36:09,228][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd670>)
+[2023-10-15 09:36:09,264][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9b0>)
+[2023-10-15 09:36:09,297][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddbb0>)
+[2023-10-15 09:36:09,323][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd630>)
+[2023-10-15 09:36:09,354][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd670>)
+[2023-10-15 09:36:09,377][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9b0>)
+[2023-10-15 09:36:09,403][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddbb0>)
+[2023-10-15 09:36:09,426][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd630>)
+[2023-10-15 09:36:09,458][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd670>)
+[2023-10-15 09:36:09,488][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9b0>)
+[2023-10-15 09:36:09,521][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddbb0>)
+[2023-10-15 09:36:09,542][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd630>)
+[2023-10-15 09:36:09,573][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd670>)
+[2023-10-15 09:36:09,593][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9b0>)
+[2023-10-15 09:36:09,608][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddbb0>)
+[2023-10-15 09:36:09,625][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd630>)
+[2023-10-15 09:36:09,641][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd670>)
+[2023-10-15 09:36:09,660][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9b0>)
+[2023-10-15 09:36:09,673][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddbb0>)
+[2023-10-15 09:36:09,689][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd630>)
+[2023-10-15 09:36:09,704][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd670>)
+[2023-10-15 09:36:09,716][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd9b0>)
+[2023-10-15 09:36:09,729][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902eddbb0>)
+[2023-10-15 09:36:09,737][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd630>)
+[2023-10-15 09:36:09,745][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902edd670>)
+[2023-10-15 09:36:09,749][root][INFO] - Saving checkpoint to /opt/project/outputs/2023-10-15/09-35-38/mini_skill_fight_0.tar
+[2023-10-15 09:36:09,774][root][INFO] - Step 2560 @ 511.6 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 30.0, success_rate = 0.66667, step = 2560, mean_episode_return = -0.03159, mean_episode_step = 27.557, total_loss = -38.01, entropy_loss = -4.1181, pg_loss = -322.69, baseline_loss = 288.8, learner_queue_size = 32)
+[2023-10-15 09:36:09,777][root][INFO] - The inference batchherr : (<libtorchbeast._C.Batch object at 0x7f2902f450f0>)
+[2023-10-15 09:36:14,777][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 35.1, success_rate = 0.66667, step = 2560, mean_episode_return = -0.03159, mean_episode_step = 27.557, total_loss = -38.01, entropy_loss = -4.1181, pg_loss = -322.69, baseline_loss = 288.8, learner_queue_size = 32)
+[2023-10-15 09:36:19,781][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 40.1, success_rate = 0.66667, step = 2560, mean_episode_return = -0.03159, mean_episode_step = 27.557, total_loss = -38.01, entropy_loss = -4.1181, pg_loss = -322.69, baseline_loss = 288.8, learner_queue_size = 32)
+[2023-10-15 09:36:24,785][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 45.1, success_rate = 0.66667, step = 2560, mean_episode_return = -0.03159, mean_episode_step = 27.557, total_loss = -38.01, entropy_loss = -4.1181, pg_loss = -322.69, baseline_loss = 288.8, learner_queue_size = 32)
+[2023-10-15 09:36:29,788][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 50.1, success_rate = 0.66667, step = 2560, mean_episode_return = -0.03159, mean_episode_step = 27.557, total_loss = -38.01, entropy_loss = -4.1181, pg_loss = -322.69, baseline_loss = 288.8, learner_queue_size = 32)
+[2023-10-15 09:36:34,793][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 55.1, success_rate = 0.66667, step = 2560, mean_episode_return = -0.03159, mean_episode_step = 27.557, total_loss = -38.01, entropy_loss = -4.1181, pg_loss = -322.69, baseline_loss = 288.8, learner_queue_size = 32)

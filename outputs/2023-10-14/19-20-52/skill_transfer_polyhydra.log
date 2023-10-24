@@ -1,0 +1,658 @@
+[2023-10-14 19:20:52,820][root][INFO] - name: null
+wandb: false
+project: skillhack
+entity: your_entity_name
+group: default
+state_dict_path: none
+foc_options_path: none
+foc_options_config_path: none
+teacher_path: none
+teacher_config_path: none
+ks_max_lambda: 10
+ks_max_time: 20000000.0
+ks_min_lambda_prop: 0.1
+train_with_all_skills: false
+penalty_per_step: 0.01
+hks_max_uniform_weight: 1000
+hks_min_uniform_prop: 0.05
+hks_max_uniform_time: 20000000.0
+tasks_json: tasks
+mock: false
+single_ttyrec: true
+num_seeds: 0
+write_profiler_trace: false
+relative_reward: false
+fn_penalty_step: constant
+penalty_time: 0.0
+penalty_step: -0.001
+reward_lose: 0
+reward_win: 1
+character: null
+save_tty: false
+mode: train
+env: mini_skill_fight
+obs_keys: glyphs,chars,colors,specials,blstats,message
+num_actors: 256
+total_steps: 10000000.0
+batch_size: 32
+unroll_length: 80
+num_learner_threads: 1
+num_inference_threads: 1
+disable_cuda: false
+learner_device: cuda:0
+actor_device: cuda:0
+max_learner_queue_size: null
+model: HalfCheetah
+use_lstm: false
+hidden_dim: 256
+embedding_dim: 64
+glyph_type: all_cat
+equalize_input_dim: false
+equalize_factor: 2
+layers: 5
+crop_model: cnn
+crop_dim: 9
+use_index_select: true
+entropy_cost: 0.001
+baseline_cost: 0.5
+discounting: 0.999
+reward_clipping: none
+normalize_reward: true
+learning_rate: 0.0002
+grad_norm_clipping: 40
+alpha: 0.99
+momentum: 0
+epsilon: 1.0e-06
+state_counter: none
+no_extrinsic: false
+int:
+  twoheaded: true
+  input: full
+  intrinsic_weight: 0.1
+  discounting: 0.99
+  baseline_cost: 0.5
+  episodic: true
+  reward_clipping: none
+  normalize_reward: true
+ride:
+  count_norm: true
+  forward_cost: 1
+  inverse_cost: 0.1
+  hidden_dim: 128
+rnd:
+  forward_cost: 0.01
+msg:
+  model: none
+  hidden_dim: 64
+  embedding_dim: 32
+
+[2023-10-14 19:20:52,836][root][INFO] - Symlinked log directory: /opt/project/latest
+[2023-10-14 19:20:52,837][root][INFO] - Creating archive directory: /opt/project/outputs/2023-10-14/19-20-52/archives
+[2023-10-14 19:20:52,842][root][INFO] - Logging results to /opt/project/outputs/2023-10-14/19-20-52
+[2023-10-14 19:20:52,886][palaas/out][INFO] - Found log directory: /opt/project/outputs/2023-10-14/19-20-52
+[2023-10-14 19:20:52,886][palaas/out][INFO] - Saving arguments to /opt/project/outputs/2023-10-14/19-20-52/meta.json
+[2023-10-14 19:20:52,887][palaas/out][INFO] - Saving messages to /opt/project/outputs/2023-10-14/19-20-52/out.log
+[2023-10-14 19:20:52,887][palaas/out][INFO] - Saving logs data to /opt/project/outputs/2023-10-14/19-20-52/logs.csv
+[2023-10-14 19:20:52,887][palaas/out][INFO] - Saving logs' fields to /opt/project/outputs/2023-10-14/19-20-52/fields.csv
+[2023-10-14 19:20:52,887][root][INFO] - Not using CUDA.
+[2023-10-14 19:20:52,894][root][INFO] - Using model HalfCheetah
+[2023-10-14 19:20:52,974][root][INFO] - Number of model parameters: 11085
+[2023-10-14 19:20:52,980][root][INFO] - ()
+[2023-10-14 19:20:52,981][root][INFO] - After actor pool
+[2023-10-14 19:20:53,296][root][INFO] - <All keys matched successfully>
+[2023-10-14 19:20:53,296][root][INFO] - The model states is ()
+[2023-10-14 19:20:53,303][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,304][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,305][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,306][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,306][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,303][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,306][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,303][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,306][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,318][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,328][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,328][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,328][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,328][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,328][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,328][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,329][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,330][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,330][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,333][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,333][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,333][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,333][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,337][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,337][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,340][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,341][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,343][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,345][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,350][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,357][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,363][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,378][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,378][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,378][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,378][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,382][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,382][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,382][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,382][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,379][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,385][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,385][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,387][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,394][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,394][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,401][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,406][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,406][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,406][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,410][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,412][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,414][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,421][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,427][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,430][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,431][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,457][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,457][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,457][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,462][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,463][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,466][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,470][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,473][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,477][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,481][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,486][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,478][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,489][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,490][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,502][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,502][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:53,522][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,371][root][CRITICAL] - {'blstats': tensor([[[37, 12, 18, 18, 13, 15, 12, 11,  6,  0, 16, 16,  1,  0,  2,  2,  8,
+           0,  1,  0,  1,  1,  0,  0,  1,  0,  1]]]), 'chars': tensor([[[[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]]]], dtype=torch.uint8), 'colors': tensor([[[[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]]]], dtype=torch.uint8), 'done': tensor([[True]]), 'glyphs': tensor([[[[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]]]], dtype=torch.int16), 'message': tensor([[[ 66, 101,  32,  99,  97, 114, 101, 102, 117, 108,  33,  32,  32,  78,
+          101, 119,  32, 109, 111, 111, 110,  32, 116, 111, 110, 105, 103, 104,
+          116,  46,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+            0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+            0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+            0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+            0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+            0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+            0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+            0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+            0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+            0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+            0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+            0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+            0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+            0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+            0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+            0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+            0,   0,   0,   0]]], dtype=torch.uint8), 'specials': tensor([[[[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]]]], dtype=torch.uint8)}
+[2023-10-14 19:20:53,531][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,536][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,545][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,546][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,551][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,555][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,556][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,558][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,568][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,568][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,570][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,574][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,575][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,575][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,576][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,581][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,581][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,582][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,582][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,583][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,586][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,586][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,587][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,592][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,594][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,597][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,597][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,598][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,598][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,598][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,599][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,602][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,603][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,605][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,608][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,608][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,609][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,609][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,613][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,614][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,614][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,615][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,615][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,617][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,617][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,618][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,618][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,620][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,621][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,622][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,622][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,626][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,626][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,626][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,630][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,631][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,632][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,633][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,634][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:53,640][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,302][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,302][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,302][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,302][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,302][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,302][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,302][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,302][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,302][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,302][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,303][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,305][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,306][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,309][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,309][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,309][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,309][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,309][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,309][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,310][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,310][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,311][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,313][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,313][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,318][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,321][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,321][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,326][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,330][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,333][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,337][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,337][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,342][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,343][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,357][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,361][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,371][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,375][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,375][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,378][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,377][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,382][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,382][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,382][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,382][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,384][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,385][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,385][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,389][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,393][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,398][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,398][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,398][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,402][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,404][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,406][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,408][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,409][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,409][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,412][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,412][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,415][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,415][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,417][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,417][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,417][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,419][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,420][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,423][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,423][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,423][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,429][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,429][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,433][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,470][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,470][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,473][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,481][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,486][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,494][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,500][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,500][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,505][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,507][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,509][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,509][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,513][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,514][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,532][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,532][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,537][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,547][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,555][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,566][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,567][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,568][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,570][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,570][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,578][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,579][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,584][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,584][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,585][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,585][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,585][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,585][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,589][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,589][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,590][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,594][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,597][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,598][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,607][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,610][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,610][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,613][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,616][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,617][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,619][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,620][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,621][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,621][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,621][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,629][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,619][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,631][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,633][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,635][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,640][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,642][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,642][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,648][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,651][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,653][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,653][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,656][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,658][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,661][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,662][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,662][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,667][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,672][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,674][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,679][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,685][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,688][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,692][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,697][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,697][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,700][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,702][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,703][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,703][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,703][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,705][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,706][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,709][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,709][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,712][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,712][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,713][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,713][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:54,715][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,716][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,724][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,728][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,729][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,735][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,737][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,739][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,743][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,747][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,756][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,759][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,763][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,764][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,764][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,768][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,768][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,769][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,775][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,779][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,786][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,788][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,788][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,788][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,790][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,790][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,792][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,793][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,797][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,798][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,798][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,798][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,798][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,800][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,800][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,800][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,803][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,804][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,804][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,805][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,807][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,814][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,815][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,818][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,821][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:54,823][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:55,671][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,680][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,693][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,709][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,742][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,764][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,765][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:55,765][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,775][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:55,782][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,789][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,805][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,815][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,826][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,837][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,845][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:55,844][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,848][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,853][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,853][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,857][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:55,869][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,874][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,878][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,886][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,886][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,886][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,889][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:55,889][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,921][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,921][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,931][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,933][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,936][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:55,941][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,941][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,947][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,949][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:55,954][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,961][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,962][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,968][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,978][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,981][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,994][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:55,967][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,006][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,005][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,013][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,016][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,022][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,029][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,035][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,037][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,037][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,038][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,043][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,048][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,053][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,058][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,062][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,075][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,084][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,088][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,090][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,105][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,113][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,118][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,123][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,124][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,130][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,130][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,133][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,137][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,142][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,142][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,152][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,152][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,157][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,165][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,175][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,177][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,184][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,185][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,195][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,195][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,197][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,200][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,202][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,224][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,227][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,227][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,231][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,233][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,236][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,246][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,247][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,248][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,249][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,252][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,255][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,262][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,266][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,267][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,268][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,273][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,274][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,277][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,282][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,283][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,285][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,288][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,288][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,289][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,290][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,295][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,294][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,300][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,301][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,302][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,303][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,304][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,312][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,315][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,320][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,322][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,328][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,330][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,332][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,334][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,336][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,339][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,339][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,344][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,350][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,352][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,353][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,356][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,357][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,363][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,363][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,363][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,365][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,361][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,367][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,368][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,369][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,372][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,372][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,373][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,377][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,377][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,378][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,375][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,381][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,382][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,383][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,384][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,385][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,389][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,390][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,392][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,391][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-14 19:20:56,395][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,396][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,401][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,425][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,428][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>
+[2023-10-14 19:20:56,429][root][INFO] - <class 'envs.skills_all.MiniHackSkillFight'>

@@ -1,0 +1,366 @@
+[2023-10-14 19:52:25,819][root][INFO] - name: null
+wandb: false
+project: skillhack
+entity: your_entity_name
+group: default
+state_dict_path: none
+foc_options_path: none
+foc_options_config_path: none
+teacher_path: none
+teacher_config_path: none
+ks_max_lambda: 10
+ks_max_time: 20000000.0
+ks_min_lambda_prop: 0.1
+train_with_all_skills: false
+penalty_per_step: 0.01
+hks_max_uniform_weight: 1000
+hks_min_uniform_prop: 0.05
+hks_max_uniform_time: 20000000.0
+tasks_json: tasks
+mock: false
+single_ttyrec: true
+num_seeds: 0
+write_profiler_trace: false
+relative_reward: false
+fn_penalty_step: constant
+penalty_time: 0.0
+penalty_step: -0.001
+reward_lose: 0
+reward_win: 1
+character: null
+save_tty: false
+mode: train
+env: HalfCheetahv4
+obs_keys: glyphs,chars,colors,specials,blstats,message
+num_actors: 256
+total_steps: 10000000.0
+batch_size: 32
+unroll_length: 80
+num_learner_threads: 1
+num_inference_threads: 1
+disable_cuda: false
+learner_device: cuda:0
+actor_device: cuda:0
+max_learner_queue_size: null
+model: HalfCheetah
+use_lstm: false
+hidden_dim: 256
+embedding_dim: 64
+glyph_type: all_cat
+equalize_input_dim: false
+equalize_factor: 2
+layers: 5
+crop_model: cnn
+crop_dim: 9
+use_index_select: true
+entropy_cost: 0.001
+baseline_cost: 0.5
+discounting: 0.999
+reward_clipping: none
+normalize_reward: true
+learning_rate: 0.0002
+grad_norm_clipping: 40
+alpha: 0.99
+momentum: 0
+epsilon: 1.0e-06
+state_counter: none
+no_extrinsic: false
+int:
+  twoheaded: true
+  input: full
+  intrinsic_weight: 0.1
+  discounting: 0.99
+  baseline_cost: 0.5
+  episodic: true
+  reward_clipping: none
+  normalize_reward: true
+ride:
+  count_norm: true
+  forward_cost: 1
+  inverse_cost: 0.1
+  hidden_dim: 128
+rnd:
+  forward_cost: 0.01
+msg:
+  model: none
+  hidden_dim: 64
+  embedding_dim: 32
+
+[2023-10-14 19:52:25,835][root][INFO] - Symlinked log directory: /opt/project/latest
+[2023-10-14 19:52:25,836][root][INFO] - Creating archive directory: /opt/project/outputs/2023-10-14/19-52-25/archives
+[2023-10-14 19:52:25,839][root][INFO] - Logging results to /opt/project/outputs/2023-10-14/19-52-25
+[2023-10-14 19:52:25,882][palaas/out][INFO] - Found log directory: /opt/project/outputs/2023-10-14/19-52-25
+[2023-10-14 19:52:25,882][palaas/out][INFO] - Saving arguments to /opt/project/outputs/2023-10-14/19-52-25/meta.json
+[2023-10-14 19:52:25,883][palaas/out][INFO] - Saving messages to /opt/project/outputs/2023-10-14/19-52-25/out.log
+[2023-10-14 19:52:25,884][palaas/out][INFO] - Saving logs data to /opt/project/outputs/2023-10-14/19-52-25/logs.csv
+[2023-10-14 19:52:25,884][palaas/out][INFO] - Saving logs' fields to /opt/project/outputs/2023-10-14/19-52-25/fields.csv
+[2023-10-14 19:52:25,884][root][INFO] - Not using CUDA.
+[2023-10-14 19:52:25,890][root][INFO] - Using model HalfCheetah
+[2023-10-14 19:52:25,975][root][INFO] - Number of model parameters: 11085
+[2023-10-14 19:52:25,982][root][INFO] - ()
+[2023-10-14 19:52:25,982][root][INFO] - After actor pool
+[2023-10-14 19:52:26,308][root][INFO] - <All keys matched successfully>
+[2023-10-14 19:52:26,309][root][INFO] - The model states is ()
+[2023-10-14 19:52:26,674][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:26,719][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:26,817][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:26,825][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:26,852][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:26,852][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:26,939][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:26,919][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,033][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,033][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,077][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,103][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,112][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,162][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,149][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,112][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,182][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,184][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,179][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,209][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,221][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,224][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,228][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,232][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,233][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,239][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,246][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,251][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,257][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,269][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,218][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,287][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,303][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,307][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,309][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,308][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,321][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,321][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,322][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,326][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,327][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,323][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,334][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,336][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,340][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,354][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,361][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,361][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,359][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,376][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,381][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,388][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,388][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,422][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,431][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,434][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,457][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,465][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,470][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,563][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,573][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,610][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,617][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,626][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,629][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,661][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,661][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,657][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,695][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,686][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,691][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,723][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,918][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,893][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,940][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,967][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:27,989][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,056][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,099][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,249][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,255][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,274][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,284][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,297][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,308][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,329][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,342][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,408][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,431][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,433][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,436][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,443][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,454][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,470][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,487][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,489][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,491][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,495][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,498][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,498][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,511][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,526][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,529][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,530][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,540][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,551][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:28,968][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:29,044][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:29,043][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:29,083][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:29,247][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:29,262][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:29,278][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:29,291][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:29,442][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:29,486][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:29,558][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:29,585][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:29,658][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:29,770][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:29,845][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:29,858][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:29,881][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:29,903][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:29,930][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:29,923][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:29,990][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:29,996][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:29,951][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,016][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,042][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,042][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,054][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,036][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,117][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,125][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,129][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,129][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,143][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,149][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,161][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,150][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,184][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,179][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,194][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,247][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,277][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,259][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,286][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,290][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,290][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,300][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,346][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,352][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,358][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,349][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,362][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,364][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,370][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,373][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,380][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,332][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,382][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,391][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,397][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,402][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,414][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,415][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,418][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,410][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,363][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,425][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,427][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,429][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,424][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,431][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,435][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,436][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,437][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,431][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,440][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,442][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,443][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,440][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,445][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,447][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,452][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,453][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,456][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,456][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,458][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,465][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,465][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,468][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,472][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,475][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,479][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,478][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,482][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,488][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,488][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,489][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,495][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,497][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,501][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,501][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,505][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,509][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,512][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,512][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,515][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,515][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,514][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,517][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,521][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,522][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,522][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,523][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,523][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:30,525][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,076][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,088][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,134][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,148][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,180][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,250][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,256][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,312][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 5.0)
+[2023-10-14 19:52:31,320][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,471][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,479][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,500][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,541][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,544][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,583][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,586][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,599][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,600][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,631][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,651][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,688][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,769][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,782][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,875][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,882][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:31,905][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:32,007][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:32,109][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:32,138][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:32,184][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:32,188][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:32,246][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:32,248][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:32,285][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:32,308][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:32,383][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:32,453][root][INFO] - <class 'gymnasium.wrappers.time_limit.TimeLimit'>
+[2023-10-14 19:52:32,455][root][ERROR] - Exception in actorpool thread!
+[2023-10-14 19:52:36,316][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 10.0)
+[2023-10-14 19:52:41,320][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 15.0)
+[2023-10-14 19:52:46,323][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 20.0)
+[2023-10-14 19:52:51,325][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 25.0)
+[2023-10-14 19:52:56,328][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 30.0)

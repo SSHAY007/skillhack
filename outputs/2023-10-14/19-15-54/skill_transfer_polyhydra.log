@@ -1,0 +1,361 @@
+[2023-10-14 19:15:54,721][root][INFO] - name: null
+wandb: false
+project: skillhack
+entity: your_entity_name
+group: default
+state_dict_path: none
+foc_options_path: none
+foc_options_config_path: none
+teacher_path: none
+teacher_config_path: none
+ks_max_lambda: 10
+ks_max_time: 20000000.0
+ks_min_lambda_prop: 0.1
+train_with_all_skills: false
+penalty_per_step: 0.01
+hks_max_uniform_weight: 1000
+hks_min_uniform_prop: 0.05
+hks_max_uniform_time: 20000000.0
+tasks_json: tasks
+mock: false
+single_ttyrec: true
+num_seeds: 0
+write_profiler_trace: false
+relative_reward: false
+fn_penalty_step: constant
+penalty_time: 0.0
+penalty_step: -0.001
+reward_lose: 0
+reward_win: 1
+character: null
+save_tty: false
+mode: train
+env: HalfCheetahv4
+obs_keys: glyphs,chars,colors,specials,blstats,message
+num_actors: 256
+total_steps: 10000000.0
+batch_size: 32
+unroll_length: 80
+num_learner_threads: 1
+num_inference_threads: 1
+disable_cuda: false
+learner_device: cuda:0
+actor_device: cuda:0
+max_learner_queue_size: null
+model: HalfCheetah
+use_lstm: false
+hidden_dim: 256
+embedding_dim: 64
+glyph_type: all_cat
+equalize_input_dim: false
+equalize_factor: 2
+layers: 5
+crop_model: cnn
+crop_dim: 9
+use_index_select: true
+entropy_cost: 0.001
+baseline_cost: 0.5
+discounting: 0.999
+reward_clipping: none
+normalize_reward: true
+learning_rate: 0.0002
+grad_norm_clipping: 40
+alpha: 0.99
+momentum: 0
+epsilon: 1.0e-06
+state_counter: none
+no_extrinsic: false
+int:
+  twoheaded: true
+  input: full
+  intrinsic_weight: 0.1
+  discounting: 0.99
+  baseline_cost: 0.5
+  episodic: true
+  reward_clipping: none
+  normalize_reward: true
+ride:
+  count_norm: true
+  forward_cost: 1
+  inverse_cost: 0.1
+  hidden_dim: 128
+rnd:
+  forward_cost: 0.01
+msg:
+  model: none
+  hidden_dim: 64
+  embedding_dim: 32
+
+[2023-10-14 19:15:54,749][root][INFO] - Symlinked log directory: /opt/project/latest
+[2023-10-14 19:15:54,754][root][INFO] - Creating archive directory: /opt/project/outputs/2023-10-14/19-15-54/archives
+[2023-10-14 19:15:54,757][root][INFO] - Logging results to /opt/project/outputs/2023-10-14/19-15-54
+[2023-10-14 19:15:54,852][palaas/out][INFO] - Found log directory: /opt/project/outputs/2023-10-14/19-15-54
+[2023-10-14 19:15:54,852][palaas/out][INFO] - Saving arguments to /opt/project/outputs/2023-10-14/19-15-54/meta.json
+[2023-10-14 19:15:54,853][palaas/out][INFO] - Saving messages to /opt/project/outputs/2023-10-14/19-15-54/out.log
+[2023-10-14 19:15:54,853][palaas/out][INFO] - Saving logs data to /opt/project/outputs/2023-10-14/19-15-54/logs.csv
+[2023-10-14 19:15:54,854][palaas/out][INFO] - Saving logs' fields to /opt/project/outputs/2023-10-14/19-15-54/fields.csv
+[2023-10-14 19:15:54,854][root][INFO] - Not using CUDA.
+[2023-10-14 19:15:54,875][root][INFO] - Using model HalfCheetah
+[2023-10-14 19:15:55,097][root][INFO] - Number of model parameters: 11085
+[2023-10-14 19:15:55,106][root][INFO] - ()
+[2023-10-14 19:15:55,106][root][INFO] - After actor pool
+[2023-10-14 19:15:55,444][root][INFO] - <All keys matched successfully>
+[2023-10-14 19:15:55,444][root][INFO] - The model states is ()
+[2023-10-14 19:15:56,182][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,242][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,194][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,211][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,245][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,244][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,249][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,253][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,270][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,258][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,248][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,306][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,314][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,319][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,341][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,343][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,347][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,356][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,356][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,360][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,323][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,364][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,365][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,365][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,374][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,372][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,354][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,377][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,387][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,388][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,394][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,395][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,400][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,412][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,413][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,403][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,403][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,415][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,401][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,389][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,421][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,424][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,426][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,427][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,427][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,425][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,433][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,433][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,437][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,446][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,447][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,449][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,445][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,452][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,454][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,454][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,427][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,448][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,458][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,462][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,468][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,471][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,471][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,448][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,481][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,485][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,481][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,488][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,492][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,443][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,495][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,495][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,471][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,511][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,505][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,528][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,524][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,532][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,521][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,537][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,543][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,543][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,562][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,567][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,665][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,667][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,752][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,760][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,764][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,802][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,817][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,820][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,830][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,831][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,838][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,844][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,838][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,845][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,847][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,848][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,851][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,864][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,869][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,873][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,877][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,889][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,896][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,900][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,901][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,905][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,908][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,917][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,919][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,927][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,934][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,942][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:56,955][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:57,905][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:57,958][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,002][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:57,999][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,044][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,059][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,091][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,163][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,174][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,334][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,358][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,389][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,400][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,418][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,429][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,517][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,544][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,578][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,592][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,630][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,607][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,679][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,683][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,749][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,772][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,796][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,783][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,824][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,830][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,893][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,899][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,912][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,920][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,937][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,980][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,981][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,988][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,002][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,030][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:58,988][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,034][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,082][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,055][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,088][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,095][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,097][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,102][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,108][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,119][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,126][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,139][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,146][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,147][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,154][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,152][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,157][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,210][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,211][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,217][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,229][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,207][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,225][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,204][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,245][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,251][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,260][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,269][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,313][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,317][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,295][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,341][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,357][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,391][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,394][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,391][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,411][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,412][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,412][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,409][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,416][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,418][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,397][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,420][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,421][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,425][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,430][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,430][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,434][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,434][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,435][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,435][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,439][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,442][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,446][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,439][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,453][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,455][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,458][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,456][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,459][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,462][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,462][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,462][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,475][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,451][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,480][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,486][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,492][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,497][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,501][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,503][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,503][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,510][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,520][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,531][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,532][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,540][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,546][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,531][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,550][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,554][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,556][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,565][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,567][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,568][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,570][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,570][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,572][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,573][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,574][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,574][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,579][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,579][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,579][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,579][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,580][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,580][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,583][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,585][root][INFO] - <TimeLimit<OrderEnforcing<PassiveEnvChecker<HalfCheetahEnv<HalfCheetah-v4>>>>>
+[2023-10-14 19:15:59,587][root][ERROR] - Exception in actorpool thread!
+[2023-10-14 19:16:00,450][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 5.0)

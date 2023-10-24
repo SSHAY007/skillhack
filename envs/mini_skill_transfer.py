@@ -1,3 +1,5 @@
+import logging
+
 from minihack import MiniHackSkill
 import os
 from os.path import dirname
@@ -5,6 +7,10 @@ from os.path import dirname
 
 class MiniHackSkillTransfer(MiniHackSkill):
     def __init__(self, *args, **kwargs):
+
+       # del kwargs["archivefile"]
+        #logging.info("SHAYYY")
+        #logging.info(kwargs)
         super().__init__(
             *args,
             reward_win=1,

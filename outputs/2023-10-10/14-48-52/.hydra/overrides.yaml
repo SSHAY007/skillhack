@@ -1,0 +1,4 @@
+- model=baseline
+- env=HalfCheetah-v4
+- use_lstm=false
+- total_steps=1e7

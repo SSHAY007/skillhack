@@ -1,0 +1,108 @@
+[2023-10-21 14:09:32,150][root][INFO] - name: null
+wandb: false
+project: skillhack
+entity: your_entity_name
+group: default
+state_dict_path: none
+foc_options_path: none
+foc_options_config_path: none
+teacher_path: none
+teacher_config_path: none
+ks_max_lambda: 10
+ks_max_time: 20000000.0
+ks_min_lambda_prop: 0.1
+train_with_all_skills: false
+penalty_per_step: 0.01
+hks_max_uniform_weight: 1000
+hks_min_uniform_prop: 0.05
+hks_max_uniform_time: 20000000.0
+tasks_json: tasks
+mock: false
+single_ttyrec: true
+num_seeds: 0
+write_profiler_trace: false
+relative_reward: false
+fn_penalty_step: constant
+penalty_time: 0.0
+penalty_step: -0.001
+reward_lose: 0
+reward_win: 1
+character: null
+save_tty: false
+mode: train
+env: HalfCheetahv4
+obs_keys: glyphs,chars,colors,specials,blstats,message
+num_actors: 256
+total_steps: 10000000.0
+batch_size: 32
+unroll_length: 80
+num_learner_threads: 1
+num_inference_threads: 1
+disable_cuda: false
+learner_device: cuda:0
+actor_device: cuda:0
+max_learner_queue_size: null
+model: HalfCheetah
+use_lstm: false
+hidden_dim: 256
+embedding_dim: 64
+glyph_type: all_cat
+equalize_input_dim: false
+equalize_factor: 2
+layers: 5
+crop_model: cnn
+crop_dim: 9
+use_index_select: true
+entropy_cost: 0.001
+baseline_cost: 0.5
+discounting: 0.999
+reward_clipping: none
+normalize_reward: true
+learning_rate: 0.0002
+grad_norm_clipping: 40
+alpha: 0.99
+momentum: 0
+epsilon: 1.0e-06
+state_counter: none
+no_extrinsic: false
+int:
+  twoheaded: true
+  input: full
+  intrinsic_weight: 0.1
+  discounting: 0.99
+  baseline_cost: 0.5
+  episodic: true
+  reward_clipping: none
+  normalize_reward: true
+ride:
+  count_norm: true
+  forward_cost: 1
+  inverse_cost: 0.1
+  hidden_dim: 128
+rnd:
+  forward_cost: 0.01
+msg:
+  model: none
+  hidden_dim: 64
+  embedding_dim: 32
+
+[2023-10-21 14:09:32,166][root][INFO] - Symlinked log directory: /opt/project/latest
+[2023-10-21 14:09:32,167][root][INFO] - Creating archive directory: /opt/project/outputs/2023-10-21/14-09-32/archives
+[2023-10-21 14:09:32,171][root][INFO] - Logging results to /opt/project/outputs/2023-10-21/14-09-32
+[2023-10-21 14:09:32,206][palaas/out][INFO] - Found log directory: /opt/project/outputs/2023-10-21/14-09-32
+[2023-10-21 14:09:32,207][palaas/out][INFO] - Saving arguments to /opt/project/outputs/2023-10-21/14-09-32/meta.json
+[2023-10-21 14:09:32,207][palaas/out][INFO] - Saving messages to /opt/project/outputs/2023-10-21/14-09-32/out.log
+[2023-10-21 14:09:32,207][palaas/out][INFO] - Saving logs data to /opt/project/outputs/2023-10-21/14-09-32/logs.csv
+[2023-10-21 14:09:32,208][palaas/out][INFO] - Saving logs' fields to /opt/project/outputs/2023-10-21/14-09-32/fields.csv
+[2023-10-21 14:09:32,208][root][INFO] - Not using CUDA.
+[2023-10-21 14:09:32,216][root][INFO] - Using model HalfCheetah
+[2023-10-21 14:09:32,749][root][INFO] - Number of model parameters: 11085
+[2023-10-21 14:09:32,754][root][INFO] - ()
+[2023-10-21 14:09:32,755][root][INFO] - After actor pool
+[2023-10-21 14:09:33,035][root][INFO] - <All keys matched successfully>
+[2023-10-21 14:09:33,036][root][INFO] - The model states is ()
+[2023-10-21 14:09:38,041][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 5.0)
+[2023-10-21 14:09:38,552][root][INFO] - The batch batch((tensor([[[-0.0184,  0.0511,  0.0393, -0.0946,  0.0620,  0.0160, -0.0272,
+           0.0638,  0.1942, -0.1691, -0.0380, -0.0825, -0.0541, -0.0647,
+          -0.0612, -0.0505, -0.0041]]], dtype=torch.float64), tensor([[0.]]), tensor([[True]]), tensor([[0]], dtype=torch.int32), tensor([[0.]])), ()) 
+[2023-10-21 14:09:38,555][root][CRITICAL] - ((tensor([[[ 0.8335,  1.3255,  0.4095,  1.7957, -0.5450,  1.3652]]]), tensor([[-1.2666, -1.7972, -1.0028, -2.5303, -1.0674, -1.8509]]), tensor([[[-0.0428]]]), tensor([[-1.2666, -1.7972, -1.0028, -2.5303, -1.0674, -1.8509]]), tensor([[-1.2666, -1.7972, -1.0028, -2.5303, -1.0674, -1.8509]]), tensor([[-1.2666, -1.7972, -1.0028, -2.5303, -1.0674, -1.8509]])), ())

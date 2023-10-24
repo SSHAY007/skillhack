@@ -1,0 +1,4 @@
+- model=HalfCheetahv4
+- env=HalfCheetahv4
+- use_lstm=false
+- total_steps=1e7

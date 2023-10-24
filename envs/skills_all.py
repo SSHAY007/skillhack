@@ -1,5 +1,7 @@
+import gym
 from gym.envs import registration
-
+import numpy as np
+import gymnasium as gym
 from nle import nethack
 from nle.nethack import Command
 
@@ -188,6 +190,19 @@ class MiniHackSkillFight(MiniHackSkillTransfer):
         )
 
 
+class HalfCheetah():
+    def __call__(self,gamma=0.9):
+        env = gym.make("HalfCheetah-v4")
+        env = gym.wrappers.FlattenObservation(env)  # deal with dm_control's Dict observation space
+        env = gym.wrappers.RecordEpisodeStatistics(env)
+        env = gym.wrappers.ClipAction(env)
+        env = gym.wrappers.NormalizeObservation(env)
+        env = gym.wrappers.TransformObservation(env, lambda obs: np.clip(obs, -10, 10))
+        env = gym.wrappers.NormalizeReward(env, gamma=gamma)
+        return env
+    def __init__(self,gamma=0.9):
+        pass
+
 class MiniHackSkillNavigateBlind(MiniHackSkillTransfer):
     def __init__(self, *args, **kwargs):
         # Enable autopickup
@@ -234,6 +249,7 @@ class MiniHackSkillNavigateBlind(MiniHackSkillTransfer):
             reward += self.reward_win
 
         return reward
+
 
 
 class MiniHackSkillNavigateBlindFixed(MiniHackSkillTransfer):

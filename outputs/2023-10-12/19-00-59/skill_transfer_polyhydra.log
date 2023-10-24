@@ -1,0 +1,634 @@
+[2023-10-12 19:00:59,331][root][INFO] - name: null
+wandb: false
+project: skillhack
+entity: your_entity_name
+group: default
+state_dict_path: none
+foc_options_path: none
+foc_options_config_path: none
+teacher_path: none
+teacher_config_path: none
+ks_max_lambda: 10
+ks_max_time: 20000000.0
+ks_min_lambda_prop: 0.1
+train_with_all_skills: false
+penalty_per_step: 0.01
+hks_max_uniform_weight: 1000
+hks_min_uniform_prop: 0.05
+hks_max_uniform_time: 20000000.0
+tasks_json: tasks
+mock: false
+single_ttyrec: true
+num_seeds: 0
+write_profiler_trace: false
+relative_reward: false
+fn_penalty_step: constant
+penalty_time: 0.0
+penalty_step: -0.001
+reward_lose: 0
+reward_win: 1
+character: null
+save_tty: false
+mode: train
+env: mini_skill_fight
+obs_keys: glyphs,chars,colors,specials,blstats,message
+num_actors: 256
+total_steps: 10000000.0
+batch_size: 32
+unroll_length: 80
+num_learner_threads: 1
+num_inference_threads: 1
+disable_cuda: false
+learner_device: cuda:0
+actor_device: cuda:0
+max_learner_queue_size: null
+model: baseline
+use_lstm: false
+hidden_dim: 256
+embedding_dim: 64
+glyph_type: all_cat
+equalize_input_dim: false
+equalize_factor: 2
+layers: 5
+crop_model: cnn
+crop_dim: 9
+use_index_select: true
+entropy_cost: 0.001
+baseline_cost: 0.5
+discounting: 0.999
+reward_clipping: none
+normalize_reward: true
+learning_rate: 0.0002
+grad_norm_clipping: 40
+alpha: 0.99
+momentum: 0
+epsilon: 1.0e-06
+state_counter: none
+no_extrinsic: false
+int:
+  twoheaded: true
+  input: full
+  intrinsic_weight: 0.1
+  discounting: 0.99
+  baseline_cost: 0.5
+  episodic: true
+  reward_clipping: none
+  normalize_reward: true
+ride:
+  count_norm: true
+  forward_cost: 1
+  inverse_cost: 0.1
+  hidden_dim: 128
+rnd:
+  forward_cost: 0.01
+msg:
+  model: none
+  hidden_dim: 64
+  embedding_dim: 32
+
+[2023-10-12 19:00:59,348][root][INFO] - Symlinked log directory: /opt/project/latest
+[2023-10-12 19:00:59,349][root][INFO] - Creating archive directory: /opt/project/outputs/2023-10-12/19-00-59/archives
+[2023-10-12 19:00:59,353][root][INFO] - Logging results to /opt/project/outputs/2023-10-12/19-00-59
+[2023-10-12 19:00:59,389][palaas/out][INFO] - Found log directory: /opt/project/outputs/2023-10-12/19-00-59
+[2023-10-12 19:00:59,389][palaas/out][INFO] - Saving arguments to /opt/project/outputs/2023-10-12/19-00-59/meta.json
+[2023-10-12 19:00:59,389][palaas/out][INFO] - Saving messages to /opt/project/outputs/2023-10-12/19-00-59/out.log
+[2023-10-12 19:00:59,389][palaas/out][INFO] - Saving logs data to /opt/project/outputs/2023-10-12/19-00-59/logs.csv
+[2023-10-12 19:00:59,389][palaas/out][INFO] - Saving logs' fields to /opt/project/outputs/2023-10-12/19-00-59/fields.csv
+[2023-10-12 19:00:59,390][root][INFO] - Not using CUDA.
+[2023-10-12 19:00:59,396][root][INFO] - Using model baseline
+[2023-10-12 19:00:59,487][root][INFO] - Number of model parameters: 3717182
+[2023-10-12 19:00:59,510][root][INFO] - ()
+[2023-10-12 19:00:59,790][root][INFO] - <All keys matched successfully>
+[2023-10-12 19:00:59,791][root][INFO] - The model states is ()
+[2023-10-12 19:00:59,798][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,797][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,799][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,799][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,799][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,800][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,801][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,801][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,802][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,802][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,802][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,804][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,805][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,807][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,807][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,809][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,808][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,809][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,809][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,809][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,809][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,809][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,810][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,810][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,811][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,811][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,811][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,811][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,811][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,810][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,809][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,811][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,811][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,812][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,812][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,811][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,812][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,812][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,812][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,812][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,813][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,813][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,813][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,813][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,813][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,813][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,813][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,814][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,814][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,815][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,818][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,820][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,819][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,820][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,820][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,821][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,822][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,822][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,822][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,822][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,823][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,823][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,824][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,824][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,826][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,826][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,813][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,828][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,831][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,832][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,832][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,832][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,832][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,833][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,832][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,833][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,834][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,834][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,834][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,834][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,834][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,835][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,837][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,837][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,838][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,841][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,841][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,841][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,842][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,842][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,843][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,843][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,841][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,844][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,845][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,845][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,846][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,839][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,847][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,847][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,848][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,850][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,850][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,851][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,851][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,851][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,852][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,852][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,852][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,854][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,856][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,856][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,856][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,858][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,858][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,858][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,864][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,865][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,867][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,867][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,869][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,869][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,869][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,869][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,869][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,870][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,870][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,871][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,868][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,872][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,872][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,874][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,875][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,875][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,875][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,876][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,876][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,877][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,880][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,881][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,887][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,887][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,888][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,888][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,891][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,892][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,893][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,893][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,894][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,896][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,932][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,932][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,933][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,933][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,939][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,941][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,940][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,941][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,991][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,992][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,995][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,995][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,995][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:00:59,996][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,996][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:00:59,996][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,003][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,004][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,856][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,859][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,863][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,865][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,867][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,869][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,879][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,880][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,889][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,889][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,889][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,889][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,889][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,889][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,889][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,889][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,889][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,890][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,890][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,890][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,890][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,890][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,890][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,890][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,890][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,890][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,891][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,894][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,895][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,895][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,895][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,896][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,896][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,896][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,896][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,897][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,898][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,899][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,899][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,899][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,899][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,900][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,900][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,900][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,903][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,904][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,907][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,908][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,911][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,912][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,915][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,915][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,916][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,916][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,919][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,920][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,920][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,922][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,924][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,925][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,927][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,928][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,929][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,930][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,935][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,936][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,950][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,951][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,951][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,952][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,959][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,960][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,963][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,964][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,966][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,968][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,979][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,979][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,980][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,980][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,982][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,983][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,987][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,988][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,989][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,990][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,990][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,989][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:00,991][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:00,991][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:01,007][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:01,008][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:01,027][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:01,028][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:01,039][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:01,040][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:01,076][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:01,077][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:01,087][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:01,088][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:01,099][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:01,100][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:01,124][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:01,125][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:01,126][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:01,126][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:01,139][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:01,140][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:01,155][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:01,156][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:01,157][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:01,158][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:01,171][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:01,172][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:01,173][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:01,173][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:01,173][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:01,175][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:01,175][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:01,175][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:01,175][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:01,176][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:01,177][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:01,178][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:01,178][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:01,179][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:01,180][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:01,181][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:01,187][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:01,188][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:01,188][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:01,189][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:01,195][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:01,196][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,214][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,215][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,218][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,218][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,220][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,220][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,223][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,223][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,223][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,224][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,224][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,224][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,227][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,229][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,233][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,234][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,240][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,241][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,248][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,249][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,251][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,252][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,253][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,259][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,259][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,259][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,261][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,261][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,261][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,262][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,259][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,267][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,267][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,268][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,274][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,275][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,280][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,281][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,288][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,289][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,289][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,290][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,299][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,300][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,303][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,304][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,304][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,305][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,308][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,310][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,313][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,314][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,314][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,315][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,318][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,319][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,320][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,321][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,330][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,331][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,338][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,339][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,341][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,343][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,344][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,345][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,351][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,352][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,389][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,389][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,390][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,390][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,391][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,392][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,395][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,397][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,399][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,400][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,406][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,407][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,420][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,420][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,421][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,421][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,426][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,427][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,431][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,432][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,436][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,437][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,450][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,451][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,455][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,456][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,460][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,461][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,467][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,468][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,480][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,481][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,484][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,485][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,485][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,486][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,493][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,494][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,496][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,498][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,498][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,499][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,516][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,518][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,528][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,530][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,546][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,545][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,547][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,547][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,559][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,560][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,569][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,572][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,582][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,584][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,588][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,589][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,599][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,600][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,613][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,616][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,617][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,618][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,626][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,628][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,635][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,636][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,640][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,642][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,647][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,649][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,652][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,654][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,659][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,660][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,661][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,662][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,670][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,671][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,674][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,675][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,676][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,677][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,687][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,688][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,689][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,690][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,691][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,693][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,694][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,699][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,700][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,704][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,704][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,705][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,705][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,707][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,707][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,708][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,708][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,709][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,709][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,710][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,713][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,714][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,719][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,719][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,719][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,720][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,720][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,720][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,727][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,728][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,731][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,732][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,736][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,737][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,748][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,749][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,754][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,755][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,756][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,757][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,767][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,768][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,776][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,777][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,790][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,791][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,822][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,823][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,827][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,828][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,833][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,837][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,839][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,844][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,846][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,848][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:02,876][root][CRITICAL] - Should not enter this state
+[2023-10-12 19:01:02,878][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 19:01:04,795][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 156. Learner queue size: 0. Other stats: (train_seconds = 5.0)
+[2023-10-12 19:01:09,799][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 154. Learner queue size: 0. Other stats: (train_seconds = 10.0)
+[2023-10-12 19:01:14,802][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 115. Learner queue size: 0. Other stats: (train_seconds = 15.0)
+[2023-10-12 19:01:19,806][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 34. Learner queue size: 32. Other stats: (train_seconds = 20.0)
+[2023-10-12 19:01:24,810][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 13. Learner queue size: 32. Other stats: (train_seconds = 25.0)
+[2023-10-12 19:01:29,824][root][INFO] - Saving checkpoint to /opt/project/outputs/2023-10-12/19-00-59/mini_skill_fight_0.tar
+[2023-10-12 19:01:29,847][root][INFO] - Step 2560 @ 510.5 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 30.0, success_rate = 0.78049, step = 2560, mean_episode_return = 0.26663, mean_episode_step = 27.404, total_loss = 334.79, entropy_loss = -4.1191, pg_loss = -258.75, baseline_loss = 597.66, learner_queue_size = 32)
+[2023-10-12 19:01:34,853][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 35.1, success_rate = 0.78049, step = 2560, mean_episode_return = 0.26663, mean_episode_step = 27.404, total_loss = 334.79, entropy_loss = -4.1191, pg_loss = -258.75, baseline_loss = 597.66, learner_queue_size = 32)
+[2023-10-12 19:01:39,854][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 40.1, success_rate = 0.78049, step = 2560, mean_episode_return = 0.26663, mean_episode_step = 27.404, total_loss = 334.79, entropy_loss = -4.1191, pg_loss = -258.75, baseline_loss = 597.66, learner_queue_size = 32)
+[2023-10-12 19:01:44,860][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 45.1, success_rate = 0.78049, step = 2560, mean_episode_return = 0.26663, mean_episode_step = 27.404, total_loss = 334.79, entropy_loss = -4.1191, pg_loss = -258.75, baseline_loss = 597.66, learner_queue_size = 32)
+[2023-10-12 19:01:49,865][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 50.1, success_rate = 0.78049, step = 2560, mean_episode_return = 0.26663, mean_episode_step = 27.404, total_loss = 334.79, entropy_loss = -4.1191, pg_loss = -258.75, baseline_loss = 597.66, learner_queue_size = 32)
+[2023-10-12 19:01:54,870][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 55.1, success_rate = 0.78049, step = 2560, mean_episode_return = 0.26663, mean_episode_step = 27.404, total_loss = 334.79, entropy_loss = -4.1191, pg_loss = -258.75, baseline_loss = 597.66, learner_queue_size = 32)
+[2023-10-12 19:01:59,876][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 60.1, success_rate = 0.78049, step = 2560, mean_episode_return = 0.26663, mean_episode_step = 27.404, total_loss = 334.79, entropy_loss = -4.1191, pg_loss = -258.75, baseline_loss = 597.66, learner_queue_size = 32)
+[2023-10-12 19:02:04,877][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 65.1, success_rate = 0.78049, step = 2560, mean_episode_return = 0.26663, mean_episode_step = 27.404, total_loss = 334.79, entropy_loss = -4.1191, pg_loss = -258.75, baseline_loss = 597.66, learner_queue_size = 32)
+[2023-10-12 19:02:09,882][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 70.1, success_rate = 0.78049, step = 2560, mean_episode_return = 0.26663, mean_episode_step = 27.404, total_loss = 334.79, entropy_loss = -4.1191, pg_loss = -258.75, baseline_loss = 597.66, learner_queue_size = 32)
+[2023-10-12 19:02:14,886][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 75.1, success_rate = 0.78049, step = 2560, mean_episode_return = 0.26663, mean_episode_step = 27.404, total_loss = 334.79, entropy_loss = -4.1191, pg_loss = -258.75, baseline_loss = 597.66, learner_queue_size = 32)
+[2023-10-12 19:02:19,892][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 80.1, success_rate = 0.78049, step = 2560, mean_episode_return = 0.26663, mean_episode_step = 27.404, total_loss = 334.79, entropy_loss = -4.1191, pg_loss = -258.75, baseline_loss = 597.66, learner_queue_size = 32)
+[2023-10-12 19:02:24,896][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 85.1, success_rate = 0.78049, step = 2560, mean_episode_return = 0.26663, mean_episode_step = 27.404, total_loss = 334.79, entropy_loss = -4.1191, pg_loss = -258.75, baseline_loss = 597.66, learner_queue_size = 32)
+[2023-10-12 19:02:29,901][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 90.1, success_rate = 0.78049, step = 2560, mean_episode_return = 0.26663, mean_episode_step = 27.404, total_loss = 334.79, entropy_loss = -4.1191, pg_loss = -258.75, baseline_loss = 597.66, learner_queue_size = 32)
+[2023-10-12 19:02:34,906][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 95.1, success_rate = 0.78049, step = 2560, mean_episode_return = 0.26663, mean_episode_step = 27.404, total_loss = 334.79, entropy_loss = -4.1191, pg_loss = -258.75, baseline_loss = 597.66, learner_queue_size = 32)

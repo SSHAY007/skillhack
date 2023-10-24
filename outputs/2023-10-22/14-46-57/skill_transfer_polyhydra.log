@@ -1,0 +1,249 @@
+[2023-10-22 14:46:57,696][root][INFO] - name: null
+wandb: false
+project: skillhack
+entity: your_entity_name
+group: default
+state_dict_path: none
+foc_options_path: none
+foc_options_config_path: none
+teacher_path: none
+teacher_config_path: none
+ks_max_lambda: 10
+ks_max_time: 20000000.0
+ks_min_lambda_prop: 0.1
+train_with_all_skills: false
+penalty_per_step: 0.01
+hks_max_uniform_weight: 1000
+hks_min_uniform_prop: 0.05
+hks_max_uniform_time: 20000000.0
+tasks_json: tasks
+mock: false
+single_ttyrec: true
+num_seeds: 0
+write_profiler_trace: false
+relative_reward: false
+fn_penalty_step: constant
+penalty_time: 0.0
+penalty_step: -0.001
+reward_lose: 0
+reward_win: 1
+character: null
+save_tty: false
+mode: train
+env: HalfCheetahv4
+obs_keys: glyphs,chars,colors,specials,blstats,message
+num_actors: 256
+total_steps: 10000000.0
+batch_size: 32
+unroll_length: 80
+num_learner_threads: 1
+num_inference_threads: 1
+disable_cuda: false
+learner_device: cuda:0
+actor_device: cuda:0
+max_learner_queue_size: null
+model: HalfCheetah
+use_lstm: false
+hidden_dim: 256
+embedding_dim: 64
+glyph_type: all_cat
+equalize_input_dim: false
+equalize_factor: 2
+layers: 5
+crop_model: cnn
+crop_dim: 9
+use_index_select: true
+entropy_cost: 0.001
+baseline_cost: 0.5
+discounting: 0.999
+reward_clipping: none
+normalize_reward: true
+learning_rate: 0.0002
+grad_norm_clipping: 40
+alpha: 0.99
+momentum: 0
+epsilon: 1.0e-06
+state_counter: none
+no_extrinsic: false
+int:
+  twoheaded: true
+  input: full
+  intrinsic_weight: 0.1
+  discounting: 0.99
+  baseline_cost: 0.5
+  episodic: true
+  reward_clipping: none
+  normalize_reward: true
+ride:
+  count_norm: true
+  forward_cost: 1
+  inverse_cost: 0.1
+  hidden_dim: 128
+rnd:
+  forward_cost: 0.01
+msg:
+  model: none
+  hidden_dim: 64
+  embedding_dim: 32
+
+[2023-10-22 14:46:57,711][root][INFO] - Symlinked log directory: /opt/project/latest
+[2023-10-22 14:46:57,712][root][INFO] - Creating archive directory: /opt/project/outputs/2023-10-22/14-46-57/archives
+[2023-10-22 14:46:57,717][root][INFO] - Logging results to /opt/project/outputs/2023-10-22/14-46-57
+[2023-10-22 14:46:57,747][palaas/out][INFO] - Found log directory: /opt/project/outputs/2023-10-22/14-46-57
+[2023-10-22 14:46:57,747][palaas/out][INFO] - Saving arguments to /opt/project/outputs/2023-10-22/14-46-57/meta.json
+[2023-10-22 14:46:57,747][palaas/out][INFO] - Saving messages to /opt/project/outputs/2023-10-22/14-46-57/out.log
+[2023-10-22 14:46:57,748][palaas/out][INFO] - Saving logs data to /opt/project/outputs/2023-10-22/14-46-57/logs.csv
+[2023-10-22 14:46:57,748][palaas/out][INFO] - Saving logs' fields to /opt/project/outputs/2023-10-22/14-46-57/fields.csv
+[2023-10-22 14:46:57,748][root][INFO] - Not using CUDA.
+[2023-10-22 14:46:57,754][root][INFO] - Using model HalfCheetah
+[2023-10-22 14:46:58,325][root][INFO] - Number of model parameters: 11085
+[2023-10-22 14:46:58,332][root][INFO] - ()
+[2023-10-22 14:46:58,332][root][INFO] - After actor pool
+[2023-10-22 14:46:58,630][root][INFO] - <All keys matched successfully>
+[2023-10-22 14:46:58,630][root][INFO] - The model states is ()
+[2023-10-22 14:47:03,632][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 5.0)
+[2023-10-22 14:47:06,434][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,435][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,435][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,436][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,436][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,436][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,493][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,494][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,494][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,501][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,502][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,502][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,508][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,508][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,508][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,514][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,514][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,514][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,532][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,533][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,533][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,553][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,554][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,555][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,560][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,561][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,561][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,564][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,564][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,564][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,573][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,574][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,574][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,605][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,606][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,606][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,653][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,654][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,654][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,693][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,694][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,694][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,729][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,730][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,730][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,731][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,732][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,732][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,790][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,791][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,791][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,793][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,793][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,794][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,795][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,795][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,868][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,870][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,871][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,871][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,873][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,873][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,874][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,876][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,976][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,977][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,979][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,979][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,979][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,981][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,981][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,981][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,983][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:06,983][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,983][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:06,985][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,081][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,082][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,083][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,084][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,084][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,085][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,086][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,086][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,087][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,087][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,088][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,166][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,166][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,167][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,168][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,168][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,168][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,170][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,170][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,170][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,171][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,264][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,265][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,266][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,267][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,267][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,269][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,269][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,269][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,271][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,344][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,344][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,346][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,346][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,347][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,348][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,349][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,349][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,350][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,350][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,350][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,448][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,448][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,448][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,450][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,450][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,450][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,451][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,452][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,452][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,518][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,518][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,518][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,520][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,520][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,520][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,522][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,522][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,522][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,524][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,632][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,633][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,634][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,635][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,635][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,672][root][INFO] - Baseline shape is torch.Size([1, 1])
+[2023-10-22 14:47:07,672][root][INFO] - Action shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:07,672][root][INFO] - policy shape is torch.Size([1, 1, 6])
+[2023-10-22 14:47:08,636][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 10.0)

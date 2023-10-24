@@ -1,0 +1,1955 @@
+[2023-10-12 18:59:37,309][root][INFO] - name: null
+wandb: false
+project: skillhack
+entity: your_entity_name
+group: default
+state_dict_path: none
+foc_options_path: none
+foc_options_config_path: none
+teacher_path: none
+teacher_config_path: none
+ks_max_lambda: 10
+ks_max_time: 20000000.0
+ks_min_lambda_prop: 0.1
+train_with_all_skills: false
+penalty_per_step: 0.01
+hks_max_uniform_weight: 1000
+hks_min_uniform_prop: 0.05
+hks_max_uniform_time: 20000000.0
+tasks_json: tasks
+mock: false
+single_ttyrec: true
+num_seeds: 0
+write_profiler_trace: false
+relative_reward: false
+fn_penalty_step: constant
+penalty_time: 0.0
+penalty_step: -0.001
+reward_lose: 0
+reward_win: 1
+character: null
+save_tty: false
+mode: train
+env: mini_skill_fight
+obs_keys: glyphs,chars,colors,specials,blstats,message
+num_actors: 256
+total_steps: 10000000.0
+batch_size: 32
+unroll_length: 80
+num_learner_threads: 1
+num_inference_threads: 1
+disable_cuda: false
+learner_device: cuda:0
+actor_device: cuda:0
+max_learner_queue_size: null
+model: baseline
+use_lstm: false
+hidden_dim: 256
+embedding_dim: 64
+glyph_type: all_cat
+equalize_input_dim: false
+equalize_factor: 2
+layers: 5
+crop_model: cnn
+crop_dim: 9
+use_index_select: true
+entropy_cost: 0.001
+baseline_cost: 0.5
+discounting: 0.999
+reward_clipping: none
+normalize_reward: true
+learning_rate: 0.0002
+grad_norm_clipping: 40
+alpha: 0.99
+momentum: 0
+epsilon: 1.0e-06
+state_counter: none
+no_extrinsic: false
+int:
+  twoheaded: true
+  input: full
+  intrinsic_weight: 0.1
+  discounting: 0.99
+  baseline_cost: 0.5
+  episodic: true
+  reward_clipping: none
+  normalize_reward: true
+ride:
+  count_norm: true
+  forward_cost: 1
+  inverse_cost: 0.1
+  hidden_dim: 128
+rnd:
+  forward_cost: 0.01
+msg:
+  model: none
+  hidden_dim: 64
+  embedding_dim: 32
+
+[2023-10-12 18:59:37,326][root][INFO] - Symlinked log directory: /opt/project/latest
+[2023-10-12 18:59:37,327][root][INFO] - Creating archive directory: /opt/project/outputs/2023-10-12/18-59-37/archives
+[2023-10-12 18:59:37,330][root][INFO] - Logging results to /opt/project/outputs/2023-10-12/18-59-37
+[2023-10-12 18:59:37,364][palaas/out][INFO] - Found log directory: /opt/project/outputs/2023-10-12/18-59-37
+[2023-10-12 18:59:37,364][palaas/out][INFO] - Saving arguments to /opt/project/outputs/2023-10-12/18-59-37/meta.json
+[2023-10-12 18:59:37,365][palaas/out][INFO] - Saving messages to /opt/project/outputs/2023-10-12/18-59-37/out.log
+[2023-10-12 18:59:37,365][palaas/out][INFO] - Saving logs data to /opt/project/outputs/2023-10-12/18-59-37/logs.csv
+[2023-10-12 18:59:37,365][palaas/out][INFO] - Saving logs' fields to /opt/project/outputs/2023-10-12/18-59-37/fields.csv
+[2023-10-12 18:59:37,365][root][INFO] - Not using CUDA.
+[2023-10-12 18:59:37,371][root][INFO] - Using model baseline
+[2023-10-12 18:59:37,463][root][INFO] - Number of model parameters: 3717182
+[2023-10-12 18:59:37,486][root][INFO] - ()
+[2023-10-12 18:59:37,763][root][INFO] - <All keys matched successfully>
+[2023-10-12 18:59:37,763][root][INFO] - The model states is ()
+[2023-10-12 18:59:37,768][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,769][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,769][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,769][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,769][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,769][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,769][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,769][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,770][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,770][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,770][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,770][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,770][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,771][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,771][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,771][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,775][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,775][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,776][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,776][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,788][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,789][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,790][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,790][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,795][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,797][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,800][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,800][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,800][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,800][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,800][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,800][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,800][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,801][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,801][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,802][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,802][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,802][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,802][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,802][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,802][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,802][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,802][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,802][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,800][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,803][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,803][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,805][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,807][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,807][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,807][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,807][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,807][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,807][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,807][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,807][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,808][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,808][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,808][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,808][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,808][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,808][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,808][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,808][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,802][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,810][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,810][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,810][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,810][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,810][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,810][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,810][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,811][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,811][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,811][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,811][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,811][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,812][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,813][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,813][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,813][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,814][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,814][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,814][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,806][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,815][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,815][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,815][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,815][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,816][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,817][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,816][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,817][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,817][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,817][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,819][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,823][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,824][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,827][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,827][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,828][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,828][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,828][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,828][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,830][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,830][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,832][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,833][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,835][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,836][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,847][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,848][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,860][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,860][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,861][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,862][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,901][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,901][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,901][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,902][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,902][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,902][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,915][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,915][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,915][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,916][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,916][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,916][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,919][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,920][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,923][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,924][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,924][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,924][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,925][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,925][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,931][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,931][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,932][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,932][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,935][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,935][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,935][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,935][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,935][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,936][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,936][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,936][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,936][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,936][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,940][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,941][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,943][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,944][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:37,955][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:37,956][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,000][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,001][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,003][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,005][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,065][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,065][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,067][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,067][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,065][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,071][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,072][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,073][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,076][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,077][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,083][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,084][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,091][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,092][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,094][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,093][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,095][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,095][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,093][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,096][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,800][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,803][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,817][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,818][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,956][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,956][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,958][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,958][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,960][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,960][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,960][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,961][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,962][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,962][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,962][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,962][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,965][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,965][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,965][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,966][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,966][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,966][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,967][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,968][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,971][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,971][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,971][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,972][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,972][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,972][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,975][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,975][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,975][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,975][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,976][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,976][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,976][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,976][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,979][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,979][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,979][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,980][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,980][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,980][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,983][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,984][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,987][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,987][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,988][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,988][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,995][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,995][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:38,996][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:38,996][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,000][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,000][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,001][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,001][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,003][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,003][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,004][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,004][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,007][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,007][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,008][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,008][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,011][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,012][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,012][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,012][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,013][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,013][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,015][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,017][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,018][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,018][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,019][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,019][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,018][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,019][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,020][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,020][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,020][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,020][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,021][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,021][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,023][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,023][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,025][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,025][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,027][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,027][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,027][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,027][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,028][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,028][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,028][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,028][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,030][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,031][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,031][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,033][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,035][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,035][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,035][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,036][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,036][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,036][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,039][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,041][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,040][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,042][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,063][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,063][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,064][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,064][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,064][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,065][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,065][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,067][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,069][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,069][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,069][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,069][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,070][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,070][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,071][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,071][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,073][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,073][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,075][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,077][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,079][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,080][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,081][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,081][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,082][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,084][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,085][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,086][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,088][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,089][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,089][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,091][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,092][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,093][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,110][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,111][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:39,153][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:39,156][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,271][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,274][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,281][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,284][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,288][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,288][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,289][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,289][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,295][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,296][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,314][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,316][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,316][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,318][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,322][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,324][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,330][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,332][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,345][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,346][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,348][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,349][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,352][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,353][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,366][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,367][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,383][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,383][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,384][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,384][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,395][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,396][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,398][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,400][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,399][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,400][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,406][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,407][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,408][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,409][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,413][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,414][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,428][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,429][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,430][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,431][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,437][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,438][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,453][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,454][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,465][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,466][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,473][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,474][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,478][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,481][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,481][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,483][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,485][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,485][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,486][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,486][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,491][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,493][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,499][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,500][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,512][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,513][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,526][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,527][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,537][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,537][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,539][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,540][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,549][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,550][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,575][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,576][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,588][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,589][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,591][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,591][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,592][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,592][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,606][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,608][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,621][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,623][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,633][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,635][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,636][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,636][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,637][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,639][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,643][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,643][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,643][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,643][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,645][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,645][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,645][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,645][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,654][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,655][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,673][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,679][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,687][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,689][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,690][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,692][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,699][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,699][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,700][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,700][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,715][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,716][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,726][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,727][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,738][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,739][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,740][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,740][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,740][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,741][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,746][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,748][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,753][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,754][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,756][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,757][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,771][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,771][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,773][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,773][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,783][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,784][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,798][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,799][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,801][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,802][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,804][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,806][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,807][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,812][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,815][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,816][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,817][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,817][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,818][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,819][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,832][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,832][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,833][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,833][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,836][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,837][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,840][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,840][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,841][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,841][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,856][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,857][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,860][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,861][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,865][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,866][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,864][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,871][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,873][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,874][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,879][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,881][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,890][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,890][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,891][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,891][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,899][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,900][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,927][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,928][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:40,930][root][CRITICAL] - Should not enter this state
+[2023-10-12 18:59:40,932][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-12 18:59:42,766][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 154. Learner queue size: 0. Other stats: (train_seconds = 5.0)
+[2023-10-12 18:59:47,776][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 21. Learner queue size: 0. Other stats: (train_seconds = 10.0)
+[2023-10-12 18:59:52,778][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 121. Learner queue size: 0. Other stats: (train_seconds = 15.0)
+[2023-10-12 18:59:55,953][root][CRITICAL] - {'blstats': tensor([[[35, 12, 18,  ...,  1,  0,  1],
+         [43, 10, 19,  ...,  1,  0,  1],
+         [33, 10, 17,  ...,  1,  0,  0],
+         ...,
+         [35,  8, 19,  ...,  1,  0,  1],
+         [35, 11, 18,  ...,  1,  0,  0],
+         [34, 12, 16,  ...,  1,  0,  0]],
+
+        [[36, 12, 18,  ...,  1,  0,  1],
+         [43, 11, 19,  ...,  1,  0,  1],
+         [33, 11, 17,  ...,  1,  0,  0],
+         ...,
+         [34,  8, 19,  ...,  1,  0,  1],
+         [34, 11, 18,  ...,  1,  0,  0],
+         [33, 12, 16,  ...,  1,  0,  0]],
+
+        [[37, 11, 18,  ...,  1,  0,  1],
+         [42, 11, 19,  ...,  1,  0,  1],
+         [33, 12, 17,  ...,  1,  0,  0],
+         ...,
+         [35,  8, 19,  ...,  1,  0,  1],
+         [35, 11, 18,  ...,  1,  0,  0],
+         [34, 12, 16,  ...,  1,  0,  0]],
+
+        ...,
+
+        [[43,  8, 18,  ...,  1,  0,  1],
+         [41,  8, 19,  ...,  1,  0,  1],
+         [42, 11, 17,  ...,  1,  0,  0],
+         ...,
+         [35,  9, 17,  ...,  1,  0,  0],
+         [43,  8, 18,  ...,  1,  0,  0],
+         [43, 11, 19,  ...,  1,  0,  1]],
+
+        [[43,  8, 18,  ...,  1,  0,  1],
+         [41,  8, 19,  ...,  1,  0,  1],
+         [43, 10, 17,  ...,  1,  0,  0],
+         ...,
+         [35, 10, 17,  ...,  1,  0,  0],
+         [43,  8, 18,  ...,  1,  0,  0],
+         [43, 11, 19,  ...,  1,  0,  1]],
+
+        [[42,  8, 18,  ...,  1,  0,  1],
+         [41,  9, 19,  ...,  1,  0,  1],
+         [43, 10, 17,  ...,  1,  0,  0],
+         ...,
+         [34, 10, 17,  ...,  1,  0,  0],
+         [43,  8, 18,  ...,  1,  0,  0],
+         [43, 11, 19,  ...,  1,  0,  1]]]), 'chars': tensor([[[[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         ...,
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]]],
+
+
+        [[[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         ...,
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]]],
+
+
+        [[[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         ...,
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]]],
+
+
+        ...,
+
+
+        [[[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         ...,
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]]],
+
+
+        [[[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         ...,
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]]],
+
+
+        [[[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         ...,
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]],
+
+         [[32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          ...,
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32],
+          [32, 32, 32,  ..., 32, 32, 32]]]], dtype=torch.uint8), 'colors': tensor([[[[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         ...,
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]]],
+
+
+        [[[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         ...,
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]]],
+
+
+        [[[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         ...,
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]]],
+
+
+        ...,
+
+
+        [[[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         ...,
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]]],
+
+
+        [[[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         ...,
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]]],
+
+
+        [[[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         ...,
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]]]], dtype=torch.uint8), 'glyphs': tensor([[[[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         ...,
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]]],
+
+
+        [[[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         ...,
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]]],
+
+
+        [[[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         ...,
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]]],
+
+
+        ...,
+
+
+        [[[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         ...,
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]]],
+
+
+        [[[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         ...,
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]]],
+
+
+        [[[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         ...,
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]],
+
+         [[2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          ...,
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359],
+          [2359, 2359, 2359,  ..., 2359, 2359, 2359]]]], dtype=torch.int16), 'message': tensor([[[ 72, 101, 108,  ...,   0,   0,   0],
+         [ 72, 101, 108,  ...,   0,   0,   0],
+         [ 72, 101, 108,  ...,   0,   0,   0],
+         ...,
+         [ 72, 101, 108,  ...,   0,   0,   0],
+         [ 72, 101, 108,  ...,   0,   0,   0],
+         [ 72, 101, 108,  ...,   0,   0,   0]],
+
+        [[  0,   0,   0,  ...,   0,   0,   0],
+         [  0,   0,   0,  ...,   0,   0,   0],
+         [  0,   0,   0,  ...,   0,   0,   0],
+         ...,
+         [  0,   0,   0,  ...,   0,   0,   0],
+         [  0,   0,   0,  ...,   0,   0,   0],
+         [  0,   0,   0,  ...,   0,   0,   0]],
+
+        [[  0,   0,   0,  ...,   0,   0,   0],
+         [  0,   0,   0,  ...,   0,   0,   0],
+         [  0,   0,   0,  ...,   0,   0,   0],
+         ...,
+         [  0,   0,   0,  ...,   0,   0,   0],
+         [  0,   0,   0,  ...,   0,   0,   0],
+         [  0,   0,   0,  ...,   0,   0,   0]],
+
+        ...,
+
+        [[ 73, 116,  39,  ...,   0,   0,   0],
+         [  0,   0,   0,  ...,   0,   0,   0],
+         [  0,   0,   0,  ...,   0,   0,   0],
+         ...,
+         [  0,   0,   0,  ...,   0,   0,   0],
+         [ 73, 116,  39,  ...,   0,   0,   0],
+         [  0,   0,   0,  ...,   0,   0,   0]],
+
+        [[ 73, 116,  39,  ...,   0,   0,   0],
+         [ 73, 116,  39,  ...,   0,   0,   0],
+         [  0,   0,   0,  ...,   0,   0,   0],
+         ...,
+         [  0,   0,   0,  ...,   0,   0,   0],
+         [ 73, 116,  39,  ...,   0,   0,   0],
+         [ 73, 116,  39,  ...,   0,   0,   0]],
+
+        [[  0,   0,   0,  ...,   0,   0,   0],
+         [  0,   0,   0,  ...,   0,   0,   0],
+         [ 73, 116,  39,  ...,   0,   0,   0],
+         ...,
+         [  0,   0,   0,  ...,   0,   0,   0],
+         [ 73, 116,  39,  ...,   0,   0,   0],
+         [ 73, 116,  39,  ...,   0,   0,   0]]], dtype=torch.uint8), 'specials': tensor([[[[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         ...,
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]]],
+
+
+        [[[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         ...,
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]]],
+
+
+        [[[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         ...,
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]]],
+
+
+        ...,
+
+
+        [[[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         ...,
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]]],
+
+
+        [[[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         ...,
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]]],
+
+
+        [[[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         ...,
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]],
+
+         [[0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          ...,
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0],
+          [0, 0, 0,  ..., 0, 0, 0]]]], dtype=torch.uint8), 'reward': tensor([[ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000],
+        [-0.0100, -0.0100, -0.0100,  ..., -0.0100, -0.0100, -0.0100],
+        [-0.0100, -0.0100, -0.0100,  ..., -0.0100, -0.0100, -0.0100],
+        ...,
+        [-0.0110, -0.0100, -0.0100,  ..., -0.0100, -0.0110, -0.0100],
+        [-0.0110, -0.0110, -0.0100,  ..., -0.0100, -0.0110, -0.0110],
+        [-0.0100, -0.0100, -0.0110,  ..., -0.0100, -0.0110, -0.0110]]), 'done': tensor([[ True,  True,  True,  ...,  True,  True,  True],
+        [False, False, False,  ..., False, False, False],
+        [False, False, False,  ..., False, False, False],
+        ...,
+        [False, False, False,  ..., False, False, False],
+        [False, False, False,  ..., False, False, False],
+        [False, False, False,  ..., False, False, False]])}
+[2023-10-12 18:59:57,783][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 34. Learner queue size: 32. Other stats: (train_seconds = 20.0)
+[2023-10-12 19:00:02,791][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 12. Learner queue size: 32. Other stats: (train_seconds = 25.0)
+[2023-10-12 19:00:07,794][root][INFO] - Saving checkpoint to /opt/project/outputs/2023-10-12/18-59-37/mini_skill_fight_0.tar
+[2023-10-12 19:00:07,827][root][INFO] - Step 2560 @ 511.6 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 30.0, success_rate = 0.84211, step = 2560, mean_episode_return = 0.39132, mean_episode_step = 26.547, total_loss = 500.06, entropy_loss = -4.1186, pg_loss = -101.74, baseline_loss = 605.92, learner_queue_size = 32)
+[2023-10-12 19:00:12,833][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 35.1, success_rate = 0.84211, step = 2560, mean_episode_return = 0.39132, mean_episode_step = 26.547, total_loss = 500.06, entropy_loss = -4.1186, pg_loss = -101.74, baseline_loss = 605.92, learner_queue_size = 32)

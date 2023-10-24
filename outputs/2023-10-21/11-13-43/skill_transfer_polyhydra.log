@@ -1,0 +1,135 @@
+[2023-10-21 11:13:43,789][root][INFO] - name: null
+wandb: false
+project: skillhack
+entity: your_entity_name
+group: default
+state_dict_path: none
+foc_options_path: none
+foc_options_config_path: none
+teacher_path: none
+teacher_config_path: none
+ks_max_lambda: 10
+ks_max_time: 20000000.0
+ks_min_lambda_prop: 0.1
+train_with_all_skills: false
+penalty_per_step: 0.01
+hks_max_uniform_weight: 1000
+hks_min_uniform_prop: 0.05
+hks_max_uniform_time: 20000000.0
+tasks_json: tasks
+mock: false
+single_ttyrec: true
+num_seeds: 0
+write_profiler_trace: false
+relative_reward: false
+fn_penalty_step: constant
+penalty_time: 0.0
+penalty_step: -0.001
+reward_lose: 0
+reward_win: 1
+character: null
+save_tty: false
+mode: train
+env: HalfCheetahv4
+obs_keys: glyphs,chars,colors,specials,blstats,message
+num_actors: 256
+total_steps: 10000000.0
+batch_size: 32
+unroll_length: 80
+num_learner_threads: 1
+num_inference_threads: 1
+disable_cuda: false
+learner_device: cuda:0
+actor_device: cuda:0
+max_learner_queue_size: null
+model: HalfCheetah
+use_lstm: false
+hidden_dim: 256
+embedding_dim: 64
+glyph_type: all_cat
+equalize_input_dim: false
+equalize_factor: 2
+layers: 5
+crop_model: cnn
+crop_dim: 9
+use_index_select: true
+entropy_cost: 0.001
+baseline_cost: 0.5
+discounting: 0.999
+reward_clipping: none
+normalize_reward: true
+learning_rate: 0.0002
+grad_norm_clipping: 40
+alpha: 0.99
+momentum: 0
+epsilon: 1.0e-06
+state_counter: none
+no_extrinsic: false
+int:
+  twoheaded: true
+  input: full
+  intrinsic_weight: 0.1
+  discounting: 0.99
+  baseline_cost: 0.5
+  episodic: true
+  reward_clipping: none
+  normalize_reward: true
+ride:
+  count_norm: true
+  forward_cost: 1
+  inverse_cost: 0.1
+  hidden_dim: 128
+rnd:
+  forward_cost: 0.01
+msg:
+  model: none
+  hidden_dim: 64
+  embedding_dim: 32
+
+[2023-10-21 11:13:43,806][root][INFO] - Symlinked log directory: /opt/project/latest
+[2023-10-21 11:13:43,807][root][INFO] - Creating archive directory: /opt/project/outputs/2023-10-21/11-13-43/archives
+[2023-10-21 11:13:43,811][root][INFO] - Logging results to /opt/project/outputs/2023-10-21/11-13-43
+[2023-10-21 11:13:43,872][palaas/out][INFO] - Found log directory: /opt/project/outputs/2023-10-21/11-13-43
+[2023-10-21 11:13:43,873][palaas/out][INFO] - Saving arguments to /opt/project/outputs/2023-10-21/11-13-43/meta.json
+[2023-10-21 11:13:43,873][palaas/out][INFO] - Saving messages to /opt/project/outputs/2023-10-21/11-13-43/out.log
+[2023-10-21 11:13:43,874][palaas/out][INFO] - Saving logs data to /opt/project/outputs/2023-10-21/11-13-43/logs.csv
+[2023-10-21 11:13:43,874][palaas/out][INFO] - Saving logs' fields to /opt/project/outputs/2023-10-21/11-13-43/fields.csv
+[2023-10-21 11:13:43,874][root][INFO] - Not using CUDA.
+[2023-10-21 11:13:43,900][root][INFO] - Using model HalfCheetah
+[2023-10-21 11:13:47,968][root][INFO] - running build_ext
+[2023-10-21 11:13:47,969][root][INFO] - building 'mujoco_py.cymj' extension
+[2023-10-21 11:13:47,970][root][INFO] - creating /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder
+[2023-10-21 11:13:47,970][root][INFO] - creating /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-38
+[2023-10-21 11:13:47,970][root][INFO] - creating /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-38/opt
+[2023-10-21 11:13:47,970][root][INFO] - creating /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-38/opt/conda
+[2023-10-21 11:13:47,970][root][INFO] - creating /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-38/opt/conda/lib
+[2023-10-21 11:13:47,970][root][INFO] - creating /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-38/opt/conda/lib/python3.8
+[2023-10-21 11:13:47,970][root][INFO] - creating /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-38/opt/conda/lib/python3.8/site-packages
+[2023-10-21 11:13:47,970][root][INFO] - creating /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-38/opt/conda/lib/python3.8/site-packages/mujoco_py
+[2023-10-21 11:13:47,971][root][INFO] - creating /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-38/opt/conda/lib/python3.8/site-packages/mujoco_py/gl
+[2023-10-21 11:13:47,971][root][INFO] - gcc -pthread -B /opt/conda/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/opt/conda/lib/python3.8/site-packages/mujoco_py -I/root/.mujoco/mujoco210/include -I/opt/conda/lib/python3.8/site-packages/numpy/core/include -I/opt/conda/include/python3.8 -c /opt/conda/lib/python3.8/site-packages/mujoco_py/cymj.c -o /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-38/opt/conda/lib/python3.8/site-packages/mujoco_py/cymj.o -fopenmp -w
+[2023-10-21 11:14:33,536][root][INFO] - gcc -pthread -B /opt/conda/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/opt/conda/lib/python3.8/site-packages/mujoco_py -I/root/.mujoco/mujoco210/include -I/opt/conda/lib/python3.8/site-packages/numpy/core/include -I/opt/conda/include/python3.8 -c /opt/conda/lib/python3.8/site-packages/mujoco_py/gl/osmesashim.c -o /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-38/opt/conda/lib/python3.8/site-packages/mujoco_py/gl/osmesashim.o -fopenmp -w
+[2023-10-21 11:14:33,615][root][INFO] - creating /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder/lib.linux-x86_64-cpython-38
+[2023-10-21 11:14:33,616][root][INFO] - creating /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder/lib.linux-x86_64-cpython-38/mujoco_py
+[2023-10-21 11:14:33,616][root][INFO] - gcc -pthread -shared -B /opt/conda/compiler_compat -L/opt/conda/lib -Wl,-rpath=/opt/conda/lib -Wl,--no-as-needed -Wl,--sysroot=/ /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-38/opt/conda/lib/python3.8/site-packages/mujoco_py/cymj.o /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-38/opt/conda/lib/python3.8/site-packages/mujoco_py/gl/osmesashim.o -L/root/.mujoco/mujoco210/bin -Wl,--enable-new-dtags,-R/root/.mujoco/mujoco210/bin -lmujoco210 -lglewosmesa -lOSMesa -lGL -o /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder/lib.linux-x86_64-cpython-38/mujoco_py/cymj.cpython-38-x86_64-linux-gnu.so -fopenmp
+[2023-10-21 11:14:34,258][root][INFO] - Number of model parameters: 11085
+[2023-10-21 11:14:34,263][root][INFO] - ()
+[2023-10-21 11:14:34,263][root][INFO] - After actor pool
+[2023-10-21 11:14:34,492][root][INFO] - <All keys matched successfully>
+[2023-10-21 11:14:34,493][root][INFO] - The model states is ()
+[2023-10-21 11:14:34,504][root][INFO] - The inference batchherr : hh
+[2023-10-21 11:14:39,556][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 5.0)
+[2023-10-21 11:14:43,779][root][INFO] - observation : (tensor([[[ 0.0178, -0.0354,  0.0557, -0.0249,  0.0761, -0.0743, -0.0810,
+           0.0265, -0.1573,  0.2174,  0.1986,  0.1813, -0.0218, -0.1339,
+          -0.0835,  0.0168, -0.0806]]], dtype=torch.float64))
+[2023-10-21 11:14:43,780][root][INFO] - done : (tensor([[True]]))
+[2023-10-21 11:14:43,780][root][INFO] - reward : (tensor([[0.]]))
+[2023-10-21 11:14:44,560][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (train_seconds = 10.0)
+[2023-10-21 11:14:49,568][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 2. Learner queue size: 0. Other stats: (train_seconds = 15.0)
+[2023-10-21 11:14:54,572][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 26. Learner queue size: 0. Other stats: (train_seconds = 20.0)
+[2023-10-21 11:14:59,576][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 82. Learner queue size: 0. Other stats: (train_seconds = 25.0)
+[2023-10-21 11:15:04,580][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 142. Learner queue size: 0. Other stats: (train_seconds = 30.0)
+[2023-10-21 11:15:09,584][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 196. Learner queue size: 0. Other stats: (train_seconds = 35.0)
+[2023-10-21 11:15:14,588][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 241. Learner queue size: 0. Other stats: (train_seconds = 40.0)
+[2023-10-21 11:15:19,593][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 255. Learner queue size: 0. Other stats: (train_seconds = 45.0)
+[2023-10-21 11:15:24,596][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 255. Learner queue size: 0. Other stats: (train_seconds = 50.0)

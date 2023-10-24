@@ -1,0 +1,105 @@
+[2023-10-15 12:08:31,574][root][INFO] - name: null
+wandb: false
+project: skillhack
+entity: your_entity_name
+group: default
+state_dict_path: none
+foc_options_path: none
+foc_options_config_path: none
+teacher_path: none
+teacher_config_path: none
+ks_max_lambda: 10
+ks_max_time: 20000000.0
+ks_min_lambda_prop: 0.1
+train_with_all_skills: false
+penalty_per_step: 0.01
+hks_max_uniform_weight: 1000
+hks_min_uniform_prop: 0.05
+hks_max_uniform_time: 20000000.0
+tasks_json: tasks
+mock: false
+single_ttyrec: true
+num_seeds: 0
+write_profiler_trace: false
+relative_reward: false
+fn_penalty_step: constant
+penalty_time: 0.0
+penalty_step: -0.001
+reward_lose: 0
+reward_win: 1
+character: null
+save_tty: false
+mode: train
+env: HalfCheetahv4
+obs_keys: glyphs,chars,colors,specials,blstats,message
+num_actors: 256
+total_steps: 10000000.0
+batch_size: 32
+unroll_length: 80
+num_learner_threads: 1
+num_inference_threads: 1
+disable_cuda: false
+learner_device: cuda:0
+actor_device: cuda:0
+max_learner_queue_size: null
+model: HalfCheetah
+use_lstm: false
+hidden_dim: 256
+embedding_dim: 64
+glyph_type: all_cat
+equalize_input_dim: false
+equalize_factor: 2
+layers: 5
+crop_model: cnn
+crop_dim: 9
+use_index_select: true
+entropy_cost: 0.001
+baseline_cost: 0.5
+discounting: 0.999
+reward_clipping: none
+normalize_reward: true
+learning_rate: 0.0002
+grad_norm_clipping: 40
+alpha: 0.99
+momentum: 0
+epsilon: 1.0e-06
+state_counter: none
+no_extrinsic: false
+int:
+  twoheaded: true
+  input: full
+  intrinsic_weight: 0.1
+  discounting: 0.99
+  baseline_cost: 0.5
+  episodic: true
+  reward_clipping: none
+  normalize_reward: true
+ride:
+  count_norm: true
+  forward_cost: 1
+  inverse_cost: 0.1
+  hidden_dim: 128
+rnd:
+  forward_cost: 0.01
+msg:
+  model: none
+  hidden_dim: 64
+  embedding_dim: 32
+
+[2023-10-15 12:08:31,590][root][INFO] - Symlinked log directory: /workspace/latest
+[2023-10-15 12:08:31,591][root][INFO] - Creating archive directory: /workspace/outputs/2023-10-15/12-08-31/archives
+[2023-10-15 12:08:31,595][root][INFO] - Logging results to /workspace/outputs/2023-10-15/12-08-31
+[2023-10-15 12:08:31,639][palaas/out][INFO] - Found log directory: /workspace/outputs/2023-10-15/12-08-31
+[2023-10-15 12:08:31,639][palaas/out][INFO] - Saving arguments to /workspace/outputs/2023-10-15/12-08-31/meta.json
+[2023-10-15 12:08:31,639][palaas/out][INFO] - Saving messages to /workspace/outputs/2023-10-15/12-08-31/out.log
+[2023-10-15 12:08:31,640][palaas/out][INFO] - Saving logs data to /workspace/outputs/2023-10-15/12-08-31/logs.csv
+[2023-10-15 12:08:31,640][palaas/out][INFO] - Saving logs' fields to /workspace/outputs/2023-10-15/12-08-31/fields.csv
+[2023-10-15 12:08:31,640][root][INFO] - Not using CUDA.
+[2023-10-15 12:08:31,646][root][INFO] - Using model HalfCheetah
+[2023-10-15 12:08:32,142][root][INFO] - running build_ext
+[2023-10-15 12:08:32,144][root][INFO] - building 'mujoco_py.cymj' extension
+[2023-10-15 12:08:32,144][root][INFO] - gcc -pthread -B /opt/conda/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/opt/conda/lib/python3.8/site-packages/mujoco_py -I/root/.mujoco/mujoco210/include -I/opt/conda/lib/python3.8/site-packages/numpy/core/include -I/opt/conda/include/python3.8 -c /opt/conda/lib/python3.8/site-packages/mujoco_py/cymj.c -o /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-38/opt/conda/lib/python3.8/site-packages/mujoco_py/cymj.o -fopenmp -w
+[2023-10-15 12:09:18,903][root][INFO] - gcc -pthread -B /opt/conda/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/opt/conda/lib/python3.8/site-packages/mujoco_py -I/root/.mujoco/mujoco210/include -I/opt/conda/lib/python3.8/site-packages/numpy/core/include -I/opt/conda/include/python3.8 -c /opt/conda/lib/python3.8/site-packages/mujoco_py/gl/osmesashim.c -o /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-38/opt/conda/lib/python3.8/site-packages/mujoco_py/gl/osmesashim.o -fopenmp -w
+[2023-10-15 12:09:18,972][root][INFO] - creating /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder/lib.linux-x86_64-cpython-38
+[2023-10-15 12:09:18,972][root][INFO] - creating /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder/lib.linux-x86_64-cpython-38/mujoco_py
+[2023-10-15 12:09:18,972][root][INFO] - gcc -pthread -shared -B /opt/conda/compiler_compat -L/opt/conda/lib -Wl,-rpath=/opt/conda/lib -Wl,--no-as-needed -Wl,--sysroot=/ /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-38/opt/conda/lib/python3.8/site-packages/mujoco_py/cymj.o /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-38/opt/conda/lib/python3.8/site-packages/mujoco_py/gl/osmesashim.o -L/root/.mujoco/mujoco210/bin -Wl,--enable-new-dtags,-R/root/.mujoco/mujoco210/bin -lmujoco210 -lglewosmesa -lOSMesa -lGL -o /opt/conda/lib/python3.8/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_38_linuxcpuextensionbuilder/lib.linux-x86_64-cpython-38/mujoco_py/cymj.cpython-38-x86_64-linux-gnu.so -fopenmp

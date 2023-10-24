@@ -1,0 +1,4 @@
+- model=HalfCheetah
+- env=mini_skill_hack
+- use_lstm=false
+- total_steps=1e7

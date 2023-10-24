@@ -869,6 +869,7 @@ class GroupedRewardManager(AbstractRewardManager):
             reward_manager.reset()
 
 
+
 class IntersectionRewardManager(RewardManager):
     """
     Requires every event to be completed (in any order) and will only give

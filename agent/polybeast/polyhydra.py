@@ -86,6 +86,7 @@ def run_learner(flags: DictConfig):
 def get_environment_flags(flags):
     env_flags = OmegaConf.to_container(flags)
     env_flags["num_servers"] = flags.num_actors
+    env_flags["max_num_steps"]= 10000
     env_flags["seedspath"] = ""
     return OmegaConf.create(env_flags)
 

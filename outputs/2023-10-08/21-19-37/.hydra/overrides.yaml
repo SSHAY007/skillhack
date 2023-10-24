@@ -1,0 +1,4 @@
+- model=baseline
+- env=mini_skill_fight
+- use_lstm=false
+- total_steps=1e7

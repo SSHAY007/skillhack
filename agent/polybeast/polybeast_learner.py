@@ -147,11 +147,15 @@ def inference(
     inference_batcher, model, flags, actor_device, lock=threading.Lock()
 ):  # noqa: B008
     with torch.no_grad():
-        for batch in inference_batcher:
+        for batch in inference_batcher:# the probelm is that we not getting anything from the batcher
             batched_env_outputs, agent_state = batch.get_inputs()
+            #logging.info(f"The batch batch{batched_env_outputs} ")
             observation, reward, done, *_ = batched_env_outputs
             # Observation is a dict with keys 'features' and 'glyphs'.
-            observation["done"] = done
+            #logging.info(f"observation : ({observation})")
+            #logging.info(f"done : ({done})")
+            #logging.info(f"reward : ({reward})")
+            #observation["done"] = done.squeeze()
             observation, agent_state = nest.map(
                 lambda t: t.to(actor_device, non_blocking=True),
                 (observation, agent_state),
@@ -174,6 +178,7 @@ def inference(
                 ),
                 agent_state,
             )
+            #logging.critical(outputs)
             batch.set_outputs(outputs)
 
 
@@ -200,7 +205,7 @@ def clip(flags, rewards):
     return clipped_rewards
 
 
-def learn(
+def learn(#not even getting here
     learner_queue,
     model,
     actor_model,
@@ -218,11 +223,13 @@ def learn(
         batch, initial_agent_state = tensors
         env_outputs, actor_outputs = batch
         observation, reward, done, *_ = env_outputs
-        observation["reward"] = reward
-        observation["done"] = done
+        #observation["reward"] = reward
+        #observation["done"] = done
 
         lock.acquire()  # Only one thread learning at a time.
+        #logging.critical(observation)
 
+        #logging.critical(f"HEREE {tensors}")
         output, _ = model(observation, initial_agent_state, learning=True)
 
         if flags.model == "foc":
@@ -240,6 +247,7 @@ def learn(
                 output["pot_sm"],
             )
         )
+        #logging.info(learner_outputs)
 
         # At this point, the environment outputs at time step `t` are the inputs
         # that lead to the learner_outputs at time step `t`. After the following
@@ -601,7 +609,7 @@ def learn(
                 stats[key1] = torch.mean(metric).item()
                 stats[key2] = torch.max(metric).item()
 
-        DEBUG = False
+        DEBUG = True
 
         if DEBUG and env_outputs.done.sum() > 0:
             print()
@@ -705,16 +713,20 @@ def train(flags):
     actor_model = create_model(flags, actor_device)
 
     # The ActorPool that will run `flags.num_actors` many loops.
+    logging.info(model.initial_state())
     actors = libtorchbeast.ActorPool(
         unroll_length=flags.unroll_length,
         learner_queue=learner_queue,
         inference_batcher=inference_batcher,
         env_server_addresses=addresses,
-        initial_agent_state=model.initial_state(),
+        initial_agent_state=model.initial_state(),# not working because model does not hav einitial states
     )
-
+#model=HalfCheetah env=HalfCheetahv4 use_lstm=false total_steps=1e7
     def run():
         try:
+            #logging.info(f"The learner queue is {learner_queue}")
+            #logging.info(f"The inference batcher is {inference_batcher}")
+            logging.info(f"The model states is {model.initial_state()}")
             actors.run()
         except Exception as e:
             logging.error("Exception in actorpool thread!")
@@ -723,6 +735,7 @@ def train(flags):
             raise e
 
     actorpool_thread = threading.Thread(target=run, name="actorpool-thread")
+    logging.info("After actor pool")
 
     optimizer = torch.optim.RMSprop(
         model.parameters(),
@@ -759,6 +772,7 @@ def train(flags):
 
     # Initialize actor model like learner model.
     actor_model.load_state_dict(model.state_dict())
+    logging.info(actor_model.load_state_dict(model.state_dict()))
 
     learner_threads = [
         threading.Thread(
@@ -791,7 +805,7 @@ def train(flags):
     for t in learner_threads + inference_threads:
         t.start()
 
-    def checkpoint(checkpoint_path=None):
+    def checkpoint(checkpoint_path=None):#NOTE:
         if flags.checkpoint:
             if checkpoint_path is None:
                 checkpoint_path = flags.checkpoint
@@ -878,6 +892,7 @@ def train(flags):
 
 
 def test(flags):
+    logging.info(flags)
     test_checkpoint = os.path.join(flags.savedir, "test_checkpoint.tar")
 
     if not os.path.exists(os.path.dirname(test_checkpoint)):
@@ -924,6 +939,7 @@ def main(flags):
             prof.export_chrome_trace(filename)
             os.system("gzip %s" % filename)
         else:
+            #logging.info(flags)
             train(flags)
     elif flags.mode.startswith("test"):
         test(flags)
