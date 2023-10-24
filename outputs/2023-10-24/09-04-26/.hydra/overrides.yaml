@@ -1,0 +1,4 @@
+- model=hks
+- env=quest_easy
+- use_lstm=false
+- total_steps=1e7

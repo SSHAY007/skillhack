@@ -26,14 +26,29 @@ def compute_entropy_loss(logits):
     entropy_per_timestep = torch.sum(-policy * log_policy, dim=-1)
     return -torch.sum(entropy_per_timestep)
 
+def compute_policy_gradient_loss_continuous(logits, actions, advantages):
+    # nll_loss = -log(pi(actions|states))
+    logits = logits.sum(2)
+    actions = actions.sum(2)
+
+    loss = F.mse_loss(
+        torch.flatten(logits,0,1),
+        target=torch.flatten(actions,0,1)
+    )
+    #loss = loss.view_as(advantages) # -log(pi) * Advantage
+    policy_gradient_loss_per_timestep = loss * advantages.detach()
+    return torch.sum(policy_gradient_loss_per_timestep)
 
 def compute_policy_gradient_loss(logits, actions, advantages):
+    # nll_loss = -log(pi(actions|states))
     cross_entropy = F.nll_loss(
         F.log_softmax(torch.flatten(logits, 0, 1), dim=-1),
         target=torch.flatten(actions, 0, 1),
         reduction="none",
-    )
-    cross_entropy = cross_entropy.view_as(advantages)
+    )# what is the difference between what the policy chose and what actions we chose
+    # since it is a loss
+
+    cross_entropy = cross_entropy.view_as(advantages) # -log(pi) * Advantage
     policy_gradient_loss_per_timestep = cross_entropy * advantages.detach()
     return torch.sum(policy_gradient_loss_per_timestep)
 
@@ -46,7 +61,7 @@ def compute_forward_dynamics_loss(pred_next_emb, next_emb):
 def compute_forward_binary_loss(pred_next_binary, next_binary):
     return F.binary_cross_entropy_with_logits(pred_next_binary, next_binary)
 
-
+#8 302 080
 def compute_forward_class_loss(pred_next_glyphs, next_glyphs):
     next_glyphs = torch.flatten(next_glyphs, 0, 2).long()
     pred_next_glyphs = pred_next_glyphs.view(next_glyphs.size(0), -1)

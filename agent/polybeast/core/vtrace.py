@@ -51,8 +51,8 @@ VTraceReturns = collections.namedtuple("VTraceReturns", "vs pg_advantages")
 def action_log_probs2(policy_logits, actions):
     policy_logits = torch.flatten(policy_logits, 0, 1)
     actions = torch.flatten(actions, 0, 1)
-    logging.critical(policy_logits.shape)
-    logging.critical(actions.shape)
+    #logging.critical(policy_logits.shape)
+    #logging.critical(actions.shape)
     return -F.nll_loss(
         F.log_softmax(torch.flatten(policy_logits, 0, 1), dim=-1),
         torch.flatten(actions, 0, 1),
@@ -60,10 +60,8 @@ def action_log_probs2(policy_logits, actions):
     ).view_as(actions)
 
 def action_log_probs(policy_logits, actions):
-    policy_logits = torch.flatten(policy_logits, 0, 1)
 #torch.Size([2560, 5])
 #torch.Size([2560])
-    actions = torch.flatten(actions, 0, 1)
     logging.critical(policy_logits.shape)
     logging.critical(actions.shape)
     return -F.nll_loss(
@@ -93,6 +91,7 @@ def from_logits(
 
 
     log_rhos = target_action_log_probs - behavior_action_log_probs
+    log_rhos = log_rhos.sum(2)
     vtrace_returns = from_importance_weights(
         log_rhos=log_rhos,
         discounts=discounts,
@@ -133,12 +132,28 @@ def from_importance_weights(
         values_t_plus_1 = torch.cat(
             [values[1:], torch.unsqueeze(bootstrap_value, 0)], dim=0
         )
+
+
+        #torch.Size([80, 32, 6]) clipped ratios of pi/mu
+        #torch.Size([80, 32]) values at 80 timesteps of 32 batchsizes
+        #torch.Size([80, 32])
+
+        #clipped_rhos = clipped_rhos.sum(2)
+        # to get policy at different actions we have to take the sum
+        # since sum(log(policy)) = product(sum(policy))
+        #logging.info(clipped_rhos.shape)
+        #logging.info(values_t_plus_1.shape)
+        #logging.info(values.shape)
+
         deltas = clipped_rhos * (
             rewards + discounts * values_t_plus_1 - values
-        )
+        ) # temporal difference
 
         acc = torch.zeros_like(bootstrap_value)
         result = []
+        #logging.info(acc.shape)
+        #logging.info(discounts.shape)
+        #logging.info(cs.shape)
         for t in range(discounts.shape[0] - 1, -1, -1):
             acc = deltas[t] + discounts[t] * cs[t] * acc
             result.append(acc)

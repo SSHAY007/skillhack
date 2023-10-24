@@ -396,7 +396,15 @@ def learn(#not even getting here
 
             # Compute loss as a weighted sum of the baseline loss, the policy
             # gradient loss and an entropy regularization term.
-            pg_loss = losses.compute_policy_gradient_loss(
+
+            #learner_outputs = learner_outputs.policy_logits.sum(2)
+            #actor_outputs = actor_outputs.sum(2)
+
+            #logging.info(f"learner outputs:{learner_outputs.policy_logits.shape}")
+            #logging.info(f"actor outputs:{actor_outputs.action.shape}")
+            #logging.info(f"pg_advantage outputs {vtrace_returns.pg_advantages.shape}")
+
+            pg_loss = losses.compute_policy_gradient_loss_continuous(#TODO: We here now
                 learner_outputs.policy_logits,
                 actor_outputs.action,
                 vtrace_returns.pg_advantages,
@@ -597,6 +605,8 @@ def learn(#not even getting here
                 stats["int_baseline_loss"] = int_baseline_loss.item()
                 stats["int_pg_loss"] = int_pg_loss.item()
 
+        lock.release()
+"""
         if "state_visits" in observation:
             visits = observation["state_visits"][:-1]
             metric = visits[env_outputs.done].float()
@@ -609,7 +619,7 @@ def learn(#not even getting here
                 stats[key1] = torch.mean(metric).item()
                 stats[key2] = torch.max(metric).item()
 
-        DEBUG = True
+        DEBUG = False
 
         if DEBUG and env_outputs.done.sum() > 0:
             print()
@@ -641,7 +651,8 @@ def learn(#not even getting here
             if flags.wandb:
                 wandb.log(stats, step=stats["step"])
 
-        lock.release()
+"""
+#        lock.release()
 
 
 def train(flags):

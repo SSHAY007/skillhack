@@ -5,6 +5,7 @@
   "mini_simple_random" : ["mini_skill_pick_up", "mini_skill_zap_death", "mini_skill_throw"],
   "mini_lc_freeze" : ["mini_skill_pick_up", "mini_skill_zap_cold", "mini_skill_apply_frost_horn", "mini_skill_nav_lava"],
   "mini_medusa" : ["mini_skill_pick_up", "mini_skill_put_on", "mini_skill_nav_blind"],
+  "quest_easy" : ["mini_skill_nav_lava", "mini_skill_pick_up"],
   "mini_mimic" : ["mini_skill_pick_up", "mini_skill_throw", "mini_skill_nav_lava_to_amulet", "mini_skill_put_on"],
   "mini_seamonsters" : ["mini_skill_pick_up", "mini_skill_take_off", "mini_skill_wear", "mini_skill_nav_water"]
 }

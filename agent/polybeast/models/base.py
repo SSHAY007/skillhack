@@ -249,7 +249,8 @@ class HalfCheetahAgent(nn.Module):
         inputs = torch.flatten(inputs, 0, 1)
         #T = T*self.num_actions
         if T != 1:
-            logging.info(inputs.shape)
+            pass
+            #logging.info(inputs.shape)
         reps = inputs
         # -- [B x K]
         action_mean = self.actor_mean(inputs)

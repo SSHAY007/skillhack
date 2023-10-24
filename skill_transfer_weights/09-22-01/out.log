@@ -1,0 +1,3 @@
+Saving logs data to /opt/project/outputs/2023-10-24/09-22-01/logs.csv
+Saving logs' fields to /opt/project/outputs/2023-10-24/09-22-01/fields.csv
+Updated log fields: ['_tick', '_time', 'train_seconds', 'success_rate', 'step', 'mean_episode_return', 'mean_episode_step', 'total_loss', 'entropy_loss', 'pg_loss', 'baseline_loss', 'learner_queue_size']
