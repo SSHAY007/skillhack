@@ -22,7 +22,7 @@ from envs.skills_all import HalfCheetah
 
 
 from agent.polybeast.models.frozen_optioncritic import FOCNet
-from agent.polybeast.models.hks import HKSNet
+from agent.polybeast.models.hks import HKSNet,HKSContinuous
 from agent.polybeast.models.kickstarting import KSNet
 
 
@@ -42,6 +42,8 @@ def create_model(flags, device):
         model_cls = FOCNet
     elif model_string == "ks":
         model_cls = KSNet
+    elif model_string == "hks_c":
+        model_cls = HKSContinuous
     elif model_string == "hks":
         model_cls = HKSNet
     elif model_string == "cnn" or model_string == "transformer":

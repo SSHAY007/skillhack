@@ -48,14 +48,27 @@ VTraceFromLogitsReturns = collections.namedtuple(
 
 VTraceReturns = collections.namedtuple("VTraceReturns", "vs pg_advantages")
 
-def action_log_probs2(policy_logits, actions):
-    policy_logits = torch.flatten(policy_logits, 0, 1)
-    actions = torch.flatten(actions, 0, 1)
-    #logging.critical(policy_logits.shape)
-    #logging.critical(actions.shape)
-    return -F.nll_loss(
-        F.log_softmax(torch.flatten(policy_logits, 0, 1), dim=-1),
+def action_log_probs2(policy, actions):
+    """
+    This converts actions taken to log probabilities
+    return -F.gaussian_nll_loss(
+        torch.flatten(policy, 0, 1),
         torch.flatten(actions, 0, 1),
+        var=torch.ones(policy.size()),
+        reduction="none",
+    ).view_as(actions)
+    """
+    #policy_logits = torch.flatten(policy_logits, 0, 1)
+    #policy = policy.sum(2)
+    #actions =  actions.sum(2)
+    #logging.critical(f"policy  {policy.shape}")
+    #policy = F.log_softmax(torch.flatten(policy, 0, 1), dim=-1)
+    #logging.critical(f"policy after {policy.shape}")
+    #logging.critical(f"action  {actions.shape}")
+    return -F.gaussian_nll_loss(
+        torch.flatten(policy, 0, 1),
+        torch.flatten(actions, 0, 1),
+        var=torch.ones(torch.flatten(actions, 0, 1).size()),
         reduction="none",
     ).view_as(actions)
 
@@ -84,14 +97,16 @@ def from_logits(
 ):
     """V-trace for softmax policies."""
 
-    #target_action_log_probs = action_log_probs(target_policy_logits, actions)#the probleeem
-    #behavior_action_log_probs = action_log_probs(behavior_policy_logits, actions)
-    target_action_log_probs = target_policy_logits
-    behavior_action_log_probs = behavior_policy_logits
+
+    target_action_log_probs = action_log_probs2(target_policy_logits, actions)#the probleeem
+    behavior_action_log_probs = action_log_probs2(behavior_policy_logits, actions)
+    #target_action_log_probs = target_policy_logits
+    #behavior_action_log_probs = behavior_policy_logits
 
 
-    log_rhos = target_action_log_probs - behavior_action_log_probs
-    log_rhos = log_rhos.sum(2)
+    log_rhos = target_action_log_probs - behavior_action_log_probs#Same things is not log ratios
+    #logging.info(log_rhos.shape)
+    log_rhos = log_rhos.sum(2)# do this if your policy
     vtrace_returns = from_importance_weights(
         log_rhos=log_rhos,
         discounts=discounts,
@@ -145,22 +160,24 @@ def from_importance_weights(
         #logging.info(values_t_plus_1.shape)
         #logging.info(values.shape)
 
+        # temporal difference
         deltas = clipped_rhos * (
             rewards + discounts * values_t_plus_1 - values
-        ) # temporal difference
+        )
 
         acc = torch.zeros_like(bootstrap_value)
         result = []
         #logging.info(acc.shape)
         #logging.info(discounts.shape)
         #logging.info(cs.shape)
+        # V-trace targets
         for t in range(discounts.shape[0] - 1, -1, -1):
             acc = deltas[t] + discounts[t] * cs[t] * acc
             result.append(acc)
         result.reverse()
         vs_minus_v_xs = torch.stack(result)
 
-        # Add V(x_s) to get v_s.
+        # Add V(x_s) to get v_s. n-step Bellman target
         vs = torch.add(vs_minus_v_xs, values)
 
         # Advantage for policy gradient.
@@ -171,6 +188,8 @@ def from_importance_weights(
             clipped_pg_rhos = torch.clamp(rhos, max=clip_pg_rho_threshold)
         else:
             clipped_pg_rhos = rhos
+        # clipped_pg_rhos = logp
+        # because of autograd => logp = grad logp
         pg_advantages = clipped_pg_rhos * (
             rewards + discounts * vs_t_plus_1 - values
         )

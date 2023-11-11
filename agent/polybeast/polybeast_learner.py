@@ -411,7 +411,7 @@ def learn(#not even getting here
             )
             baseline_loss = flags.baseline_cost * losses.compute_baseline_loss(
                 vtrace_returns.vs - learner_outputs.baseline
-            )
+            )# using l2 loss
             total_loss += pg_loss + baseline_loss
 
         # TWO-HEADED INTRINSIC REWARDS / LOSSES
@@ -533,6 +533,7 @@ def learn(#not even getting here
         optimizer.step()
         scheduler.step()
 
+        # here we update the actors model by the learner model
         actor_model.load_state_dict(model.state_dict())
 
         # LOGGING
@@ -604,9 +605,7 @@ def learn(#not even getting here
             if flags.int.twoheaded:
                 stats["int_baseline_loss"] = int_baseline_loss.item()
                 stats["int_pg_loss"] = int_pg_loss.item()
-
-        lock.release()
-"""
+                """ 
         if "state_visits" in observation:
             visits = observation["state_visits"][:-1]
             metric = visits[env_outputs.done].float()
@@ -618,7 +617,7 @@ def learn(#not even getting here
             else:
                 stats[key1] = torch.mean(metric).item()
                 stats[key2] = torch.max(metric).item()
-
+"""
         DEBUG = False
 
         if DEBUG and env_outputs.done.sum() > 0:
@@ -651,8 +650,7 @@ def learn(#not even getting here
             if flags.wandb:
                 wandb.log(stats, step=stats["step"])
 
-"""
-#        lock.release()
+        lock.release()
 
 
 def train(flags):

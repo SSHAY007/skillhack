@@ -4,7 +4,9 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-from agent.polybeast.models import BaseNet
+import logging
+from torch.distributions.normal import Normal
+from agent.polybeast.models import BaseNet,HalfCheetahAgent
 from agent.polybeast.models.base import NUM_CHARS
 from agent.polybeast.skill_transfer.skill_transfer import load_model
 
@@ -204,6 +206,133 @@ class HKSNet(BaseNet):
             weighted_teacher += (
                 pot_sm[:, :, i].unsqueeze(2).repeat(1, 1, self.num_actions)
                 * option_sm[i]
+            )
+
+        return (
+            dict(
+                policy_logits=output["policy_logits"],
+                baseline=output["baseline"],
+                action=output["action"],
+                chosen_option=output["action"],
+                teacher_logits=weighted_teacher,  # TODO not actually logits anymore
+                pot_sm=pot_sm,
+            ),
+            core_state,
+        )
+
+
+
+class HKSContinuous(HalfCheetahAgent):
+    def __init__(self, observation_shape, num_actions, flags, device):
+        super(HKSContinuous, self).__init__(observation_shape,num_actions,flags,device)
+
+        options_path = flags.foc_options_path
+        configs_path = flags.foc_options_config_path
+
+        logging.info(options_path)
+        if len(options_path) != len(configs_path):
+            print(options_path)
+            print(configs_path)
+            raise ValueError(
+                "options_path length does not equal configs_length "
+                + str(len(options_path))
+                + " "
+                + str(len(configs_path))
+            )
+
+        self.num_options = len(options_path)
+
+        self.options = [
+            load_model(flags.env, paths[0], paths[1], device)[0]
+            for paths in zip(options_path, configs_path)
+        ]
+
+        # self.pot = BaseNet(observation_shape, self.num_options, flags, device)
+        self.h_dim = 64
+        self.pot_layer = nn.Linear(self.h_dim, self.num_options)
+
+    def forward(self, inputs, core_state, learning=False):
+        raw_in = inputs
+        inputs = self.prepare_input(inputs)
+        T, B ,*_ = inputs.shape
+        """
+        inputs = self.prepare_input(inputs)
+        T, B ,*_ = inputs.shape
+        inputs = torch.flatten(inputs, 0, 1)
+        # -- [B x K]
+        core_outputs = self.fc(inputs)
+        action_mean = self.actor_mean(core_outputs)
+        action_logstd = self.actor_logstd.expand_as(action_mean)
+        action_std = torch.exp(action_logstd)
+        #Normal.batch_shape = (T,B,self.num_actions)
+        probs = Normal(action_mean, action_std)
+        #logging.info(f"action mean shape is {action_mean.shape}")
+        policy =  probs
+        # -- [B x A]
+        #policy_logits = self.actor_mean(core_output)
+        # -- [B x A]
+        baseline = self.critic(inputs)
+
+        if self.training:
+            action = policy.sample()
+        else:
+            # Don't sample when testing.
+            logging.critical("not training")
+            action = torch.argmax(probs, dim=1)
+
+        # we have to reshape it to [Time,BatchSize,Value]
+        #logging.info(inputs.shape)
+        policy = probs.log_prob(action)
+        # we don't want to take the sum because we want a probability distibution over x
+        action = action.view(T,B,self.num_actions)
+        policy = policy.view(T,B,self.num_actions)
+
+        baseline = baseline.view(T,B)
+
+        output = dict(
+            policy_logits=policy,
+            baseline=baseline,
+            action=action,
+            chosen_option=policy,
+            teacher_logits=policy,
+            pot_sm=policy,
+        )
+        #
+        #
+        #
+        #
+        #
+        """
+        (output, core_state) = super().forward(inputs, core_state, learning)
+
+        #policy over teachers logits = pot_logits
+        #core_outputs comes from the fully connected
+        #core_puts comes from the superclass
+        pot_logits = self.pot_layer(self.core_outputs)
+        pot_logits = pot_logits.view(T, B, self.num_options)
+
+        pot_sm = torch.softmax(pot_logits, 2)
+
+        with torch.no_grad():
+            option_sm = [#the issue
+                torch.softmax(
+                    self.options[i](raw_in, core_state, learning)[0][
+                        "policy_logits"
+                    ],
+                    2,
+                )
+                for i in range(len(self.options))
+            ]
+
+        weighted_teacher = (
+                pot_sm[:, :, 0].unsqueeze(2).repeat(1, 1, self.num_actions)
+                * option_sm[0]
+        )
+
+        for i in range(1, self.num_options):
+            weighted_teacher += (
+                    pot_sm[:, :, i].unsqueeze(2).repeat(1, 1, self.num_actions)
+                    * option_sm[i]
             )
 
         return (

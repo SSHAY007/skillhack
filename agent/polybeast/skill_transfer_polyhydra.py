@@ -34,7 +34,7 @@ def main(flags: DictConfig):
     copy_final_checkpoint = False
 
     # Training on a task
-    if flags.model in ["foc", "ks", "hks"]:
+    if flags.model in ["foc", "ks", "hks","hks_c"]:
         if flags.tasks_json is not None:
             tasks_path = "data/tasks/" + flags.tasks_json + ".json"
         else:
@@ -71,7 +71,7 @@ def main(flags: DictConfig):
 
                 print("All skills present, begin training on task.")
 
-                if flags.model in ["foc", "hks"]:
+                if flags.model in ["foc", "hks","hks_c"]:
                     flags.foc_options_path = skill_dirs
                     flags.foc_options_config_path = [
                         st_home + "/skill_config.yaml"

@@ -230,13 +230,19 @@ class HalfCheetahAgent(nn.Module):
             nn.Tanh(),
             self.layer_init(nn.Linear(64, 64)),
             nn.Tanh(),
-            self.layer_init(nn.Linear(64, 1), std=1.0),
+            self.layer_init(nn.Linear(64, 1), std=1.0),#output is 1 because it is a real value for the state
         )
-        self.actor_mean = nn.Sequential(
+        self.fc = nn.Sequential(
             self.layer_init(nn.Linear(np.array(observation_space.shape).prod(), 64)),
             nn.Tanh(),
             self.layer_init(nn.Linear(64, 64)),
             nn.Tanh(),
+        )
+        self.actor_mean = nn.Sequential(
+            #self.layer_init(nn.Linear(np.array(observation_space.shape).prod(), 64)),
+            #nn.Tanh(),
+            #self.layer_init(nn.Linear(64, 64)),
+            #nn.Tanh(),
             self.layer_init(nn.Linear(64, np.prod(action_space.shape)), std=0.01),
         )
         self.actor_logstd = nn.Parameter(torch.zeros(1, np.prod(action_space.shape)))
@@ -248,15 +254,15 @@ class HalfCheetahAgent(nn.Module):
         T, B ,*_ = inputs.shape
         inputs = torch.flatten(inputs, 0, 1)
         #T = T*self.num_actions
-        if T != 1:
-            pass
-            #logging.info(inputs.shape)
+        #logging.info(f"T x B : {T} x {B}")
         reps = inputs
         # -- [B x K]
-        action_mean = self.actor_mean(inputs)
+        self.core_outputs = self.fc(reps)
+        action_mean = self.actor_mean(self.core_outputs)
+        #logging.info(action_mean.size())
         action_logstd = self.actor_logstd.expand_as(action_mean)
         action_std = torch.exp(action_logstd)
-        #Normal.batch_shape = (T,B,self.num_actions)
+        Normal.batch_shape = (T,B,self.num_actions)
         probs = Normal(action_mean, action_std)
         #logging.info(f"action mean shape is {action_mean.shape}")
         policy =  probs
@@ -266,7 +272,7 @@ class HalfCheetahAgent(nn.Module):
         baseline = self.critic(inputs)
 
         if self.training:
-            action = probs.sample()
+            action = policy.sample()
         else:
             # Don't sample when testing.
             logging.critical("not training")
@@ -280,23 +286,26 @@ class HalfCheetahAgent(nn.Module):
 
         # we have to reshape it to [Time,BatchSize,Value]
         #logging.info(inputs.shape)
-        probs = probs.log_prob(action)#.expand((T,B,self.num_actions))
+        policy = probs.log_prob(action)#.sum(1,keepdim=True)#.expand((T,B,self.num_actions))
+        # we don't want to take the sum because we want a probability distibution over x
         action = action.view(T,B,self.num_actions)
-        probs = probs.view(T,B,self.num_actions)
-        #probs = probs.view(probs.size()[1],-1)
+        policy = policy.view(T,B,self.num_actions)
+        #policy = policy.view(T,B,self.num_actions)
+
+        #policy = policy.view(policy.size()[1],-1)
         baseline = baseline.view(T,B)
 
         output = dict(
-            policy_logits=probs,
+            policy_logits=policy,
             baseline=baseline,
             action=action,
-            chosen_option=probs,
-            teacher_logits=probs,
-            pot_sm=probs,
+            chosen_option=policy,
+            teacher_logits=policy,
+            pot_sm=policy,
         )
         #logging.info(f"Baseline shape is {baseline.shape}")
         #logging.info(f"Action shape is {action.shape}")
-        #logging.info(f"policy shape is {probs.shape}")
+        #logging.info(f"policy shape is {policy.shape}")
         return (output, core_state)
 
     def initial_state(self, batch_size=1):

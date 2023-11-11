@@ -1,9 +1,9 @@
 # Copyright (c) Facebook, Inc. and its affiliates.
 import logging
 import threading
-
+import numpy as np
 import gym
-import gymnasium
+#import gymnasium as gym
 from nle.env import tasks as nle_tasks
 
 from minihack import MiniHack
@@ -230,11 +230,20 @@ def create_env(flags, env_id=0):
             kwargs.update(character=flags.character)
             #env = skills_all.HalfCheetah()()
 
-            env = gym.make("HalfCheetah-v3") # this works
+            env = gym.make("HalfCheetah-v3")
+            env = gym.wrappers.FlattenObservation(env)  # deal with dm_control's Dict observation space
+            env = gym.wrappers.RecordEpisodeStatistics(env)
+            env = gym.wrappers.ClipAction(env)
+            env = gym.wrappers.NormalizeObservation(env)
+            env = gym.wrappers.TransformObservation(env, lambda obs: np.clip(obs, -10, 10))
+            env = gym.wrappers.NormalizeReward(env, gamma=0.9)
+            #env = gym.wrappers.RecordVideo(env, 'outputs', episode_trigger = lambda x: x == 2)
+            #env = gym.make("HalfCheetah-v3") # this works
 
             #logging.info(isinstance(env,gymnasium.Env),) making sure it is an gym instance
             #logging.info(type(env))
             return env
+
 
         env = env_class(**kwargs)
         if flags.state_counter != "none":

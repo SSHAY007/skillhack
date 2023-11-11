@@ -16,7 +16,7 @@ import torch
 from torch.nn import functional as F
 
 
-def compute_baseline_loss(advantages):
+def compute_baseline_loss(advantages):#compute value function loss
     return 0.5 * torch.sum(advantages ** 2)
 
 
@@ -28,20 +28,23 @@ def compute_entropy_loss(logits):
 
 def compute_policy_gradient_loss_continuous(logits, actions, advantages):
     # nll_loss = -log(pi(actions|states))
-    logits = logits.sum(2)
-    actions = actions.sum(2)
+    #logits = logits.sum(axis=-1)
+    #actions = actions.sum(2)
 
-    loss = F.mse_loss(
+    #these should not be actuals actions this should be
+    # action_log_probabilities
+
+    loss = F.mse_loss(#this is
         torch.flatten(logits,0,1),
         target=torch.flatten(actions,0,1)
     )
-    #loss = loss.view_as(advantages) # -log(pi) * Advantage
+    #loss = loss.view_as(advantages) # -nabla log(pi) * Advantage
     policy_gradient_loss_per_timestep = loss * advantages.detach()
-    return torch.sum(policy_gradient_loss_per_timestep)
+    return -torch.sum(policy_gradient_loss_per_timestep)
 
 def compute_policy_gradient_loss(logits, actions, advantages):
     # nll_loss = -log(pi(actions|states))
-    cross_entropy = F.nll_loss(
+    cross_entropy = F.nll_loss(# requires Long ('ints')
         F.log_softmax(torch.flatten(logits, 0, 1), dim=-1),
         target=torch.flatten(actions, 0, 1),
         reduction="none",

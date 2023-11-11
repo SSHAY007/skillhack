@@ -1,16 +1,21 @@
 from omegaconf import OmegaConf
 import torch
 
+import logging
+from agent.polybeast.models.base import BaseNet, RandomNet, HalfCheetahAgent
 from nle.env.base import DUNGEON_SHAPE
-
+from envs.skills_all import HalfCheetah
 from agent.common.envs import tasks
 from agent.polybeast.models import BaseNet
 
 
 def create_basenet(flags, device):
     model_string = flags.model
+    logging.critical(flags.model)
     if model_string == "baseline":
         model_cls = BaseNet
+    elif model_string == "baseline_c":
+        model_cls = HalfCheetahAgent
     elif model_string == "cnn" or model_string == "transformer":
         raise RuntimeError(
             "model=%s deprecated, use model=baseline crop_model=%s instead"
@@ -19,11 +24,18 @@ def create_basenet(flags, device):
     else:
         raise NotImplementedError("model=%s" % model_string)
 
-    num_actions = len(
-        tasks.ENVS[flags.env](savedir=None, archivefile=None)._actions
-    )
 
-    model = model_cls(DUNGEON_SHAPE, num_actions, flags, device)
+    if flags.model in ["baseline_c","hks_c"]:
+        logging.critical(flags.model)
+        print(flags.model)
+        env = HalfCheetah()()#have a functor, first brackets is constructor and second is a function call
+        model = model_cls(env.observation_space,env.action_space,flags,device)
+    else:
+        num_actions = len(
+            tasks.ENVS[flags.env](savedir=None, archivefile=None).actions
+        )
+        model = model_cls(DUNGEON_SHAPE, num_actions, flags, device)
+
     model.to(device=device)
     return model
 
